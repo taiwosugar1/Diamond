@@ -1,0 +1,142 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1000;
+    background: white;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0px 5px 5px grey;
+}
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+.header .mobile-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header ul li {
+    color: grey;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+    padding: 3px 8px;
+    border-radius: 5px;
+    list-style: none;
+    font-weight: 500;
+    font-family: "roboto";
+    text-decoration: none;
+}
+.header ul li:hover {
+    text-decoration: underline;
+    color: aqua;
+}
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    background: white;
+    z-index: 2000;
+    left: 0;
+    top: 60px;
+    position: absolute;
+}
+.hotel {
+    position: relative;
+}
+.hotel ul {
+    position: absolute;
+    top: 100%;
+    left: -40px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    display: none;
+}
+.hotel:hover ul {
+    display: block;
+}
+.hotel ul li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.hotel ul li:last-child {
+    border-bottom: none;
+}
+.media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        background: white;
+        width: 100%;
+        height: 60px;
+        box-shadow: 0px 5px 5px grey;
+        
+    }
+    .header .mobile-icon {
+        display: block;
+        margin-right: 50px;
+    }
+    .header ul.nav-details {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 48px;
+        height: 500px;
+        right: 0;
+        width: 70%;
+        background: white;
+        padding: 10px;
+        box-shadow: 0px 5px 5px grey;
+    }
+    .header ul.nav-details.open {
+        display: flex;
+    }
+    .header ul.nav-details li {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+    .header .media {
+        display: none;
+    }
+    .details {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 400px;
+        height: 400px;
+        background: white;
+        z-index: 2000;
+        left: 0;
+        top: 200px;
+        position: absolute;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    }
+}

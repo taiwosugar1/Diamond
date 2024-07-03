@@ -1,0 +1,275 @@
+.about{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.about-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)), url("https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+   
+    
+}.about-details div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: -440px;
+    margin-top: -140px;
+    margin-right: 200px;
+}
+
+.about-details div ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-details div ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    list-style: none;
+    color: white;
+    padding: 3px 7px;
+    font-weight: 600;
+    cursor: pointer;
+    border:1px solid #333;
+}
+.about-details div ul li:hover{
+    color: aqua;
+    background: #333;
+    border-radius: 4px;
+}
+.about-details h2{
+    
+    color: white;
+    font-weight: bolder;
+    font-family: "sanserif";
+    
+}
+
+.about h1{
+    color: white;
+    font-weight: bolder;
+    font-family: "sanserif";
+    font-size: 50px;
+}
+.about p{
+    color: white;
+    font-family: "roboto";
+    font-size: 20px;
+    width: 600px;
+}
+.about-details-drop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    background: white;
+    z-index: 2000;
+    left: 800px;
+    top: 270px;
+    position: absolute;
+
+}
+
+
+/* -----------staff details------------- */
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about h3{
+    width: 700px;
+    color: #666;
+}
+.about-staff{
+ display: grid;grid-template-columns: auto auto auto auto;
+   grid-gap: 20px;
+   place-content: center;
+}
+.about-staff .staff{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    height: 400px;
+    margin: 40px 20px;
+    background: white;
+ 
+}
+.about-staff .staff img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.about-staff .staff h2{
+    color: black;
+}
+.about-staff .staff p{
+    color: grey;
+    font-size: 14px;
+    width: 170px;
+    font-family: "san-serif";
+    text-align: center;
+}
+.about-staff .staff .staff-social{
+    display: flex;
+}
+.about-staff .staff .staff-social div{
+    display: flex;align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+
+/* -----------footer---------------- */
+
+.about-footer{
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5));
+    display: grid;
+    place-content: center;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 100px;
+    
+}
+.about-footer div{
+    width: 200px;
+    height: 350px;
+    color: white;
+    text-align: left;
+}
+.about-footer div p{
+   width: 200px;
+   text-align: left;
+}
+.about-footer div h3{
+   color: white;
+   font-family: "roboto";
+ }
+ .latest-news-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 250px;
+    height: 400px;                                                                                                                                                                                            
+ }
+ .latest-news-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 50px;
+ }
+ .latest-news-box h5{
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+   margin-right: 5px;
+   line-height: 8px;
+
+ }
+ .latest-news-box p{
+    width: 200px;
+ }
+
+
+@media screen and  ( max-width: 480px) {
+    .about-details div{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 60px;
+        margin-top: -140px;
+        margin-right: 200px;
+    }
+    .about-details div ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .about p{
+        color: white;
+        font-family: "roboto";
+        font-size: 20px;
+        width: 300px;
+    }
+    .about-details-drop{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 300px;
+        height: 350px;
+        background: white;
+        z-index: 1000;
+        left: -50px;
+        top: 280px;
+        position: absolute;
+    
+    }
+
+/* ---------------staff details-------------- */
+.about h3{
+    width: 400px;
+    color: #666;
+}
+
+    .about-staff{
+        display: grid;grid-template-columns: auto ;
+          grid-gap: 20px;
+          place-content: center;
+       }
+    .about-staff .staff{
+       width: 80%;
+    }
+    .about-staff .staff img{
+        width: 140px;
+        height: 140px;
+    }
+
+    /* ----------footer details-------------- */
+    .about-footer{
+        margin-top: 200px;
+        width: 100%;
+        height: auto;
+        background:rgba(51, 51, 51, 0.5);
+        display: grid;
+        place-content: center;
+        grid-template-columns: auto auto ;
+        grid-gap: 0px;
+    }
+    .about-footer div{
+        margin: 10px;
+        width: 200px;
+        height: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .about-footer div p{
+        width: 180px;
+    }
+}

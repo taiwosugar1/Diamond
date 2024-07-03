@@ -1,0 +1,152 @@
+
+.homeNav {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px;
+    padding: 20px;
+    background: transparent;
+    width: 80%;
+    height: auto;
+    border-bottom: 2px solid grey;
+    
+}
+
+
+.background-video {
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 750px;
+    z-index: -1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+  
+  .background-video video {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Filter: grayscale(100%); */
+    animation: slowMotion 300s infinite linear;
+    
+}
+
+
+  .overlay{
+    position: absolute;
+    top: 170px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 5)); */
+    padding-bottom: 180px;
+  }
+  .hero{
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    flex-direction: column;
+    color: white;
+    padding: 20px 50px;
+  
+}
+.hero h1{
+    font-size: 45px;
+}
+
+.hero h3{
+    color: white;
+}
+.hero div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.heroBox{
+    background: orange;
+width: 300px;
+height: 300px;
+transition: background  0.5s;
+margin-left: -50px;
+}
+.heroBox img{
+    width: 300px;
+    height: 300px;
+    /* translate: -5px -5px 0; */
+    cursor: pointer;
+    
+   
+    
+}
+
+.datch{
+  width: 5px;
+  height: 1px;
+  margin: 10px;
+  background: grey;
+}
+.tags{
+  padding-left: -50px;
+  color: grey;
+}
+.tags p{
+  font-size: 12px;
+}
+
+
+/* -------------Mobile screen------------- */
+
+@media screen and (max-width: 480px) {
+  .homeNav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px;
+    background: transparent;
+    width: 90%;
+    
+    height: auto;
+    border-bottom: 2px solid grey;
+    
+}
+
+.background-video {
+  top: 50;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  z-index: -1;
+
+}
+.hero h1{
+  font-size: 25px;
+}
+.hero div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.heroBox{
+  background: orange;
+width: 150px;
+height: 150px;
+transition: background  0.5s;
+}
+.heroBox img{
+  width: 150px;
+  height: 150px;
+  /* translate: -5px -5px 0; */
+  cursor: pointer;
+  
+ 
+  
+}
+}

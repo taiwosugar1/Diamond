@@ -1,0 +1,6 @@
+.home{
+   display: grid;
+   grid-template-columns: auto;
+   place-content: center;
+    width: 100%;
+}
