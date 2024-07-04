@@ -45,6 +45,13 @@
     /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 5)); */
     padding-bottom: 180px;
   }
+  .hero-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
   .hero{
     display: flex;
     justify-content: center;

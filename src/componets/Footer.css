@@ -20,18 +20,26 @@
     width: 300px;
     height: 35px;
     border: 2px solid orange;
-    border-radius: 5px;
+    border-radius: 0 5px 5px 0;
     right: 50px;
     position: absolute;
 }
 .footer-ul button{
+    background: orange;
+    text-align: center;
+    cursor: pointer;
     position: relative;
-    width: 50px;
-    height: 35px;
+    width: 70px;
+    height: 40px;
     background-repeat: 5px;
-    border: 1px solid blue;
-    margin-left: -440px;
+    color: white;
+    border: 2px solid white;
+    margin-left: -150px;
     margin-right: 10px;
+    border-radius: 5px 0 0 5px ;
+}
+.footer-ul button:hover{
+    background: orangered;
 }
 .footer-ul ul{
     list-style: none;
