@@ -8,7 +8,10 @@ const Home = () => {
     <div className='home'>
 
        <Background/>
+       <div style={{bottom:"0", left:"0"}}>
        <Footer/>
+       </div>
+      
     </div>
   )
 }
