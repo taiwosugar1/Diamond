@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Footer.css"
-import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
+import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
@@ -9,17 +9,21 @@ const Footer = () => {
     <div className='home-footer'>
       <div className="footer-ul">
         <ul>
-          <h3>LIST</h3>
-          <li>LISTof it</li>
-          <li>LISTof it</li>
-          <li>LISTof it</li>
+          <h3>ABOUT US</h3>
           <li>LISTof it</li>
           <li>LISTof it</li>
         </ul>
+        <ul className='footer-media-large-screen'>
+      <Link
+       to={"https://instagram.com/diamondvisa/"}><li><FaInstagram/></li></Link>
+      <Link to={"https://facebook.com/diamondvisa"}><li><FaFacebook/></li></Link>
+      <Link to={"https://twitter.com"}><li><FaTwitter/></li></Link>
+      <Link to={"https://twitter.com"}><li><FaWhatsapp/></li></Link>
+    </ul>
       </div>
       <div className="footer-ul">
         <ul>
-          <h3>LIST</h3>
+          <h3>CONTACT</h3>
           <li>LISTof it</li>
           <li>LISTof it</li>
           <li>LISTof it</li>
@@ -40,13 +44,18 @@ const Footer = () => {
      
       <div className="footer-ul">
         <p>   Footer Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, nihil?</p>
-       <button>Submit</button>
-        <input type="text" placeholder='Write a Feedback'/> 
+        <div className='footer-input-details'>
+           <button>Submit</button>
+           <input type="text" placeholder='Write a Feedback'/> 
+        </div>
         </div>
       
 
+       
    
     </div>
+    <p className='footer-under'>Copyright 2024 @ <b>Diamond Visa</b>.</p>
+    
     <div className="footer-ul-mobile">
       <h4>BOOK YOUR FLIGHT NOW</h4>
       <ul className='footer-media'>
@@ -65,6 +74,7 @@ const Footer = () => {
         </ul>
         <p>Copyright 2024 @ <b>Diamond Visa</b>.</p>
       </div>
+    
     </div>
   )
 }
