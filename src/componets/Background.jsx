@@ -28,17 +28,14 @@ const Background = () => {
       
       
       <div style={{display:"flex", alignItems:"center", justifyContent:"center"}}>
-      
+
+
+      <div className="hero-container">
       <div className='hero'>
        
         <h1>The joy of using<br/> the Diamond Visa and <br /> Immigration Services</h1>
         <div className='tags' >
           
-            <p>SEASON 1</p>
-            <div className="datch"></div>
-         
-            <p>SEP 3, 2023</p>
-            <div className="datch"></div>
           
             <p>TRAVEL AND TOURISM</p>
         </div>
@@ -46,7 +43,8 @@ const Background = () => {
 
         </div>
       <div className='heroBox'> 
-        
+         <img src="images/plane2.jpg" alt="" />
+      </div>
       </div>
       </div>
       </div>

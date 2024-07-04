@@ -110,7 +110,7 @@ margin-left: -50px;
     flex-direction: column;
     padding: 0px;
     background: transparent;
-    width: 90%;
+    width: 100%;
     
     height: auto;
     border-bottom: 2px solid grey;
@@ -143,6 +143,13 @@ margin-left: -50px;
 }
 .hero div{
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero-container{
+  display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
   flex-direction: column;
