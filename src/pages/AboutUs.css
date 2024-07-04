@@ -91,6 +91,7 @@ section{
 }
 
 .about h3{
+    text-align: justify;
     width: 700px;
     color: #666;
 }
