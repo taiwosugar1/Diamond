@@ -19,7 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-left: -300px;
+    margin-left: -200px;
     margin-top: -140px;
     margin-right: 200px;
 }
@@ -92,7 +92,7 @@ section{
 
 .about h3{
     text-align: justify;
-    width: 700px;
+    width: 650px;
     color: #666;
 }
 .about-staff{
