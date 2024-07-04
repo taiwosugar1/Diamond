@@ -58,10 +58,14 @@
 }
 .hero h1{
     font-size: 45px;
+    text-shadow: 1px 1px 2px black;
 }
 
-.hero h3{
+.hero p{
     color: white;
+    font-family: "roboto";
+    font-weight: 800;
+    text-shadow: 1px 1px 2px black;
 }
 .hero div{
     display: flex;
@@ -79,7 +83,7 @@ margin-left: -50px;
 .heroBox img{
     width: 300px;
     height: 300px;
-    /* translate: -5px -5px 0; */
+    translate: -5px -5px 0;
     cursor: pointer;
     
    
@@ -140,6 +144,7 @@ margin-left: -50px;
 }
 .hero h1{
   font-size: 25px;
+  text-shadow: 1px 1px 2px black;
 }
 .hero div{
   display: flex;
@@ -156,14 +161,14 @@ margin-left: -50px;
 }
 .heroBox{
   background: orange;
-width: 150px;
+width: 200px;
 height: 150px;
 transition: background  0.5s;
 }
 .heroBox img{
-  width: 150px;
+  width: 200px;
   height: 150px;
-  /* translate: -5px -5px 0; */
+  translate: -5px -5px 0;
   cursor: pointer;
   
  
