@@ -45,7 +45,7 @@ const Background = () => {
       <div className="hero-container">
       <div className='hero'>
        
-        <h1>The joy of using<br/> Diamond Visa and <br /> Immigration Services</h1>
+        <h1>Discover the Joy of <br/> Travel with Diamond <br/> Visa and Immigration Services</h1>
         <div className='tags' >
           
           
