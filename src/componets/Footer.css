@@ -85,7 +85,7 @@
         
     }
     
-.footer-ul, .footer-ul input, .footer-ul button{
+.footer-ul, .footer-ul input, .footer-ul button, .footer-under{
     display: none;
 }
 .footer-ul-mobile{
