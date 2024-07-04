@@ -49,14 +49,13 @@
 }
 @media screen and (max-width: 480px){
     .footer{
-        height: 200px;
+        height: 250px;
         width: 100%;
-        margin-top: 450px;
+        margin-top: 400px;
         background: #3f3e3e;
         display: flex;
         align-items: center;
         justify-content: center;
-        
         
     }
     
@@ -79,6 +78,10 @@
     color: white;
     border-radius: 5px;
 }
+.footer-media{
+    display: flex;
+    justify-content: center;
+}
 .footer-ul-mobile ul{
     display: flex;
     align-items: center;
@@ -90,7 +93,7 @@
 .footer-ul-mobile ul li{
     color: white;
     padding: 5px;
-    margin: 5px;
+    margin: 0px 5px;
     font-size: 16px;
     text-decoration: none;
     list-style: none;
