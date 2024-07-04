@@ -36,11 +36,9 @@ Welcome to Diamond Visa Services, your trusted partner in visa processing. Estab
 
       {/* ------------------About staff----------------- */}
      <section>
-<<<<<<< HEAD
-     <h3>At <b>Diamond Visa</b>, we are more than just a visa processing agency; we are your partners in making your travel aspirations come true. Trust us to handle your visa needs with professionalism, efficiency, and a personal touch.
-=======
+
       <h3>At <b>Diamond Visa</b>, we are more than just a visa processing agency; we are your partners in making your travel aspirations come true. Trust us to handle your visa needs with professionalism, efficiency, and a personal touch.
->>>>>>> ac8d71ec167d49f327324c81a4f9818918f0c79b
+
 
 </h3>
       <div className="about-staff">

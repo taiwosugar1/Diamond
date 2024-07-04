@@ -199,7 +199,6 @@ section{
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-<<<<<<< HEAD
         margin-left: 40px;
         margin-top: -140px;
         margin-right: 0px;
@@ -207,11 +206,10 @@ section{
     }
     .about-details div h3{
         color: #fff;
-=======
         margin-left: 60px;
         margin-top: -20px;
         margin-right: 200px;
->>>>>>> ac8d71ec167d49f327324c81a4f9818918f0c79b
+
     }
     .about-details div ul{
         display: flex;
@@ -236,13 +234,10 @@ section{
         height: 430px;
         background: white;
         z-index: 1000;
-<<<<<<< HEAD
         left: 50px;
         top: 280px;
-=======
         left: -50px;
         top: 220px;
->>>>>>> ac8d71ec167d49f327324c81a4f9818918f0c79b
         position: absolute;
     
     }
