@@ -29,7 +29,7 @@ const AboutUs = () => {
         </div>
         <h1>About Us</h1>
         <p>
-Welcome to Diamond Visa Services, your trusted partner in visa processing. Established with the mission to simplify and expedite the visa application process, we are committed to providing comprehensive and reliable services to our clients. Whether you are traveling for business, leisure, or education, our experienced team is here to ensure a smooth and stress-free experience.
+Welcome to Diamond Visa Services, your trusted partner in visa processing. Established with the mission to simplify and expedite the visa application process, we are committed to providing comprehensive and reliable services to our clients. 
 </p>
       </div>
 
