@@ -18,23 +18,27 @@ const AboutUs = () => {
     <div className='about'>
       <div className='about-details'>
         <div >
-          <h2>DIAMOND VISA</h2>
+          <h3>DIAMOND VISA</h3>
           <ul>
             <Link to={"/shop"}><li> Shop</li></Link>
             <li onClick={handleToggle}>Booking</li>
             {isOpen && (
               <div className='about-details-drop'> details</div>
             )}
-          </ul>
+          </ul>      
         </div>
         <h1>About Us</h1>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat….</p>
+        <p>
+Welcome to Diamond Visa Services, your trusted partner in visa processing. Established with the mission to simplify and expedite the visa application processes, we are committed to providing comprehensive and reliable services to our clients.
+</p>
       </div>
 
 
       {/* ------------------About staff----------------- */}
      <section>
-      <h3><b>Diamond Visa</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque enim minima ullam impedit ducimus reiciendis numquam delectus accusamus, facilis placeat. Eos nulla quod nam dignissimos corporis, blanditiis vel vitae possimus.</h3>
+     <h3>At <b>Diamond Visa</b>, we are more than just a visa processing agency; we are your partners in making your travel aspirations come true. Trust us to handle your visa needs with professionalism, efficiency, and a personal touch.
+
+</h3>
       <div className="about-staff">
         {staffMembers.map((staffMember, index) => (
           <div className="staff" key={index}>

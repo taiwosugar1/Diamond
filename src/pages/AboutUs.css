@@ -199,15 +199,21 @@ section{
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        margin-left: 60px;
+        margin-left: 40px;
         margin-top: -140px;
-        margin-right: 200px;
+        margin-right: 0px;
+        border-bottom: 1px solid rgb(6, 6, 64);
+    }
+    .about-details div h3{
+        color: #fff;
     }
     .about-details div ul{
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
+        margin-right: 150px;
+        margin-left: -80px;
+        /* flex-direction: column; */
     }
     .about p{
         color: white;
@@ -220,11 +226,11 @@ section{
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        width: 300px;
-        height: 350px;
+        width: 350px;
+        height: 430px;
         background: white;
         z-index: 1000;
-        left: -50px;
+        left: 50px;
         top: 280px;
         position: absolute;
     

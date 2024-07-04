@@ -1,0 +1,22 @@
+.shop{
+    background: pink;
+}
+
+.shop-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px slid grey;
+    background: #000;
+    background: rgb(6, 6, 64);
+}
+.shop-button button{
+    padding: 3px 5px;
+    margin: 10px;
+    cursor: pointer;
+    background: rgb(6, 6, 64);
+    color: white;
+    border: 1px solid white;
+}

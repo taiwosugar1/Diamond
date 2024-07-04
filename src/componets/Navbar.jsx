@@ -53,7 +53,8 @@ const NavMenu = ({ isOpen, isMobile, handleToggle }) => {
           <li>Three Star</li>
         </ul>
       </li>
-      <Link to={"/"}><li>Home</li></Link>
+      <Link to={"/shop"}><li> Shop</li></Link>
+      <Link to={"/"}><li >Home</li></Link>
       <Link to={"/about-us"}><li>About Us</li></Link>
     
     </ul>
