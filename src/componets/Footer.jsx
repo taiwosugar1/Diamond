@@ -35,11 +35,28 @@ const Footer = () => {
           <li>LISTof it</li>
         </ul>
       </div>
-      <div className="footer-ul"><p>   Footer Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, nihil?</p></div>
+     
+      <div className="footer-ul">
+        <p>   Footer Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, nihil?</p>
+       <button>Submit</button>
+        <input type="text" placeholder='Write a Feedback'/> 
+        </div>
       
 
    
     </div>
+    <div className="footer-ul-mobile">
+      <h4>BOOK YOUR FLIGHT NOW</h4>
+        <ul>
+          
+          <li>ABOUT</li>
+          <li>OUR SERVICES</li>
+          <li>FLIGHTS</li>
+          <li>CONTACT</li>
+          <li>FAQ</li>
+        </ul>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      </div>
     </div>
   )
 }

@@ -5,6 +5,7 @@ import { FaFacebook, FaInstagram } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa6';
 import { BsYoutube } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 
 const AboutUs = () => {
@@ -19,7 +20,7 @@ const AboutUs = () => {
         <div >
           <h2>DIAMOND VISA</h2>
           <ul>
-            <li> Shop</li>
+            <Link to={"/shop"}><li> Shop</li></Link>
             <li onClick={handleToggle}>Booking</li>
             {isOpen && (
               <div className='about-details-drop'> details</div>
