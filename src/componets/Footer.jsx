@@ -50,12 +50,12 @@ const Footer = () => {
         <ul>
           
           <li>ABOUT</li>
-          <li>OUR SERVICES</li>
+          <li>SERVICES</li>
           <li>FLIGHTS</li>
           <li>CONTACT</li>
           <li>FAQ</li>
         </ul>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <p>Copyright 2024 @ <b>Diamond Visa</b>.</p>
       </div>
     </div>
   )

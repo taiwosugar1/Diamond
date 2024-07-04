@@ -58,7 +58,7 @@ const Background = () => {
          
          
              {[
-              <img src="images/pilot.jpg" alt=""   key="title1" />,
+              <img src="images/traveler.jpg" alt=""   key="title1" />,
               <img src="images/plane2.jpg" alt=""   key="title2" />,
               <img src="images/hotel.jpg" alt=""   key="title3" />,
              ][imageIndex]}
