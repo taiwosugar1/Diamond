@@ -198,17 +198,15 @@ section{
     .about-details div{
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        margin-left: 40px;
-        margin-top: -140px;
-        margin-right: 0px;
+        justify-content: center;
+        margin-left: 140px;
+        
         border-bottom: 1px solid rgb(6, 6, 64);
     }
     .about-details div h3{
         color: #fff;
         margin-left: 60px;
-        margin-top: -20px;
-        margin-right: 200px;
+        
 
     }
     .about-details div ul{
