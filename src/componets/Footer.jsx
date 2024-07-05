@@ -57,7 +57,7 @@ const Footer = () => {
     <p className='footer-under'>Copyright 2024 @ <b>Diamond Visa</b>.</p>
     
     <div className="footer-ul-mobile">
-      <h4>BOOK YOUR FLIGHT NOW</h4>
+      <a href="tel:+123456789"><h4>BOOK YOUR FLIGHT NOW</h4></a>
       <ul className='footer-media'>
       <Link
        to={"https://instagram.com/diamondvisa/"}><li><FaInstagram/></li></Link>
@@ -69,7 +69,7 @@ const Footer = () => {
           <Link to={"/about-us"}><li>ABOUT</li></Link>
           <Link><li>SERVICES</li></Link>
           <Link><li>FLIGHTS</li></Link>
-          <Link> <li>CONTACT</li></Link>
+          <Link to={"contact"}> <li>CONTACT</li></Link>
           <Link><li>FAQ</li></Link>
         </ul>
         <p>Copyright 2024 @ <b>Diamond Visa</b>.</p>

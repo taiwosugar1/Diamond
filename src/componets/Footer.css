@@ -98,12 +98,20 @@
     color: white;
     
 }
-.footer-ul-mobile h4{
+.footer-ul-mobile a{
+    text-decoration: none;
+}
+.footer-ul-mobile a h4{
     width: 200px;
     padding: 5px 10px;
     background: #0d2041;
     color: white;
     border-radius: 5px;
+    cursor: pointer;
+    
+}
+.footer-ul-mobile h4:hover{
+    background: #1556c6;
 }
 .footer-media{
     display: flex;
