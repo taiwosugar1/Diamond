@@ -65,12 +65,17 @@ Welcome to Diamond Visa Services, your trusted partner in visa processing. Estab
             <div>
               <h3>ABOUT US</h3>
               <hr />
-              <p>Lorem, ipsum dolor sit amet consectetu. Non, numquam dolore. Doloribus illo rerum beatae.</p>
+              <p>Lorem, ipsum dolor sit amet numquam dolore. Doloribus illo rerum beatae.</p>
             </div>
             <div>
-              <h3>LATEST NEWS</h3>
+              <a href="tel:+123456789"><h3>CALL US</h3></a>
               <hr />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, numquam dolore. D</p>
+              <p>Lorem, ipsu Non, numquam dolore. D</p>
+            </div>
+            <div>
+              <h3>TRAVELS</h3>
+              <hr />
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, dolorem.</p>
             </div>
             <div>
               <h3>TRAVELS</h3>
