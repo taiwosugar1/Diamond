@@ -166,33 +166,6 @@ section{
    color: white;
    font-family: "roboto";
  }
- .latest-news-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 250px;
-    height: 400px;                                                                                                                                                                                            
- }
- .latest-news-box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 250px;
-    height: 50px;
- }
- .latest-news-box h5{
-    border: 1px solid white;
-    color: white;
-    padding: 10px;
-   margin-right: 5px;
-   line-height: 8px;
-
- }
- .latest-news-box p{
-    width: 200px;
- }
-
 
 @media screen and  ( max-width: 480px) {
     .about-details div{
@@ -265,15 +238,16 @@ section{
         width: 100%;
         height: auto;
         background:rgba(51, 51, 51, 0.5);
-        display: grid;
-        place-content: center;
-        grid-template-columns: auto auto ;
-        grid-gap: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
     }
     .about-footer div{
         margin: 10px;
         width: 200px;
-        height: 350px;
+        height: 200px;
         display: flex;
         align-items: center;
         justify-content: center;

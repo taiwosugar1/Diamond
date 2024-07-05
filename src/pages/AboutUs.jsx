@@ -65,30 +65,19 @@ Welcome to Diamond Visa Services, your trusted partner in visa processing. Estab
             <div>
               <h3>ABOUT US</h3>
               <hr />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, numquam dolore. Doloribus illo rerum beatae.</p>
+              <p>Lorem, ipsum dolor sit amet consectetu. Non, numquam dolore. Doloribus illo rerum beatae.</p>
             </div>
             <div>
               <h3>LATEST NEWS</h3>
               <hr />
-              <div className="latest-news-container">
-                <div className="latest-news-box">
-                  <h5>19 <br />jan</h5>
-                  <p>Welcome to Flatsome</p>
-                </div>
-                <div className="latest-news-box">
-                  <h5>19 <br />jan</h5>
-                  <p>Welcome to Flatsome</p>
-                </div>
-
-              </div>
-              </div>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, numquam dolore. D</p>
+            </div>
             <div>
               <h3>TRAVELS</h3>
-              <hr /></div>
-            <div>
-              <h3>SIGNUP FOR NEWSLETTER</h3>
               <hr />
-              </div>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, dolorem.</p>
+            </div>
+           
         </div>
       </footer>
     </div>
@@ -99,21 +88,8 @@ export default AboutUs;
 
 const staffMembers = [
     {
-      name: 'CHUKS GODWIN',
-      position: 'CEO/ FOUNDER',
-      image: 'images/man.jpg',
-      social: [
-        { icon: <FaFacebook />, link: 'https://facebook.com' },
-        { icon: <FaTwitter />, link: 'https://twitter.com'  },
-        { icon: <BsYoutube />, link: 'https://youtube.com'  },
-        { icon: <FaInstagram />, link: 'https://instagram.com' },
-        { icon: <MdEmail />, link: 'mailto:email@example.com' },
-      ],
-      bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, officia?',
-    },
-    {
       name: 'JANE DOE',
-      position: 'MANAGER',
+      position: 'CEO/ FOUNDER',
       image: 'images/woman.jpg',
       social: [
         { icon: <FaFacebook />, link: 'https://facebook.com' },
@@ -125,9 +101,9 @@ const staffMembers = [
       bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, officia?',
     },
     {
-      name: 'MIKE DOE',
-      position: 'ADMIN',
-      image: 'images/man2.jpg',
+      name: 'CHUKS GODWIN',
+      position: 'MANAGER',
+      image: 'images/man.jpg',
       social: [
         { icon: <FaFacebook />, link: 'https://facebook.com' },
         { icon: <FaTwitter />, link: 'https://twitter.com'  },
@@ -137,18 +113,31 @@ const staffMembers = [
       ],
       bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, officia?',
     },
-    {
-      name: 'RICHARD MILE',
-      position: "TRANSPORTATION",
-      image: 'images/man3.jpg',
-      social: [
-        { icon: <FaFacebook />, link: 'https://facebook.com' },
-        { icon: <FaTwitter />, link: 'https://twitter.com'  },
-        { icon: <BsYoutube />, link: 'https://youtube.com'  },
-        { icon: <FaInstagram />, link: 'https://instagram.com' },
-        { icon: <MdEmail />, link: 'mailto:email@example.com' },
-      ],
-      bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, officia?',
-    },
+    // {
+    //   name: 'MIKE DOE',
+    //   position: 'ADMIN',
+    //   image: 'images/man2.jpg',
+    //   social: [
+    //     { icon: <FaFacebook />, link: 'https://facebook.com' },
+    //     { icon: <FaTwitter />, link: 'https://twitter.com'  },
+    //     { icon: <BsYoutube />, link: 'https://youtube.com'  },
+    //     { icon: <FaInstagram />, link: 'https://instagram.com' },
+    //     { icon: <MdEmail />, link: 'mailto:email@example.com' },
+    //   ],
+    //   bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, officia?',
+    // },
+    // {
+    //   name: 'RICHARD MILE',
+    //   position: "TRANSPORTATION",
+    //   image: 'images/man3.jpg',
+    //   social: [
+    //     { icon: <FaFacebook />, link: 'https://facebook.com' },
+    //     { icon: <FaTwitter />, link: 'https://twitter.com'  },
+    //     { icon: <BsYoutube />, link: 'https://youtube.com'  },
+    //     { icon: <FaInstagram />, link: 'https://instagram.com' },
+    //     { icon: <MdEmail />, link: 'mailto:email@example.com' },
+    //   ],
+    //   bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, officia?',
+    // },
     // Add more staff members here
   ];
