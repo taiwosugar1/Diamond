@@ -10,8 +10,8 @@ const Footer = () => {
       <div className="footer-ul">
         <ul>
           <h3>ABOUT US</h3>
-          <li>LISTof it</li>
-          <li>LISTof it</li>
+         <li><a href="tel: +1234567890"> Call Us</a></li> 
+          <li>Book a Flight</li>
         </ul>
         <ul className='footer-media-large-screen'>
       <Link
@@ -22,23 +22,19 @@ const Footer = () => {
     </ul>
       </div>
       <div className="footer-ul">
-        <ul>
-          <h3>CONTACT</h3>
-          <li>LISTof it</li>
-          <li>LISTof it</li>
-          <li>LISTof it</li>
-          <li>LISTof it</li>
-          <li>LISTof it</li>
-        </ul>
+        <div>
+         <Link to={"contact"}><h3>CONTACT</h3></Link> 
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
       </div>
       <div className="footer-ul">
         <ul>
-          <h3>LIST</h3>
-          <li>LISTof it</li>
-          <li>LISTof it</li>
-          <li>LISTof it</li>
-          <li>LISTof it</li>
-          <li>LISTof it</li>
+          <Link to={"wa.watsapp.com"}><h3>VISA</h3></Link>
+          <li>List of Visa</li>
+          <li>Visa Type</li>
+          <li>Available Hotel</li>
+          <li>Agent</li>
+          <li>Management</li>
         </ul>
       </div>
      

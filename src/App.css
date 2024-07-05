@@ -1,6 +1,10 @@
 .App {
   text-align: center;
 }
+li, a{
+  text-decoration: none;
+  list-style: none;
+}
 .side-box, .side-box2 {
   width: 70px;
   height: 57px;

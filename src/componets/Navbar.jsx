@@ -40,7 +40,7 @@ const NavMenu = ({ isOpen, isMobile, handleToggle }) => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quia.
           <p>(link unavailable)</p>
           <ul>
-            <li>Phone</li>
+            <li><a href="tel: +1234567890">Phone</a></li>
             <li>Whatsapp</li>
           </ul>
         </div>
