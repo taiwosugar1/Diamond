@@ -295,7 +295,7 @@ section{
        display: grid;
        grid-template-columns: auto auto;
        place-content: center;
-       grid-gap: 20px;
+       grid-gap: 10px;
     }
     .about-footer div{
         margin: 10px;
