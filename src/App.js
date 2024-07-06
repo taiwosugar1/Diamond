@@ -9,7 +9,7 @@ import Contact from './pages/Contact';
 
 import AboutUs from './pages/AboutUs';
 import { FaPhone, FaWhatsapp } from 'react-icons/fa';
-import Shop from './pages/Shop';
+import Tour from './pages/Tour';
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
       
          <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path='/shop' element={<Shop/>}/>
+          <Route path='/tour' element={<Tour/>}/>
           <Route path="/contact" element={<Contact/>}/>
          <Route path='/about-us' element={<AboutUs/>}/>
          </Routes>

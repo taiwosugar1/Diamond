@@ -57,7 +57,7 @@ const NavMenu = ({ isOpen, isMobile, handleToggle }) => {
       </li>
 
       
-      <Link to={"/shop"}><li> Shop</li></Link>
+      <Link to={"/tour"}><li> Shop</li></Link>
       <Link to={"/"}><li >Home</li></Link>
       <Link to={"/about-us"}><li>About Us</li></Link>
     

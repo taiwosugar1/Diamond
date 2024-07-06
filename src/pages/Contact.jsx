@@ -7,7 +7,7 @@ const Shop = () => {
     <div className='contact'>
     <div className="contact-button">
      <Link to={"/"}> <button>Home</button></Link>
-     <Link to={"/contact"}> <button>Shop</button></Link>
+     <Link to={"/tour"}> <button>tour</button></Link>
      <Link to={"/about-us"}> <button>About</button></Link>
      </div>
 
