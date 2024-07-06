@@ -85,7 +85,7 @@ Empowering your global journey with expert visa and immigration solutions.
    </p>
             </div>
             <div>
-              <h3>TRAVELS</h3>
+              <h3>VISA APPLICATIONS</h3>
               <hr />
               <p>Our team is dedicated to providing personalized support and guidance throughout your visa application process.</p>
             </div>
