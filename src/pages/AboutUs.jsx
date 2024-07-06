@@ -20,7 +20,7 @@ const AboutUs = () => {
         <div >
           <h3>DIAMOND VISA</h3>
           <ul>
-            <Link to={"/"}><li> Tour</li></Link>
+            <Link to={"/tour"}><li> Tour</li></Link>
             <li onClick={handleToggle}>Booking</li>
             {isOpen && (
               <div className='about-details-drop'> details</div>
