@@ -262,7 +262,7 @@ section{
         height: 430px;
         background: white;
         z-index: 1000;
-        left: 50px;
+        left: -50px;
         top: 240px;
         position: absolute;
     
