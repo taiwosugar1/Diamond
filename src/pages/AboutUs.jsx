@@ -121,7 +121,7 @@ const staffMembers = [
         { icon: <FaTwitter />, link: 'https://twitter.com'  },
         { icon: <BsYoutube />, link: 'https://youtube.com'  },
         { icon: <FaInstagram />, link: 'https://instagram.com' },
-        { icon: <MdEmail />, link: 'mailto:godwinchukss2.com' },
+        { icon: <MdEmail />, link: 'mailto:godwinchukss2@gmail.com' },
       ],
       bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, officia?',
     },
