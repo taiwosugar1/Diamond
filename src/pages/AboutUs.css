@@ -312,7 +312,6 @@ section{
         margin-top: 30px;
         width: 100%;
         height: auto;
-        background:rgba(51, 51, 51, 0.1);
        display: grid;
        grid-template-columns: auto auto;
        place-content: center;
