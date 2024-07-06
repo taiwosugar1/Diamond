@@ -53,7 +53,7 @@ const Footer = () => {
     <p className='footer-under'>Copyright 2024 @ <b>Diamond Visa</b>.</p>
     
     <div className="footer-ul-mobile">
-      <a href="tel:+123456789"><h4>BOOK YOUR FLIGHT NOW</h4></a>
+      <a href="https://wa.me/message/NL7UY3M3Q6ZOG1"><h4>BOOK YOUR FLIGHT NOW</h4></a>
       <ul className='footer-media'>
       <Link
        to={"https://instagram.com/diamondvisa/"}><li><FaInstagram/></li></Link>

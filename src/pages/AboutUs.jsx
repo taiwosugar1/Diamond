@@ -68,7 +68,7 @@ Welcome to Diamond Visa Services, your trusted partner in visa processing. Estab
               <p>Lorem, ipsum dolor sit amet numquam dolore. Doloribus illo rerum beatae.</p>
             </div>
             <div>
-              <a href="tel:+123456789"><h3>CALL US</h3></a>
+              <a href="tel: +1-614-707-6245"><h3>CALL US</h3></a>
               <hr />
               <p>Lorem, ipsu Non, numquam dolore. D</p>
             </div>
