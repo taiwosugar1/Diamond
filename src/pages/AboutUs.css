@@ -308,17 +308,19 @@ section{
         border: 1px solid grey;
     }
     .about-footer div p{
-        width: 180px;
+        width: 90%;
     }
     .about-footer div a h3 {
         text-decoration: none;
         color: white;
+        margin-bottom: -30px;
     }
     .about-footer div h3 {
         text-decoration: none;
         color: white;
         cursor: pointer;
         margin-left: 250px;
+        margin-bottom: -30px;
     }
     
 }
