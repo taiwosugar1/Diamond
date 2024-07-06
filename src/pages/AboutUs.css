@@ -308,19 +308,20 @@ section{
        
     }
     .about-footer div p{
-        width: 90%;
+        width: 85%;
+        text-align: justify;
     }
     .about-footer div a h3 {
         text-decoration: none;
         color: white;
-        margin-bottom: -20px;
+        margin-bottom: -35px;
     }
     .about-footer div h3 {
         text-decoration: none;
         color: white;
         cursor: pointer;
         margin-left: 20px;
-        margin-bottom: -20px;
+        margin-bottom: -35px;
     }
     
 }
