@@ -300,12 +300,12 @@ section{
     .about-footer div{
         margin: 5px;
         width: 200px;
-        height: 300px;
+        height: 260px;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        border: 1px solid grey;
+       
     }
     .about-footer div p{
         width: 90%;
@@ -313,14 +313,14 @@ section{
     .about-footer div a h3 {
         text-decoration: none;
         color: white;
-        margin-bottom: -30px;
+        margin-bottom: -20px;
     }
     .about-footer div h3 {
         text-decoration: none;
         color: white;
         cursor: pointer;
         margin-left: 250px;
-        margin-bottom: -30px;
+        margin-bottom: -20px;
     }
     
 }
