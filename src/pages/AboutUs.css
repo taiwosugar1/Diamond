@@ -301,7 +301,9 @@ section{
     footer .paragraph {
        color: aqua;
        bottom: 0;
-       background: #666;
+       background: grey;
+       width: 80%;
+       padding: 10px;
     }
     
     .about-footer{
