@@ -298,9 +298,9 @@ section{
        grid-gap: 10px;
     }
     .about-footer div{
-        margin: 10px;
+        margin: 5px;
         width: 200px;
-        height: 200px;
+        height: 300px;
         display: flex;
         align-items: center;
         justify-content: center;
