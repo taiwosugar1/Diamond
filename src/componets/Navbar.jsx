@@ -36,15 +36,16 @@ const NavMenu = ({ isOpen, isMobile, handleToggle }) => {
     <ul className={`nav-details ${isMobile ? 'open' : ''}`}>
       <li onClick={handleToggle}>Contact</li>
       {isOpen && (
-        <div className="details">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quia.
-          <p>(link unavailable)</p>
+        <div className="contact-details"> 
+          <p>Navigating your path toa brighter future with Diamond Visa and Immigration Services. </p>
           <ul>
-            <li><a href="tel: +1234567890">Phone</a></li>
-            <li>Whatsapp</li>
+            <li><a href="tel: +1-614-707-6245">Phone</a></li>
+            <li><a href="https://wa.me/message/NL7UY3M3Q6ZOG1">Whatsapp </a></li>
           </ul>
         </div>
       )}
+
+
       <Link to={"/"}><li>Country</li></Link>
       <li className='hotel'>Hotel
         <ul>
@@ -53,6 +54,8 @@ const NavMenu = ({ isOpen, isMobile, handleToggle }) => {
           <li>Three Star</li>
         </ul>
       </li>
+
+      
       <Link to={"/shop"}><li> Shop</li></Link>
       <Link to={"/"}><li >Home</li></Link>
       <Link to={"/about-us"}><li>About Us</li></Link>
@@ -66,7 +69,7 @@ const SocialMedia = () => {
     <ul className='media'>
       <Link to={"https://instagram.com/diamondvisa/"}><li><FaInstagram/></li></Link>
       <Link to={"https://facebook.com/diamondvisa"}><li><FaFacebook/></li></Link>
-      <Link to={"(link unavailable)"}><li><FaTwitter/></li></Link>
+      <Link to={"https://twiiter.com/diamondvisa"}><li><FaTwitter/></li></Link>
       <Link to={"https://wa.me/message/NL7UY3M3Q6ZOG1"}><li><FaWhatsapp/></li></Link>
     </ul>
   );
