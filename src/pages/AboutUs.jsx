@@ -47,9 +47,9 @@ Welcome to Diamond Visa Services, your trusted partner in visa processing. Estab
             <p>{staffMember.position}</p>
             <div className="staff-social">
               {staffMember.social.map((socialLink, index) => (
-                <div key={index}>
-                  {socialLink.icon}
-                </div>
+                <Link to={socialLink.link}><div key={index} style={{cursor:"pointer"}}>
+                {socialLink.icon } 
+                </div></Link>
               ))}
             </div>
             <p>{staffMember.bio}</p>
@@ -93,9 +93,9 @@ export default AboutUs;
 
 const staffMembers = [
     {
-      name: 'JANE DOE',
+      name: 'DIAMOND AVE',
       position: 'CEO/ FOUNDER',
-      image: 'images/woman.jpg',
+      image: 'images/diamond-ave.png',
       social: [
         { icon: <FaFacebook />, link: 'https://facebook.com' },
         { icon: <FaTwitter />, link: 'https://twitter.com'  },
@@ -114,7 +114,7 @@ const staffMembers = [
         { icon: <FaTwitter />, link: 'https://twitter.com'  },
         { icon: <BsYoutube />, link: 'https://youtube.com'  },
         { icon: <FaInstagram />, link: 'https://instagram.com' },
-        { icon: <MdEmail />, link: 'mailto:email@example.com' },
+        { icon: <MdEmail />, link: 'mailto:godwinchukss2.com' },
       ],
       bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, officia?',
     },

@@ -6,6 +6,13 @@ li, a,h1,h2, h3, h4, h5, p{
   list-style: none;
   font-family: "roboto";
 }
+@media screen and (max-width: 480px) {
+  li, a,h1,h2, h3, h4, h5, p{
+    text-decoration: none;
+    list-style: none;
+    font-family: "roboto";
+  }
+}
 .side-box, .side-box2 {
   width: 70px;
   height: 57px;

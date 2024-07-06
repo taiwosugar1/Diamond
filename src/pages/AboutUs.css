@@ -217,15 +217,16 @@ section{
     }
 
 /* ---------------staff details-------------- */
-.about h3{
-    width: 400px;
-    color: #666;
+   .about h3{
+        width: 400px;
+        color: #666;
 }
 
     .about-staff{
-        display: grid;grid-template-columns: auto ;
-          grid-gap: 20px;
-          place-content: center;
+        display: grid;
+        grid-template-columns: auto ;
+        grid-gap: 20px;
+        place-content: center;
        }
     .about-staff .staff{
        width: 80%;
