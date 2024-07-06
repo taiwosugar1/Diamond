@@ -74,7 +74,7 @@ Welcome to Diamond Visa Services, your trusted partner in visa processing. Estab
               <hr />
               <p> 
 Call us now to speak with our experienced immigration consultants and take the first step towards achieving your dreams.
-/p>
+</p>
             </div>
             <div>
               <h3>DIAMOND VISA AND <br/>IMMIGRATION SERVICES</h3>
