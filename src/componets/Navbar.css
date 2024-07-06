@@ -56,11 +56,19 @@
     top: 60px;
     position: absolute;
 }
+.contact-details ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+}
+
 .contact-details p{
     width: 80%;
 }
 .hotel {
     position: relative;
+    
 }
 .hotel ul {
     position: absolute;
@@ -155,14 +163,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
-       width: 100%;
+        margin-right: 40px;
     }
     .contact-details ul li a{
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 2px 3px;
-        margin: 10px 20px;
+        margin: 10px;
     }
     .hotel:hover ul {
         display: block;

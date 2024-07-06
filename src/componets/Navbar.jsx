@@ -40,6 +40,7 @@ const NavMenu = ({ isOpen, isMobile, handleToggle }) => {
           <p>Navigating your path toa brighter future with Diamond Visa and Immigration Services. </p>
           <ul>
             <li><a href="tel: +1-614-707-6245">Phone</a></li>
+            <li><a href="mailto: info@diamondvisa.com">Email</a></li>
             <li><a href="https://wa.me/message/NL7UY3M3Q6ZOG1">Whatsapp </a></li>
           </ul>
         </div>
