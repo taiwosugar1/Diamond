@@ -77,10 +77,10 @@ Call us now to speak with our experienced immigration consultants and take the f
 /p>
             </div>
             <div>
-              <h3>TRAVEL THE WORLD</h3>
+              <h3>DIAMOND VISA AND <br/>IMMIGRATION SERVICES</h3>
               <hr />
               <p>
-Diamond Visa and Immigration Services
+
 Empowering your global journey with expert visa and immigration solutions.
    </p>
             </div>
