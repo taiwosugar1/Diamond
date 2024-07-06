@@ -300,6 +300,8 @@ section{
     }
     footer p{
        color: aqua;
+       margin-top: 200px;
+       bottom: 0;
     }
     
     .about-footer{
