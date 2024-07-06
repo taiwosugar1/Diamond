@@ -77,7 +77,7 @@
     background: white;
     z-index: 2000;
     left: 800px;
-    top: 290px;
+    top: 270px;
     position: absolute;
 
 }
@@ -263,7 +263,7 @@ section{
         background: white;
         z-index: 1000;
         left: 50px;
-        top: 280px;
+        top: 260px;
         left: -50px;
         top: 220px;
         position: absolute;
