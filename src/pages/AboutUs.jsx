@@ -28,8 +28,8 @@ const AboutUs = () => {
           </ul>      
         </div>
         <h1>About Us</h1>
-        <p>
-Welcome to Diamond Visa Services, your trusted partner in visa processing. Established with the mission to simplify and expedite the visa application processes, we are committed to providing comprehensive and reliable services to our clients.
+        <p><b>
+Welcome to Diamond Visa and immigration services:<b> Your trusted partner for simplified and expedited visa processing, offering comprehensive and reliable services."
 </p>
       </div>
 
@@ -37,8 +37,8 @@ Welcome to Diamond Visa Services, your trusted partner in visa processing. Estab
       {/* ------------------About staff----------------- */}
      <section>
 
-      <h3>At <b>Diamond Visa</b>, we are more than just a visa processing agency; we are your partners in making your travel aspirations come true. Trust us to handle your visa needs with professionalism, efficiency, and a personal touch.
-</h3>
+      <h3><b>Diamond Visa and immigration services</b>,
+We are your trusted partner for achieving your travel dreams, offering professional, efficient, and personalized visa services. Reach out to us for expert guidance and support.</h3>
       <div className="about-staff">
         {staffMembers.map((staffMember, index) => (
           <div className="staff" key={index}>
