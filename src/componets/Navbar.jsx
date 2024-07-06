@@ -39,9 +39,9 @@ const NavMenu = ({ isOpen, isMobile, handleToggle }) => {
         <div className="contact-details"> 
           <p>Navigating your path toa brighter future with Diamond Visa and Immigration Services. </p>
           <ul>
-            <li><a href="tel: +1-614-707-6245">Phone</a></li>
-            <li><a href="mailto: info@diamondvisa.com">Email</a></li>
-            <li><a href="https://wa.me/message/NL7UY3M3Q6ZOG1">Whatsapp </a></li>
+            <li><a href="tel: +1-614-707-6245" className='a1'>Phone</a></li>
+            <li><a href="mailto: info@diamondvisa.com"className='a2'>Email</a></li>
+            <li><a href="https://wa.me/message/NL7UY3M3Q6ZOG1" className='a3'>Whatsapp </a></li>
           </ul>
         </div>
       )}
@@ -49,15 +49,17 @@ const NavMenu = ({ isOpen, isMobile, handleToggle }) => {
 
       <Link to={"/"}><li>Country</li></Link>
       <li className='hotel'>Hotel
+       <div>
         <ul>
           <li>Executive</li>
           <li>Five Star</li>
           <li>Three Star</li>
         </ul>
+        </div>
       </li>
 
       
-      <Link to={"/tour"}><li> Shop</li></Link>
+      <Link to={"/tour"}><li> Tour</li></Link>
       <Link to={"/"}><li >Home</li></Link>
       <Link to={"/about-us"}><li>About Us</li></Link>
     
