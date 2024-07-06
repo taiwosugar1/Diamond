@@ -17,12 +17,12 @@ function App() {
             <BrowserRouter>
        <Navbar/>
        <div className='side-box'>
-        <h6><FaVaadin/></h6>
-        <h6>Diamond</h6>
+        
+        <a href='tel:+1234567890'><h6><FaVaadin/><br/> Diamond</h6> </a>
        </div>
        <div className='side-box2'>
 
-       <h6>Book <br/>Now</h6>
+       <a href='tel:+1234567890'><h6>Book <br/>Now</h6> </a>
        </div>
       
          <Routes>

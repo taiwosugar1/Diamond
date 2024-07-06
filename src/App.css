@@ -29,7 +29,7 @@ li, a{
 .side-box:hover, .side-box2:hover{
    background: blue;
 }
-.side-box h6{
+.side-box a h6, .side-box2 a h6{
   color: white;
   padding: 0;
   margin: 0;
