@@ -8,7 +8,7 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 
 import AboutUs from './pages/AboutUs';
-import { FaVaadin } from 'react-icons/fa';
+import { FaPhone, FaWhatsapp } from 'react-icons/fa';
 import Shop from './pages/Shop';
 
 function App() {
@@ -16,14 +16,14 @@ function App() {
     <div className="App">
             <BrowserRouter>
        <Navbar/>
-       <div className='side-box'>
-        
-        <a href='tel:+1234567890'><h6><FaVaadin/><br/> Diamond</h6> </a>
-       </div>
-       <div className='side-box2'>
-
-       <a href='tel:+1234567890'><h6>Book <br/>Now</h6> </a>
-       </div>
+        <a href='tel: +1-614-707-6245'>
+          <div className='side-box'>
+            <h6><FaPhone/><br/> Diamond</h6>
+          </div> </a>
+       <a href='https://wa.me/message/NL7UY3M3Q6ZOG1'> 
+          <div className='side-box2'>
+            <h6><FaWhatsapp/><br/>Book Now</h6> 
+          </div></a>
       
          <Routes>
           <Route path="/" element={<Home/>}/>

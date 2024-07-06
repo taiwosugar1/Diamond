@@ -29,20 +29,18 @@ li, a{
 .side-box:hover, .side-box2:hover{
    background: blue;
 }
-.side-box a h6, .side-box2 a h6{
+.side-box h6, .side-box2 h6{
   color: white;
   padding: 0;
   margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+    
   }
 }
 

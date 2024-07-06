@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./Navbar.css";
-import { FaFacebook, FaInstagram, FaTwitter, FaBars, FaTimes } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaTwitter, FaBars, FaTimes, FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -67,6 +67,7 @@ const SocialMedia = () => {
       <Link to={"https://instagram.com/diamondvisa/"}><li><FaInstagram/></li></Link>
       <Link to={"https://facebook.com/diamondvisa"}><li><FaFacebook/></li></Link>
       <Link to={"(link unavailable)"}><li><FaTwitter/></li></Link>
+      <Link to={"https://wa.me/message/NL7UY3M3Q6ZOG1"}><li><FaWhatsapp/></li></Link>
     </ul>
   );
 };

@@ -17,8 +17,8 @@ const Footer = () => {
       <Link
        to={"https://instagram.com/diamondvisa/"}><li><FaInstagram/></li></Link>
       <Link to={"https://facebook.com/diamondvisa"}><li><FaFacebook/></li></Link>
-      <Link to={"https://twitter.com"}><li><FaTwitter/></li></Link>
-      <Link to={"https://twitter.com"}><li><FaWhatsapp/></li></Link>
+      <Link to={"https://twitter.com/diamondvisa"}><li><FaTwitter/></li></Link>
+      <Link to={"https://wa.me/message/NL7UY3M3Q6ZOG1"}><li><FaWhatsapp/></li></Link>
     </ul>
       </div>
       <div className="footer-ul">
@@ -58,7 +58,8 @@ const Footer = () => {
       <Link
        to={"https://instagram.com/diamondvisa/"}><li><FaInstagram/></li></Link>
       <Link to={"https://facebook.com/diamondvisa"}><li><FaFacebook/></li></Link>
-      <Link to={"(link unavailable)"}><li><FaTwitter/></li></Link>
+      <Link to={"https://twitter.com/diamondvisa"}><li><FaTwitter/></li></Link>
+      <Link to={"https://wa.me/message/NL7UY3M3Q6ZOG1"}><li><FaWhatsapp/></li></Link>
     </ul>
         <ul>
           
