@@ -298,7 +298,7 @@ section{
        justify-content: center;
        flex-direction: column;
     }
-    footer p{
+    footer .paragraph {
        color: aqua;
        bottom: 0;
        background: #666;
