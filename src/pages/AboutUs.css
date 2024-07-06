@@ -156,11 +156,11 @@ section{
     width: 200px;
     height: 250px;
     color: white;
-    text-align: left;
+    text-align: center;
 }
 .about-footer div p{
    width: 190px;
-   text-align: left;
+   text-align: center;
 }
 .about-footer div h3{
    color: white;
