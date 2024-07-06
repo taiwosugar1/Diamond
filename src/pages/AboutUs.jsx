@@ -65,7 +65,9 @@ Welcome to Diamond Visa Services, your trusted partner in visa processing. Estab
             <div>
               <h3>ABOUT US</h3>
               <hr />
-              <p>Lorem, ipsum dolor sit amet numquam dolore. Doloribus illo rerum beatae.</p>
+              <p>
+         Our dedicated team is committed to making your dreams               of living and working abroad a reality.
+        .</p>
             </div>
             <div>
               <a href="tel: +1-614-707-6245"><h3>CALL US</h3></a>
@@ -75,7 +77,10 @@ Welcome to Diamond Visa Services, your trusted partner in visa processing. Estab
             <div>
               <h3>TRAVELS</h3>
               <hr />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, dolorem.</p>
+              <p>
+Diamond Visa and Immigration Services
+Empowering your global journey with expert visa and immigration solutions.
+   </p>
             </div>
             <div>
               <h3>TRAVELS</h3>
