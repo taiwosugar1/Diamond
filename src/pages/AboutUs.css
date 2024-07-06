@@ -170,6 +170,20 @@ section{
  /* ------------------tab screen---------------------- */
 
 @media screen and (max-width: 768px){
+.about-details div h3{
+        color: #fff;
+        margin-left: 260px;
+    }
+.about p{
+        color: white;
+        font-family: "roboto";
+        font-size: 20px;
+        width: 450px;
+    }
+.about h3{
+        width: 500px;
+        color: #666;
+}
     .about-footer{
         margin-top: 30px;
         width: 100%;
@@ -220,8 +234,6 @@ section{
     .about-details div h3{
         color: #fff;
         margin-left: 60px;
-        
-
     }
     .about-details div ul{
         display: flex;
