@@ -91,7 +91,7 @@ Empowering your global journey with expert visa and immigration solutions.
             </div>
            
         </div>
-        <p>Copyright 2024 © <b>Diamond Visa and immigration services </b><br/>All rights reserved.</p>
+        <p className="paragraph">Copyright 2024 © <b>Diamond Visa and immigration services </b><br/>All rights reserved.</p>
       </footer>
     </div>
   );
