@@ -47,7 +47,7 @@ Welcome to Diamond Visa Services, your trusted partner in visa processing. Estab
             <p>{staffMember.position}</p>
             <div className="staff-social">
               {staffMember.social.map((socialLink, index) => (
-                <Link to={socialLink.link}><div key={index} style={{cursor:"pointer"}}>
+                <Link to={socialLink.link}><div key={index}>
                 {socialLink.icon } 
                 </div></Link>
               ))}

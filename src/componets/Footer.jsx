@@ -7,6 +7,7 @@ const Footer = () => {
   return (
     <div className='footer'>
     <div className='home-footer'>
+
       <div className="footer-ul">
         <ul>
           <h3>ABOUT US</h3>
@@ -21,12 +22,14 @@ const Footer = () => {
       <Link to={"https://wa.me/message/NL7UY3M3Q6ZOG1"}><li><FaWhatsapp/></li></Link>
     </ul>
       </div>
+
       <div className="footer-ul">
         <div>
          <Link to={"contact"}><h3>CONTACT</h3></Link> 
             <p>Lorem ipsum dolor sit amet consectetur.</p>
         </div>
       </div>
+
       <div className="footer-ul">
         <ul>
           <Link to={"wa.watsapp.com"}><h3>VISA</h3></Link>
@@ -45,11 +48,10 @@ const Footer = () => {
            <input type="text" placeholder='Write a Feedback'/> 
         </div>
         </div>
-      
-
-       
-   
+        
     </div>
+
+
     <p className='footer-under'>Copyright 2024 @ <b>Diamond Visa</b>.</p>
     
     <div className="footer-ul-mobile">
