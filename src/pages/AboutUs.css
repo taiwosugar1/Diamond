@@ -1,4 +1,4 @@
-.about{
+y.about{
     width: 100%;
     overflow-x: hidden;
 }
@@ -263,9 +263,7 @@ section{
         background: white;
         z-index: 1000;
         left: 50px;
-        top: 260px;
-        left: -50px;
-        top: 220px;
+        top: 240px;
         position: absolute;
     
     }
