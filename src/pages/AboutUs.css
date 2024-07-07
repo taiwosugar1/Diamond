@@ -111,7 +111,7 @@ section{
     width: 200px;
     height: 400px;
     margin: 40px 20px;
-    background: white;
+    background: rgb(6, 6, 64);
  
 }
 .about-staff .staff img{
@@ -121,10 +121,10 @@ section{
     object-fit: cover;
 }
 .about-staff .staff h2{
-    color: black;
+    color: aqua;
 }
 .about-staff .staff p{
-    color: grey;
+    color: aqua;
     font-size: 14px;
     width: 170px;
     font-family: "san-serif";
@@ -139,8 +139,8 @@ section{
     width: 30px;
     height: 30px;
     margin: 3px;
-    color: grey;
-    border: 1px solid grey;
+    color: aqua;
+    border: 1px solid aqua;
     border-radius: 50%;
 }
 
@@ -189,14 +189,14 @@ footer{
 
  .about-footer div a h3 {
     text-decoration: none;
-    color: #666;
+    color: white;
     margin-left: 0px;
     margin-bottom: 0px;
    font-family: "sanserif";
 }
 .about-footer div h3 {
     text-decoration: none;
-    color: #666;
+    color: white;
     cursor: pointer;
     margin-left: 0px;
     margin-bottom: 0px;
@@ -217,7 +217,7 @@ footer{
     }
 .about h3{
         width: 500px;
-        color: #666;
+        color: #918c8c;
 }
     .about-footer{
         margin-top: 30px;
