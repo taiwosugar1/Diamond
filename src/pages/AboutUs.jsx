@@ -39,7 +39,7 @@ Welcome to Diamond Visa and immigration services:</b> Your trusted partner for s
      <section>
 
       <h3><b>Diamond Visa and immigration services</b>,
-We are your trusted partner for achieving your travel dreams, offering professional, efficient, and personalized visa services. Reach out to us for expert guidance and support.</h3>
+         We are your trusted partner for achieving your travel dreams, offering professional, efficient, and personalized visa services. Reach out to us for expert guidance and support.</h3>
       <div className="about-staff">
         {staffMembers.map((staffMember, index) => (
           <div className="staff" key={index}>
@@ -73,17 +73,16 @@ We are your trusted partner for achieving your travel dreams, offering professio
             <div>
               <a href="tel: +1-614-707-6245"><h3>CALL US</h3></a>
               
-              <p> 
-Call us now to speak with our experienced immigration consultants and take the first step towards achieving your dreams.
-</p>
+         <p> 
+          Call us now to speak with our experienced immigration consultants and take the first step towards achieving your dreams.
+          </p>
             </div>
             <div>
               <h3>DIAMOND VISA AND <br/>IMMIGRATION <br/> SERVICES</h3>
               
               <p>
-
-Empowering your global journey with expert visa and immigration solutions.
-   </p>
+                Empowering your global journey with expert visa and immigration solutions.
+           </p>
             </div>
             <div>
               <h3>VISA APPLICATIONS</h3>
@@ -112,12 +111,12 @@ const staffMembers = [
         { icon: <FaInstagram />, link: 'https://instagram.com' },
         { icon: <MdEmail />, link: 'mailto:email@example.com' },
       ],
-      bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, officia?',
+      bio: 'Diamond Ave, founder and CEO of Diamond Visa & Immigration services, exoertly guilding clients through complex immigration processes. ',
     },
     {
       name: 'CHUKS GODWIN',
       position: 'MANAGER',
-      image: 'images/man.jpg',
+      image: 'images/chucks.jpeg',
       social: [
         { icon: <FaFacebook />, link: 'https://facebook.com' },
         { icon: <FaTwitter />, link: 'https://twitter.com'  },
@@ -125,7 +124,7 @@ const staffMembers = [
         { icon: <FaInstagram />, link: 'https://instagram.com' },
         { icon: <MdEmail />, link: 'mailto:godwinchukss2@gmail.com' },
       ],
-      bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, officia?',
+      bio: 'Chucks Godwin, Manager at Diamond Visa & Immigration Services, dedicated to delivering expert immigration solutions with a personal touch.',
     },
     // {
     //   name: 'MIKE DOE',

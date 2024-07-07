@@ -299,6 +299,7 @@ footer{
 
 /* ---------------staff details-------------- */
    .about h3{
+        font-size: 17px;
         width: 400px;
         color: #666;
 }
@@ -348,7 +349,7 @@ footer{
     .about-footer div{
         margin: 5px;
         width: 200px;
-        height: 210px;
+        height: 180px;
         display: flex;
         background: transparent;
         align-items: center;
@@ -359,6 +360,7 @@ footer{
     .about-footer div p{
         width: 100%;
         text-align: center;
+        font-size: 16px;
        font-family: "sanserif";
     }
     .about-footer div a h3 {
