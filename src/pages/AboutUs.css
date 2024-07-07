@@ -357,17 +357,17 @@ footer{
        
     }
     .about-footer div p{
-        width: 90%;
+        width: 100%;
         text-align: center;
        font-family: "sanserif";
     }
     .about-footer div a h3 {
-        margin-bottom: -20px;
+        margin-bottom: -10px;
        font-family: "sanserif";
     }
     .about-footer div h3 {
        
-        margin-bottom: -20px;
+        margin-bottom: -10px;
        font-family: "sanserif";
     }
     
