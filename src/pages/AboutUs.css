@@ -1,3 +1,4 @@
+
 .about{
     width: 100%;
     overflow-x: hidden;
@@ -65,6 +66,7 @@
     font-family: "roboto";
     font-size: 20px;
     width: 700px;
+    font-family: "sanserif";
 }
 .about-details-drop{
     display: flex;
@@ -91,6 +93,7 @@ section{
 }
 
 .about h3{
+    font-family: "sanserif";
     width: 650px;
     color: #666;
 }
@@ -141,11 +144,27 @@ section{
 }
 
 /* -----------footer---------------- */
+footer{
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    background:rgba(51, 51, 51, 0.5);
+ }
+ footer .paragraph {
+    color: white;
+    bottom: 0;
+    background: grey;
+    width: 80%;
+    padding: 10px;
+ }
 
 .about-footer{
     width: 100%;
     height: 300px;
-    background: linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5));
+    
     display: grid;
     place-content: center;
     grid-template-columns: auto auto auto auto;
@@ -153,28 +172,56 @@ section{
     
 }
 .about-footer div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 200px;
     height: 250px;
     color: white;
-    text-align: left;
+    text-align: center;
 }
 .about-footer div p{
    width: 190px;
-   text-align: left;
+   text-align: center;
 }
-.about-footer div h3{
-   color: white;
-   font-family: "roboto";
-   cursor: pointer;
- }
+
+ .about-footer div a h3 {
+    text-decoration: none;
+    color: #666;
+    margin-left: 0px;
+    margin-bottom: 0px;
+   font-family: "sanserif";
+}
+.about-footer div h3 {
+    text-decoration: none;
+    color: #666;
+    cursor: pointer;
+    margin-left: 0px;
+    margin-bottom: 0px;
+   font-family: "sanserif";
+}
  /* ------------------tab screen---------------------- */
 
 @media screen and (max-width: 768px){
+.about-details div h3{
+        color: #fff;
+        margin-left: 260px;
+    }
+.about p{
+        color: white;
+        font-family: "roboto";
+        font-size: 20px;
+        width: 450px;
+    }
+.about h3{
+        width: 500px;
+        color: #666;
+}
     .about-footer{
         margin-top: 30px;
         width: 100%;
         height: auto;
-        background:rgba(51, 51, 51, 0.5);
        display: grid;
        grid-template-columns: auto auto ;
        place-content: center;
@@ -184,24 +231,22 @@ section{
         margin: 10px;
         width: 300px;
         height: 200px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        border: 1px solid grey;
+       
     }
     .about-footer div p{
-        width: 180px;
+        width: 220px;
     }
     .about-footer div a h3 {
-        text-decoration: none;
-        color: white;
+       
+        margin-left: 0px;
+        margin-bottom: -20px;
+       font-family: "sanserif";
     }
     .about-footer div h3 {
-        text-decoration: none;
-        color: white;
-        cursor: pointer;
-        margin-left: 450px;
+       
+        margin-left: 0px;
+        margin-bottom: -20px;
+       font-family: "sanserif";
     }
 }
 
@@ -220,8 +265,7 @@ section{
     .about-details div h3{
         color: #fff;
         margin-left: 60px;
-        
-
+        font-family: "sanserif";
     }
     .about-details div ul{
         display: flex;
@@ -236,6 +280,7 @@ section{
         font-family: "roboto";
         font-size: 20px;
         width: 350px;
+        
     }
     .about-details-drop{
         display: flex;
@@ -246,10 +291,8 @@ section{
         height: 430px;
         background: white;
         z-index: 1000;
-        left: 50px;
-        top: 280px;
-        left: -50px;
-        top: 220px;
+        left: -55px;
+        top: 240px;
         position: absolute;
     
     }
@@ -275,38 +318,57 @@ section{
     }
 
     /* ----------footer details-------------- */
+    footer{
+       display: flex;
+       align-items: center;
+       height: auto;
+       width: 100%;
+       justify-content: center;
+       flex-direction: column;
+       background:rgba(51, 51, 51, 0.5);
+    }
+    footer .paragraph {
+       color: white;
+       bottom: 0;
+       background: grey;
+       width: 80%;
+       padding: 10px;
+    }
+    
     .about-footer{
         margin-top: 30px;
         width: 100%;
         height: auto;
-        background:rgba(51, 51, 51, 0.5);
        display: grid;
+       background: transparent;
        grid-template-columns: auto auto;
        place-content: center;
-       grid-gap: 20px;
+       grid-gap: 10px;
     }
     .about-footer div{
-        margin: 10px;
+        margin: 5px;
         width: 200px;
-        height: 200px;
+        height: 260px;
         display: flex;
+        background: transparent;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        border: 1px solid grey;
+       
     }
     .about-footer div p{
-        width: 180px;
+        width: 90%;
+        text-align: center;
+       font-family: "sanserif";
     }
     .about-footer div a h3 {
-        text-decoration: none;
-        color: white;
+        margin-bottom: -20px;
+       font-family: "sanserif";
     }
     .about-footer div h3 {
-        text-decoration: none;
-        color: white;
-        cursor: pointer;
-        margin-left: 250px;
+       
+        margin-bottom: -20px;
+       font-family: "sanserif";
     }
     
 }

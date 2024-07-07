@@ -1,4 +1,5 @@
 
+
 import React, { useState } from 'react';
 import "./AboutUs.css";
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
@@ -20,7 +21,7 @@ const AboutUs = () => {
         <div >
           <h3>DIAMOND VISA</h3>
           <ul>
-            <Link to={"/"}><li> Tour</li></Link>
+            <Link to={"/tour"}><li> Tour</li></Link>
             <li onClick={handleToggle}>Booking</li>
             {isOpen && (
               <div className='about-details-drop'> details</div>
@@ -28,8 +29,8 @@ const AboutUs = () => {
           </ul>      
         </div>
         <h1>About Us</h1>
-        <p>
-Welcome to Diamond Visa Services, your trusted partner in visa processing. Established with the mission to simplify and expedite the visa application processes, we are committed to providing comprehensive and reliable services to our clients.
+        <p><b>
+Welcome to Diamond Visa and immigration services:</b> Your trusted partner for simplified and expedited visa processing, offering comprehensive and reliable services."
 </p>
       </div>
 
@@ -37,8 +38,8 @@ Welcome to Diamond Visa Services, your trusted partner in visa processing. Estab
       {/* ------------------About staff----------------- */}
      <section>
 
-      <h3>At <b>Diamond Visa</b>, we are more than just a visa processing agency; we are your partners in making your travel aspirations come true. Trust us to handle your visa needs with professionalism, efficiency, and a personal touch.
-</h3>
+      <h3><b>Diamond Visa and immigration services</b>,
+We are your trusted partner for achieving your travel dreams, offering professional, efficient, and personalized visa services. Reach out to us for expert guidance and support.</h3>
       <div className="about-staff">
         {staffMembers.map((staffMember, index) => (
           <div className="staff" key={index}>
@@ -64,26 +65,40 @@ Welcome to Diamond Visa Services, your trusted partner in visa processing. Estab
         <div className="about-footer">
             <div>
               <h3>ABOUT US</h3>
-              <hr />
-              <p>Lorem, ipsum dolor sit amet numquam dolore. Doloribus illo rerum beatae.</p>
+              
+        <p>
+         Our dedicated team is committed to making your dreams               of living and working abroad a reality.
+        </p>
             </div>
             <div>
-              <a href="tel: +1-614-707-6245"><h3>CALL US</h3></a>
-              <hr />
-              <p>Lorem, ipsu Non, numquam dolore. D</p>
+              <a href="tel: +1-614-707-6245">
+                <h3>CALL US</h3>
+                </a>
+              
+        <p> 
+         Call us now to speak with our experienced immigration consultants and take the first step towards achieving your dreams.
+       </p>
             </div>
             <div>
-              <h3>TRAVELS</h3>
+              <h3>DIAMOND VISA AND <br/>IMMIGRATION <br/> SERVICES</h3>
               <hr />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, dolorem.</p>
+        <p>
+          Empowering your global journey with expert visa and immigration solutions.
+       </p>
             </div>
             <div>
-              <h3>TRAVELS</h3>
-              <hr />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, dolorem.</p>
+              <h3>VISA APPLICATIONS</h3>
+              
+          <p>
+            Our team is dedicated to providing personalized 
+            support and guidance throughout your visa application process.
+          </p>
             </div>
            
         </div>
+        <p className="paragraph">
+          Copyright 2024 © <b>Diamond Visa and immigration services </b>All rights reserved.
+        </p>
       </footer>
     </div>
   );
@@ -114,7 +129,7 @@ const staffMembers = [
         { icon: <FaTwitter />, link: 'https://twitter.com'  },
         { icon: <BsYoutube />, link: 'https://youtube.com'  },
         { icon: <FaInstagram />, link: 'https://instagram.com' },
-        { icon: <MdEmail />, link: 'mailto:godwinchukss2.com' },
+        { icon: <MdEmail />, link: 'mailto:godwinchukss2@gmail.com' },
       ],
       bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, officia?',
     },

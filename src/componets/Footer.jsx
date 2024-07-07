@@ -1,3 +1,4 @@
+
 import React from 'react'
 import "./Footer.css"
 import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa'
@@ -71,7 +72,7 @@ const Footer = () => {
           <Link to={"contact"}> <li>CONTACT</li></Link>
           <Link><li>FAQ</li></Link>
         </ul>
-        <p>Copyright 2024 @ <b>Diamond Visa</b>.</p>
+        <p className='home-footer-under'>Copyright 2024 © <b>Diamond Visa and immigration services </b>All rights reserved.</p>
       </div>
     
     </div>
