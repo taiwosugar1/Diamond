@@ -33,8 +33,8 @@ const AboutUs = () => {
                   <p>- Document preparation and review</p>
                   <p>- Application submission and tracking</p>
                   <p>- Interview preparation and support</p>
-                  <ul>
-                    <Link to={"https://wa.me/message/NL7UY3M3Q6ZOG1"}><li>Visit Us</li></Link>
+                  <ul className='drop-ul'>
+                    <Link to={"https://wa.me/message/NL7UY3M3Q6ZOG1"}><li className='drop-li'>Visit Us</li></Link>
                     <Link to={"mailto: info@diamondvisa.com"}><li>Send Mail</li></Link>
                   </ul>
                   </div>
