@@ -23,10 +23,15 @@ const TourDetail = () => {
     <div className='tour-detail' >
       
       
-      <h2>{country.name}</h2>
+      <h1>{country.name}</h1>
+      <div className='tour-details-container'>
       <img src={country.image} alt={country.name} />
-      <p>More information about {country.name}</p>
-      <p>{country.description}</p>
+
+      <div  className='tour-description'>
+         <p>More information about <h3>{country.name}</h3></p>
+         <p>{country.description}</p>
+      </div>
+      </div>
 
     </div>
     </div>
