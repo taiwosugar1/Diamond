@@ -44,6 +44,7 @@ const Background = () => {
 
       <div className="hero-container">
       <div className='hero'>
+        
        
         <h1>Discover the Joy of <br/> Travel with Diamond <br/> Visa and Immigration Services</h1>
         <div className='tags' >
@@ -58,7 +59,7 @@ const Background = () => {
          
          
              {[
-              <img src="images/traveler.jpg" alt=""   key="title1" />,
+              <img src="images/immigration.jpg" alt=""   key="title1" />,
               <img src="images/plane2.jpg" alt=""   key="title2" />,
               <img src="images/hotel.jpg" alt=""   key="title3" />,
              ][imageIndex]}

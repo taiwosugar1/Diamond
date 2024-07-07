@@ -19,6 +19,7 @@
 .header .logo {
     display: flex;
     align-items: center;
+    margin-left: 15px;
 }
 .header .mobile-icon {
     display: none;
@@ -64,7 +65,11 @@
     justify-content: center;
     margin-right: 40px;
 }
-
+.contact-details h3{
+    width: 90%;
+    margin: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 .contact-details p{
     width: 80%;
 }

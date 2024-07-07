@@ -19,12 +19,26 @@ const AboutUs = () => {
     <div className='about'>
       <div className='about-details'>
         <div >
-          <h3>DIAMOND VISA</h3>
+          <h3 className='h3'>DIAMOND VISA</h3>
           <ul>
             <Link to={"/tourList"}><li> Tour</li></Link>
             <li onClick={handleToggle}>Booking</li>
             {isOpen && (
-              <div className='about-details-drop'> details</div>
+              <div className='about-details-drop'> 
+             
+              <div>
+              <h4>DIAMOND VISA AND IMMIGRATION SERVICES</h4>
+                  <p>- Visa applications (tourist, student, work, family)</p>
+                  <p>- Immigration services (permanent residence, citizenship)</p>
+                  <p>- Document preparation and review</p>
+                  <p>- Application submission and tracking</p>
+                  <p>- Interview preparation and support</p>
+                  <ul>
+                    <Link to={"https://wa.me/message/NL7UY3M3Q6ZOG1"}><li>Visit Us</li></Link>
+                    <Link to={"mailto: info@diamondvisa.com"}><li>Send Mail</li></Link>
+                  </ul>
+                  </div>
+                </div>
             )}
           </ul>      
         </div>
