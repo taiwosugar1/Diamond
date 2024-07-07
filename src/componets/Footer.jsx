@@ -26,13 +26,13 @@ const Footer = () => {
 
       <div className="footer-ul">
         <div>
-         <Link to={"contact"}><h3>CONTACT</h3></Link> 
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+         <Link to={"/about-us"}><h3>CONTACT</h3></Link> 
+            <p> Contact us today to schedule a consultation and take the first step towards achieving your visa and immigration goals!</p>
         </div>
       </div>
 
       <div className="footer-ul">
-        <ul>
+        <ul className='visa'>
           <Link to={"wa.watsapp.com"}><h3>VISA</h3></Link>
           <li>List of Visa</li>
           <li>Visa Type</li>
@@ -43,9 +43,9 @@ const Footer = () => {
       </div>
      
       <div className="footer-ul">
-        <p>   Footer Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, nihil?</p>
+        <p> Blog with immigration tips and news.</p>
         <div className='footer-input-details'>
-           <button>Submit</button>
+          <Link to={"mailto:email@example.com"}> <button>Submit</button></Link>
            <input type="text" placeholder='Write a Feedback'/> 
         </div>
         </div>
@@ -53,7 +53,7 @@ const Footer = () => {
     </div>
 
 
-    <p className='footer-under'>Copyright 2024 @ <b>Diamond Visa</b>.</p>
+    <p className='home-footer-under-large'>Copyright 2024 © <b>Diamond Visa and immigration services </b>All rights reserved.</p>
     
     <div className="footer-ul-mobile">
       <a href="https://wa.me/message/NL7UY3M3Q6ZOG1"><h4>BOOK YOUR FLIGHT NOW</h4></a>

@@ -26,6 +26,9 @@
     flex-direction: column;
     
 }
+.footer-ul .visa{
+    text-align: left;
+}
 .footer-media-large-screen{
     display: flex;
 }
@@ -80,6 +83,10 @@
 }
 .footer-ul-mobile{
     display: none;
+}
+ .home-footer-under-large {
+    width: 80%;
+    color: white;
 }
 
 
