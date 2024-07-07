@@ -1,5 +1,5 @@
 .tour{
-    background: pink;
+    background: rgb(6, 6, 64);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,6 +44,9 @@
 .tour-container .tour-box img{
     width: 100%;
     height: 150px;
+}
+.tour-container .tour-box h3, .tour-container .tour-box p {
+    color: white;
 }
 
 .tour-box .view{

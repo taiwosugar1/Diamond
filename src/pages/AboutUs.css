@@ -2,6 +2,7 @@
 .about{
     width: 100%;
     overflow-x: hidden;
+    background: rgb(6, 6, 64);
 }
 
 .about-details{
@@ -95,7 +96,7 @@ section{
 .about h3{
     font-family: "sanserif";
     width: 650px;
-    color: #666;
+    color: aqua;
 }
 .about-staff{
  display: grid;grid-template-columns: auto auto auto auto;

@@ -26,7 +26,7 @@ const Background = () => {
   }, []);
    
   return (
-    <div>
+    <div className='bg-home'>
       
       <div className="background-video">
       <video autoPlay muted loop playsInline>
