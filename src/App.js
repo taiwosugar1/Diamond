@@ -5,10 +5,10 @@ import './App.css';
 
 import Navbar from './componets/Navbar';
 import Home from './pages/Home';
-
 import AboutUs from './pages/AboutUs';
 import { FaPhone, FaWhatsapp } from 'react-icons/fa';
 import Tour from './pages/Tour';
+import TourList from './pages/TourList';
 
 function App() {
   return (
@@ -25,8 +25,9 @@ function App() {
           </div></a>
       
          <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path='/tour' element={<Tour/>}/>
+          <Route path="/" exact element={<Home/>}/>
+          <Route path='/tour/:id' element={<Tour/>}/>
+          <Route path="/tourList" element={<TourList/>}/>
          <Route path='/about-us' element={<AboutUs/>}/>
          </Routes>
          

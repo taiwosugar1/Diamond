@@ -60,7 +60,7 @@ const NavMenu = ({ isOpen, isMobile, handleToggle }) => {
       </li>
 
       
-      <Link to={"/tour"}><li> Tour</li></Link>
+      <Link to={"/tourList"}><li> Tour</li></Link>
       <Link to={"/"}><li >Home</li></Link>
       <Link to={"/about-us"}><li>About Us</li></Link>
     

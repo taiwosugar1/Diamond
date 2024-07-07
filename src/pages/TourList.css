@@ -1,0 +1,79 @@
+.tour{
+    background: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.tour-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px slid grey;
+    background: #000;
+    background: rgb(6, 6, 64);
+    top: 0;
+    position: sticky;
+}
+.tour-button button{
+    padding: 3px 5px;
+    margin: 10px;
+    cursor: pointer;
+    background: rgb(6, 6, 64);
+    color: white;
+    border: 1px solid white;
+}
+.tour-container{
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    place-content: center;
+    grid-template-columns: auto auto auto auto;
+}
+.tour-container .tour-box{
+    width: 250px;
+    height: 300px;
+    box-shadow: 2px 2px 10px rgba(51, 51, 51, 0.5);
+    margin: 20px 10px;
+}
+.tour-container .tour-box img{
+    width: 100%;
+    height: 150px;
+}
+
+.tour-box .view{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px grey;
+     width: 50px;
+     height: 30px;
+     padding: 3px 10px;   
+    margin: auto;
+    background: blue;
+    color: white;
+}
+
+
+@media screen and (max-width: 480px){
+    .tour-container{
+        grid-template-columns: auto auto;
+    }
+    .tour-container .tour-box{
+        width: 200px;
+        height: 270px;
+        box-shadow: 2px 2px 10px rgba(51, 51, 51, 0.5);
+        margin: 5px;
+    }
+   
+    .tour-container .tour-box img{
+        height: 130px;
+    }
+    
+}
