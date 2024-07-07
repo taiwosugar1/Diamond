@@ -3,14 +3,6 @@
     "development"
   ],
   "hints": {
-    "compat-api/css": [
-      "default",
-      {
-        "ignore": [
-          "position: sticky",
-          "height: fit-content"
-        ]
-      }
-    ]
+    "compat-api/css": "off"
   }
 }

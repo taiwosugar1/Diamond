@@ -7,7 +7,6 @@ const Shop = () => {
     <div className='tour'>
     <div className="tour-button">
      <Link to={"/"}> <button>Home</button></Link>
-     <Link to={"/contact"}> <button>Contact</button></Link>
      <Link to={"/about-us"}> <button>About</button></Link>
      </div>
 
