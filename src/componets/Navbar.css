@@ -83,10 +83,6 @@
 }
 .hotel {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     
 }
 .hotel ul {
@@ -201,15 +197,17 @@
     }
    
     .hotel:hover div ul {
-        display: block;
-        align-content: center;
-        margin-left: -250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         background: white;
         top: 0;
+        margin-left: -250px;
         width: 250px;
         border-radius: 5px;
         border: 0.5px solid grey;
-        height: 290px;
+        height: 170px;
         
     }
     .hotel div ul li{
@@ -217,7 +215,7 @@
         align-items: center;
         justify-content: center;
         color: #0d2041;
-        border-bottom: none;
+        border-bottom: 1px solid grey;
     }
     
 }

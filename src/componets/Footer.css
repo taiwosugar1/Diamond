@@ -82,9 +82,7 @@
     display: none;
 }
 
-/* ------------------tab screen---------------------- */
 
-@media screen and (max-width: 768px){}
 
 /* ------------------tab screen---------------------- */
 
@@ -92,7 +90,7 @@
     .footer{
         height: 250px;
         width: 100%;
-        margin-top: 0px;
+        margin-top: 100px;
         padding-top: 30px;
         background: #3f3e3e;
         display: flex;
@@ -112,6 +110,56 @@
         color: white;
         
     }
+    
+.footer-ul-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    
+}
+
+.footer-ul-mobile a h4{
+    width: 200px;
+    padding: 5px 10px;
+    background: #0d2041;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.footer-ul-mobile h4:hover{
+    background: #1556c6;
+}
+.footer-media{
+    display: flex;
+    justify-content: center;
+}
+.footer-ul-mobile ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+    
+    
+}
+.footer-ul-mobile ul li{
+    color: white;
+    padding: 5px;
+    margin: 0px 5px;
+    font-size: 16px;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+}
+.footer-ul-mobile ul li:hover{
+    background: rgb(0, 23, 128);
+}
+.footer-ul-mobile .home-footer-under{
+    width: 80%;
+}
 }
      
 
