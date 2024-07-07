@@ -65,40 +65,34 @@ We are your trusted partner for achieving your travel dreams, offering professio
         <div className="about-footer">
             <div>
               <h3>ABOUT US</h3>
-              
-        <p>
-         Our dedicated team is committed to making your dreams               of living and working abroad a reality.
+              <hr />
+              <p>
+         Our dedicated team is committed to making your dreams of living and working abroad a reality.
         </p>
             </div>
             <div>
-              <a href="tel: +1-614-707-6245">
-                <h3>CALL US</h3>
-                </a>
-              
-        <p> 
-         Call us now to speak with our experienced immigration consultants and take the first step towards achieving your dreams.
-       </p>
+              <a href="tel: +1-614-707-6245"><h3>CALL US</h3></a>
+              <hr />
+              <p> 
+Call us now to speak with our experienced immigration consultants and take the first step towards achieving your dreams.
+</p>
             </div>
             <div>
               <h3>DIAMOND VISA AND <br/>IMMIGRATION <br/> SERVICES</h3>
               <hr />
-        <p>
-          Empowering your global journey with expert visa and immigration solutions.
-       </p>
+              <p>
+
+Empowering your global journey with expert visa and immigration solutions.
+   </p>
             </div>
             <div>
               <h3>VISA APPLICATIONS</h3>
-              
-          <p>
-            Our team is dedicated to providing personalized 
-            support and guidance throughout your visa application process.
-          </p>
+              <hr />
+              <p>Our team is dedicated to providing personalized support and guidance throughout your visa application process.</p>
             </div>
            
         </div>
-        <p className="paragraph">
-          Copyright 2024 © <b>Diamond Visa and immigration services </b>All rights reserved.
-        </p>
+        <p className="paragraph">Copyright 2024 © <b>Diamond Visa and immigration services </b>All rights reserved.</p>
       </footer>
     </div>
   );
