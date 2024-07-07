@@ -224,6 +224,16 @@ footer{
     margin-bottom: 0px;
    font-family: "sanserif";
 }
+.about-details-drop div .drop-ul .drop-li{
+    box-shadow: 2px 2px 5px grey;
+    background: rgb(06, 06, 64);
+    color: rgb(227, 116, 198);
+}
+.about-details-drop div .drop-ul .drop-li:hover{
+    box-shadow: 2px 2px 5px grey;
+    background: rgb(107, 117, 230);
+    color: aqua;
+}
  /* ------------------tab screen---------------------- */
 
 @media screen and (max-width: 768px){
@@ -343,6 +353,8 @@ footer{
         margin-top: 30px;
         margin-left: -50px;
      }
+     
+       
 
 /* ---------------staff details-------------- */
    .about h3{
