@@ -44,7 +44,7 @@ const AboutUs = () => {
         </div>
         <h1>About Us</h1>
         <p><b>
-Welcome to Diamond Visa and immigration services:</b> Your trusted partner for simplified and expedited visa processing, offering comprehensive and reliable services."
+Welcome to Diamond Visa and immigration services:</b> Your trusted partner for simplified and expedited visa processing, offering comprehensive and reliable services.
 </p>
       </div>
 
