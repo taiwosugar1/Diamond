@@ -18,7 +18,7 @@
   { 
     id: "3",
     name: "Canada",
-     image: "/images/hotel.jpg" ,
+     image: "/images/canada.jpg" ,
      link: "",
      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia impedit illum tempora fugit! Totam quisquam accusantium placeat numquam corrupti vel pariatur eaque? Voluptatibus modi esse officia repellat laudantium laboriosam cum?"
   },
@@ -34,7 +34,7 @@
     name: "Germany",
      image: "/images/hotel2.jpg" ,
      link: "",
-     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia impedit illum tempora fugit! Totam quisquam accusantium placeat numquam corrupti vel pariatur eaque? Voluptatibus modi esse officia repellat laudantium laboriosam cum?"
+     description: "Germany is a popular tourist destination, attracting millions of visitors each year. Germany tourists can explore a rich history, vibrant culture, and breathtaking landscapes. From the iconic Berlin Wall to the picturesque Rhine River, Germany offers a diverse range of experiences for travelers."
   },
   { 
     id: "6",

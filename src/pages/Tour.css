@@ -33,8 +33,19 @@
     height: auto;
 
 }
+.tour-description .info{
+    font-weight: 900;
+    font-variant: small-caps;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.tour-description .description{
+    font-family: Georgia,  serif;
+    text-align: center;
+
+}
 
 @media screen and (max-width: 480px){
+    
     .tour-detail{
         display: flex;
         justify-content: center;

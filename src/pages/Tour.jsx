@@ -28,8 +28,8 @@ const TourDetail = () => {
       <img src={country.image} alt={country.name} />
 
       <div  className='tour-description'>
-         <p>More information about <h3>{country.name}</h3></p>
-         <p>{country.description}</p>
+         <p className='info'>More information about </p><h3>{country.name}</h3>
+         <p className='description'>{country.description}</p>
       </div>
       </div>
 
