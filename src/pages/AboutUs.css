@@ -277,7 +277,7 @@ footer{
     }
     .about p{
         color: white;
-        font-family: "roboto";
+        font-family: "serif";
         font-size: 20px;
         width: 350px;
         
@@ -299,6 +299,7 @@ footer{
 
 /* ---------------staff details-------------- */
    .about h3{
+    font-family: serif;
         font-size: 17px;
         width: 400px;
         color: #666;
@@ -361,16 +362,16 @@ footer{
         width: 100%;
         text-align: center;
         font-size: 16px;
-       font-family: "sanserif";
+       font-family: "serif";
     }
     .about-footer div a h3 {
         margin-bottom: 0px;
-       font-family: "sanserif";
+       font-family: "serif";
     }
     .about-footer div h3 {
        
         margin-bottom: 0px;
-       font-family: "sanserif";
+       font-family: "serif";
     }
     
 }
