@@ -65,21 +65,21 @@ We are your trusted partner for achieving your travel dreams, offering professio
         <div className="about-footer">
             <div>
               <h3>ABOUT US</h3>
-              <hr />
+              
               <p>
          Our dedicated team is committed to making your dreams of living and working abroad a reality.
         </p>
             </div>
             <div>
               <a href="tel: +1-614-707-6245"><h3>CALL US</h3></a>
-              <hr />
+              
               <p> 
 Call us now to speak with our experienced immigration consultants and take the first step towards achieving your dreams.
 </p>
             </div>
             <div>
               <h3>DIAMOND VISA AND <br/>IMMIGRATION <br/> SERVICES</h3>
-              <hr />
+              
               <p>
 
 Empowering your global journey with expert visa and immigration solutions.
@@ -87,7 +87,7 @@ Empowering your global journey with expert visa and immigration solutions.
             </div>
             <div>
               <h3>VISA APPLICATIONS</h3>
-              <hr />
+              
               <p>Our team is dedicated to providing personalized support and guidance throughout your visa application process.</p>
             </div>
            
