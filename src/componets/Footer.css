@@ -176,7 +176,7 @@
     .footer{
         height: 250px;
         width: 100%;
-        margin-top: 400px;
+        margin-top: 450px;
         padding-top: 30px;
         background: #3f3e3e;
         display: flex;
@@ -185,7 +185,7 @@
         bottom: 0;
     }
     
-.footer-ul, .footer-ul input, .footer-ul button, .footer-under{
+.footer-ul, .footer-ul input, .footer-ul button, .footer-under, .home-footer-under-large{
     display: none;
 }
 .footer-ul-mobile{
