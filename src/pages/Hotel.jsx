@@ -18,17 +18,18 @@ const Hotel = () => {
        <Link to={"/"}> <button>Home</button></Link>
        <Link to={"/about-us"}> <button>About</button></Link>
      </div>
-       <div className='tour-detail' >
-      
-      
-      <h1>{hotel.name}</h1>
-      <div className='tour-details-container'>
-      <img src={hotel.image} alt={hotel.name} />
+     <hr style={{color: "white", width:"100%"}} />
+     <br />
 
-      <div  className='tour-description'>
-         <p className='info'>More information about </p><h3>{hotel.name}</h3>
-         <p className='description'>{hotel.description}</p>
-         <Link to={"https://wa.me/message/NL7UY3M3Q6ZOG1"}><button className="book-button">Book this</button></Link>
+      <div className='tour-detail' >
+        <h1>{hotel.name}</h1>
+        <div className='tour-details-container'>
+          <img src={hotel.image} alt={hotel.name} />
+
+          <div  className='tour-description'>
+            <p className='info'>More information about </p><h3>{hotel.name}</h3>
+            <p className='description'>{hotel.description}</p>
+            <Link to={"https://wa.me/message/NL7UY3M3Q6ZOG1"}><button className="book-button">Book this</button></Link>
       </div>
       </div>
 

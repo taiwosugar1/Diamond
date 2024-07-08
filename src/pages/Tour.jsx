@@ -19,6 +19,8 @@ const TourDetail = () => {
        <Link to={"/"}> <button>Home</button></Link>
        <Link to={"/about-us"}> <button>About</button></Link>
      </div>
+     <hr style={{color: "white", width:"100%"}} />
+     <br />
 
     <div className='tour-detail' >
       

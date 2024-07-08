@@ -25,6 +25,7 @@ export const hotelList = [
       },
       { 
         id: 44,
+        category:"executive",
         name: "Jameston Hotel",
          image: "/images/hotel.jpg" ,
          location: "carlifonia",
@@ -33,6 +34,7 @@ export const hotelList = [
       },
       { 
          id: 45,
+         category:"five star",
          name: "Kelvin rich Hotel",
           image: "/images/hotel5.jpg" ,
           location: "Illinois",
@@ -42,6 +44,7 @@ export const hotelList = [
        { 
          id: 46,
          name: "Consonant Hotel",
+         category:"three star",
           image: "/images/hotel6.jpg" ,
           location: "carlifonia",
           link: "https://wa.me/message/NL7UY3M3Q6ZOG1",

@@ -8,8 +8,11 @@ const TourList = () => {
     <div className='tour'>
     <div className="tour-button">
      <Link to={"/"}> <button>Home</button></Link>
+     <Link to={"/hotel"}> <button>Hotels</button></Link>
      <Link to={"/about-us"}> <button>About</button></Link>
      </div>
+     <hr style={{color: "white", width:"100%"}} />
+     <br />
 
      <div className="tour-container">
       {countryList.map(( country, index) =>(
