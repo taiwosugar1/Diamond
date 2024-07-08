@@ -1,3 +1,7 @@
+.tour-detail{
+    padding-bottom: 30px;
+}
+
 .book-hotel{
     color: white;
     padding: 10px;
@@ -7,4 +11,26 @@
 }
 .book-hotel:hover{
     background: rgb(0,0,0,64);
+}
+.hotel-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    bottom: 0;
+}
+.hotel-footer ul{
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    justify-content: center;
+    background: rgb(6,6,64);
+}
+.hotel-footer ul li{
+    margin: 0px 10px;
+}
+.hotel-footer ul li a{
+    padding: 5px 10px;
+    color: white;
+    bottom: 0;
 }

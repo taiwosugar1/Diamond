@@ -6,8 +6,8 @@
     align-items: center;
     flex-direction: column;
     background: rgb(6,6,64);
-    height: 100%, 100vh;
-    padding-bottom: 200px;
+    height: 100%;
+    padding-bottom: 20px;
 }
 .hotel-list h1{
     color: white;
@@ -45,6 +45,7 @@
 .view-hotel:hover{
     background: rgb(0,0,0,64);
 }
+
 
 /* -----------tab screen------------- */
 
