@@ -9,6 +9,10 @@ import AboutUs from './pages/AboutUs';
 import { FaPhone, FaWhatsapp } from 'react-icons/fa';
 import Tour from './pages/Tour';
 import TourList from './pages/TourList';
+import Hotel from './pages/Hotel';
+import Hotels from './pages/Hotels';
+
+
 
 function App() {
   return (
@@ -26,6 +30,8 @@ function App() {
       
          <Routes>
           <Route path="/" exact element={<Home/>}/>
+          <Route path="/hotels" exact element={<Hotels/>}/>
+          <Route path='/hotel/:id' exact element={<Hotel/>}/>
           <Route path='/tour/:id' element={<Tour/>}/>
           <Route path="/tourList" element={<TourList/>}/>
          <Route path='/about-us' element={<AboutUs/>}/>

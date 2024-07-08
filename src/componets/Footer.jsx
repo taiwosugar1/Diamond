@@ -26,7 +26,7 @@ const Footer = () => {
 
       <div className="footer-ul">
         <div>
-         <Link to={"/about-us"}><h3>CONTACT</h3></Link> 
+  
             <p> Contact us today to schedule a consultation and take the first step towards achieving your visa and immigration goals!</p>
         </div>
       </div>
@@ -68,8 +68,7 @@ const Footer = () => {
           
           <Link to={"/about-us"}><li>ABOUT</li></Link>
           <Link><li>SERVICES</li></Link>
-          <Link><li>FLIGHTS</li></Link>
-          <Link to={"contact"}> <li>CONTACT</li></Link>
+          <Link to={"/tourlist"}><li>TOURIST</li></Link>
           <Link><li>FAQ</li></Link>
         </ul>
         <p className='home-footer-under'>Copyright 2024 © <b>Diamond Visa and immigration services </b>All rights reserved.</p>

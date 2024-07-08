@@ -49,20 +49,18 @@ const NavMenu = ({ isOpen, isMobile, handleToggle }) => {
       )}
 
 
-      <Link to={"https://wa.me/message/NL7UY3M3Q6ZOG1"}><li>Country</li></Link>
+      <Link to={"tourlist"}><li>Country</li></Link>
       
       <li className='hotel'>Hotel
        <div>
         <ul>
-          <li>Executive</li>
-          <li>Five Star</li>
-          <li>Three Star</li>
+          <Link to={"hotels"}><li>Executive</li></Link>
+          <Link to={"hotels"}><li>Five Star</li></Link>
+          <Link to={"hotels"}><li>Three Star</li></Link>
         </ul>
         </div>
       </li>
 
-      
-      <Link to={"/tourList"}><li> Tour</li></Link>
       <Link to={"/"}><li >Home</li></Link>
       <Link to={"/about-us"}><li>About Us</li></Link>
     
