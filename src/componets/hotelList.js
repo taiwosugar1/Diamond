@@ -1,11 +1,11 @@
 export const hotelList = [
     { 
         id: 41,
-        name: "New York City Hotel",
-         image: "/images/hotel.jpg" ,
+        name: "New Yorker Hotel",
+         image: "/images/hotel4.jpg" ,
          location: "New York City",
          link: "https://wa.me/message/NL7UY3M3Q6ZOG1",
-         description: "Australia, a country known for its stunning beaches, unique wildlife, and vibrant culture, is a popular destination for tourists from around the world. Australia tourists are drawn to the country's natural beauty, outdoor activities, and iconic landmarks. Enjoying outdoor activities, such as surfing, hiking, and wildlife watching"
+         description: "We curate our recommendations based on your interests, budget, and travel dates. Plan your next trip with recommendations by travel creators."
       },
       { 
         id: 42,
@@ -18,7 +18,7 @@ export const hotelList = [
       { 
         id: 43,
         name: "carlifonia Hotel and suites",
-         image: "/images/hotel2.jpg" ,
+         image: "/images/hotel3.jpg" ,
          location: "carlifonia",
          link: "https://wa.me/message/NL7UY3M3Q6ZOG1",
          description: " "
@@ -34,7 +34,7 @@ export const hotelList = [
       { 
          id: 45,
          name: "Kelvin rich Hotel",
-          image: "/images/hotel.jpg" ,
+          image: "/images/hotel5.jpg" ,
           location: "Illinois",
           link: "https://wa.me/message/NL7UY3M3Q6ZOG1",
           description: " "
@@ -42,7 +42,7 @@ export const hotelList = [
        { 
          id: 46,
          name: "Consonant Hotel",
-          image: "/images/hotel.jpg" ,
+          image: "/images/hotel6.jpg" ,
           location: "carlifonia",
           link: "https://wa.me/message/NL7UY3M3Q6ZOG1",
           description: " "
@@ -50,7 +50,22 @@ export const hotelList = [
        { 
          id: 47,
          name: "Richmond Hotel and suit",
-          image: "/images/hotel.jpg" ,
+          image: "/images/hotel7.jpg" ,
+          location: "carlifonia",
+          link: "https://wa.me/message/NL7UY3M3Q6ZOG1",
+          description: " "
+       }, { 
+         id: 47,
+         name: "Caravel Hotel",
+          image: "/images/hotel7.jpg" ,
+          location: "carlifonia",
+          link: "https://wa.me/message/NL7UY3M3Q6ZOG1",
+          description: "Located a short distance from Sorrento and the sea, Hotel Caravel is a modern and elegant hotel with recently renovated rooms, swimming pool, terrace with lt more. "
+       },
+       { 
+         id: 48,
+         name: "Richmond Hotel and suit",
+          image: "/images/hotel8.jpg" ,
           location: "carlifonia",
           link: "https://wa.me/message/NL7UY3M3Q6ZOG1",
           description: " "
