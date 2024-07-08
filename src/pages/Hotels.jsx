@@ -30,8 +30,8 @@ const Hotel = ({ filteredCategory }) => {
           <div key={index} className="hotel-box">
             <img src={hotel.image} alt="" />
             <div>
-              <h3>Name: <span>{hotel.name}</span></h3>
-              <h3>Location: <span>{hotel.location}</span></h3>
+              <h4> {hotel.name}</h4>
+              <p>Location: <h4 style={{color:"blueviolet"}}>{hotel.location}</h4></p>
               <Link to={`/hotel/${hotel.id}`}><button className='view-hotel'>View more details</button></Link>
             </div>
           </div>
