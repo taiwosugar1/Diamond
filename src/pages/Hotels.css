@@ -27,11 +27,22 @@
     background: pink;
     border: 0.5px solid grey;
     margin: 10px 20px;
+    padding-bottom: 20px;
 }
 .hotel-box img{
     top: 0;
     width: 100%;
     height: 250px;
+}
+.view-hotel{
+    color: white;
+    padding: 5px;
+    background: blue;
+    border-radius: 5px;
+    border: 2px 2px 5px rgba(0,0,0,0.5);
+}
+.view-hotel:hover{
+    background: rgb(0,0,0,64);
 }
 
 @media screen and (max-width: 480px) {

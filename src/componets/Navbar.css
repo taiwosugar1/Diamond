@@ -212,13 +212,14 @@
         width: 250px;
         border-radius: 5px;
         border: 0.5px solid grey;
-        height: 170px;
+        height: 270px;
         
     }
     .hotel div ul li{
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 100%;
         color: #0d2041;
         border-bottom: 1px solid grey;
     }

@@ -29,7 +29,7 @@ const Hotel = () => {
           <div  className='tour-description'>
             <p className='info'>More information about </p><h3>{hotel.name}</h3>
             <p className='description'>{hotel.description}</p>
-            <Link to={"https://wa.me/message/NL7UY3M3Q6ZOG1"}><button className="book-button">Book this</button></Link>
+            <Link to={"https://wa.me/message/NL7UY3M3Q6ZOG1"}><button className="book-hotel">Book this</button></Link>
       </div>
       </div>
 
