@@ -10,6 +10,9 @@ import TourList from './pages/TourList';
 import Hotel from './pages/Hotel';
 import Hotels from './pages/Hotels';
 import { useState } from 'react';
+// index.js or App.js
+import '@fontsource/montserrat'; // Defaults to weight 400
+import '@fontsource/poppins'; // Defaults to weight 400
 
 
 
