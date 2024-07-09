@@ -1,6 +1,6 @@
 export const hotelList = [
     { 
-        id: 41,
+        id: 1,
         name: "New Yorker Hotel",
          image: "/images/hotel4.jpg" ,
          location: "New York City",
@@ -8,7 +8,7 @@ export const hotelList = [
          description: "We curate our recommendations based on your interests, budget, and travel dates. Plan your next trip with recommendations by travel creators."
       },
       { 
-        id: 42,
+        id: 2,
         name: "carlifonia Hotel and suites",
          image: "/images/hotel2.jpg" ,
          location: "carlifonia",

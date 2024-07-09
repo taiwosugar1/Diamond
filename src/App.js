@@ -36,7 +36,7 @@ function App() {
          <Routes>
           <Route path="/hotels" element={<Hotels filteredCategory={filteredCategory} />}/>
           <Route path="/" exact element={<Home/>}/>
-          <Route path='/hotel/:id' exact element={<Hotel/>}/>
+          <Route path='hotel/:Id' element={<Hotel/>}/>
           <Route path='/tour/:id' element={<Tour/>}/>
           <Route path="/tourList" element={<TourList/>}/>
          <Route path='/about-us' element={<AboutUs/>}/>
