@@ -5,7 +5,7 @@ import { countryList } from '../componets/countryList';
 
 const TourDetail = () => {
   const { id } = useParams();
-  const country = countryList.find((countryList) => countryList.id === id);
+  const country = countryList.find((country) => country.id === id);
   
  
   if (!country) {

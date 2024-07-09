@@ -58,7 +58,7 @@ export const hotelList = [
           link: "https://wa.me/message/NL7UY3M3Q6ZOG1",
           description: " "
        }, { 
-         id: 47,
+         id: 48,
          name: "Caravel Hotel",
           image: "/images/hotel7.jpg" ,
           location: "carlifonia",
@@ -66,7 +66,7 @@ export const hotelList = [
           description: "Located a short distance from Sorrento and the sea, Hotel Caravel is a modern and elegant hotel with recently renovated rooms, swimming pool, terrace with lt more. "
        },
        { 
-         id: 48,
+         id: 49,
          name: "Richmond Hotel and suit",
           image: "/images/hotel8.jpg" ,
           location: "carlifonia",

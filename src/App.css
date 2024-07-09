@@ -4,13 +4,13 @@
 li, a,h1,h2, h3, h4, h5, p{
   text-decoration: none;
   list-style: none;
-  font-family: "roboto";
+  font-family: "montserrat, poppins";
 }
 @media screen and (max-width: 480px) {
   li, a,h1,h2, h3, h4, h5, p{
     text-decoration: none;
     list-style: none;
-    font-family: "roboto";
+    font-family: "montserrat, poppins ";
   }
 }
 .side-box, .side-box2 {
