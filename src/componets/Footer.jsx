@@ -9,7 +9,7 @@ import Feedback from './Feedback'
 const Footer = () => {
   return (
     <div className='footer'>
-    <div className='home-footer'>
+    <div className='home-footer' style={{marginLeft:"20px"}}>
 
       <div className="footer-ul">
         <ul>
