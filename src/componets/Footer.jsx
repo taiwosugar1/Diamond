@@ -3,7 +3,7 @@ import React from 'react'
 import "./Footer.css"
 import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
-import FeedbackComponent from './Feedback'
+import Feedback from './Feedback'
 
 
 const Footer = () => {
@@ -46,7 +46,7 @@ const Footer = () => {
      
       
         <div className="large-screen-feedback">
-        <FeedbackComponent/>
+        <Feedback/>
         </div>
         
         
