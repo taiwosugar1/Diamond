@@ -71,7 +71,7 @@ const FeedbackComponent = () => {
               placeholder="Your email address"
               className='feedback-input'
             />
-            <button type="submit" className='feedback-button'>Submit</button>
+            <button type="submit" className='feedback-button'>Send feedback</button>
           </form>
         </div>
         <h3 className='feedback-h3'>All Feedbacks</h3>
