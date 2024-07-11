@@ -34,7 +34,7 @@
     width: 100%;
     position: sticky;
     z-index: 1;
-    background: #000;
+    background: #0d2041;
   }
   
   .feedback-form {
@@ -72,7 +72,6 @@
     width: 100%;
     list-style-type: none;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.1);
   }
   
   .feedback-li{
