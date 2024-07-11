@@ -43,6 +43,7 @@ function App() {
           <Route path='/tour/:id' element={<Tour/>}/>
           <Route path="/tourList" element={<TourList/>}/>
          <Route path='/about-us' element={<AboutUs/>}/>
+         
          </Routes>
         
          

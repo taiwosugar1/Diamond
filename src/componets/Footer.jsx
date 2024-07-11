@@ -3,6 +3,8 @@ import React from 'react'
 import "./Footer.css"
 import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import FeedbackComponent from './Feedback'
+
 
 const Footer = () => {
   return (
@@ -42,13 +44,11 @@ const Footer = () => {
         </ul>
       </div>
      
-      <div className="footer-ul">
-        <p> Blog with immigration tips and news.</p>
-        <div className='footer-input-details'>
-          <Link to={"mailto:email@example.com"}> <button>Submit</button></Link>
-           <input type="text" placeholder='Write a Feedback'/> 
+      
+        <div className="large-screen-feedback">
+        <FeedbackComponent/>
         </div>
-        </div>
+        
         
     </div>
 
@@ -64,6 +64,7 @@ const Footer = () => {
       <Link to={"https://twitter.com/diamondvisa"}><li><FaTwitter/></li></Link>
       <Link to={"https://wa.me/message/NL7UY3M3Q6ZOG1"}><li><FaWhatsapp/></li></Link>
     </ul>
+        
         <ul>
           
           <Link to={"/about-us"}><li>ABOUT</li></Link>
@@ -71,6 +72,11 @@ const Footer = () => {
           <Link to={"/tourlist"}><li>TOURIST</li></Link>
           <Link><li>FAQ</li></Link>
         </ul>
+        {/* <div className='mobile-feedback' >
+          <Feedback/>
+        </div> */}
+        
+
         <p className='home-footer-under'>Copyright 2024 © <b>Diamond Visa and immigration services </b>All rights reserved.</p>
       </div>
     

@@ -1,0 +1,116 @@
+
+.feedback{
+  width: 400px;
+  align-content: center;
+  position: relative;
+}
+.feedback-container {
+    width: 100%;
+    margin-left: -10px;
+    height: 320px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #0d2041;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #0d2041 #0d2041;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-direction: column; 
+  }
+  
+  
+  .feedback-h3 {
+    text-align: center;
+    color: #fff;
+  }
+
+  .feedback-box-for-form{
+    top: 0;
+    left: 5px;
+    width: 100%;
+    position: sticky;
+    z-index: 1;
+    background: #000;
+  }
+  
+  .feedback-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .feedback-textarea {
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    width: 300px;
+    height: 70px;
+  }
+  
+  .feedback-button {
+    padding: 10px;
+    width: 100px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  
+  }
+  
+  .feedback-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .feedback-ul {
+    width: 100%;
+    list-style-type: none;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  .feedback-li{
+    background-color: black;
+    font-family: sans-serif;
+    padding: 10px;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+   color: white;
+    contain: content;
+    width: 300px;
+    
+  }
+  .feedback-button-delete{
+    display: flex;
+    color: white;
+    border-radius: 5px;
+    background-color: #007bff;
+    padding: 10px;
+  }
+  .feedback-input {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+
+  @media screen and (max-width: 480px){
+    .feedback{
+      width: 400px;
+      right: 0;
+      top: 450px;
+      position: relative;
+    }
+    .large-screen-feedback{
+      display: none;
+    }
+  }

@@ -6,3 +6,11 @@
     width: 100%;
     height: auto;
 }
+.small-screen-feedback{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .small-screen-feedback{
+        display: flex;
+    }
+}
