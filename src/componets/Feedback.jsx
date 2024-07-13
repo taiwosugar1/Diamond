@@ -96,7 +96,7 @@ const FeedbackComponent = () => {
             <button type="submit" className='feedback-button'>Submit</button>
           </form>
         </div>
-        <h3 className='feedback-h3'>All Feedbacks</h3>
+        <h3 className='feedback-h3'> Feedbacks</h3>
         <div className='feedback-map'>
           <div className='feedback-ul'>
             {feedbacks.map((item, index) => (

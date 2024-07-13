@@ -24,8 +24,11 @@
   
   
   .feedback-h3 {
+    margin-top: -30px;
+    margin-left: 40px;
     text-align: center;
     color: #fff;
+    z-index: 1;
   }
 
   .feedback-box-for-form{
@@ -70,6 +73,7 @@
   
   .feedback-ul {
     width: 100%;
+    background: white;
     list-style-type: none;
     padding: 10px;
   }
@@ -84,12 +88,12 @@
     border: 1px solid #ccc;
     border-radius: 4px;
    color: white;
-    contain: content;
+    content: contain;
     width: 300px;
     
   }
   .feedback-button-delete{
-    display: flex;
+    display: none;
     color: white;
     border-radius: 5px;
     background-color: #007bff;
