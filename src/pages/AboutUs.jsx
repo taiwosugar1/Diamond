@@ -19,7 +19,7 @@ const AboutUs = () => {
     <div className='about'>
       <div className='about-details'>
         <div >
-          <h3 className='h3'>DIAMOND VISA</h3>
+          <h3 className='h3'>DIAMOND VISA AND <br/> IMMIGRATION SERVICE</h3>
           <ul>
             <Link to={"/tourList"}><li> Tour</li></Link>
             <li onClick={handleToggle}>Booking</li>
@@ -34,7 +34,7 @@ const AboutUs = () => {
                   <p>- Application submission and tracking</p>
                   <p>- Interview preparation and support</p>
                   <ul className='drop-ul'>
-                    <Link to={"https://wa.me/message/NL7UY3M3Q6ZOG1"}><li className='drop-li'>Visit Us</li></Link>
+                    <Link to={"https://wa.me/message/NL7UY3M3Q6ZOG1"}><li className='drop-li' style={{marginLeft:'80px'}}>Chat with Us</li></Link>
                     <Link to={"mailto: info@diamondvisa.com"}><li className='drop-li'>Send Mail</li></Link>
                   </ul>
                   </div>
@@ -42,6 +42,8 @@ const AboutUs = () => {
             )}
           </ul>      
         </div>
+
+        
         <h1>About Us</h1>
         <p><b>
 Welcome to Diamond Visa and immigration services:</b> Your trusted partner for simplified and expedited visa processing, offering comprehensive and reliable services.

@@ -8,9 +8,10 @@ const FeedbackComponent = () => {
   const [email, setEmail] = useState('');
 
   useEffect(() => {
-    // Load feedbacks from localStorage on component mount
-    const storedFeedbacks = JSON.parse(localStorage.getItem('feedbacks')) || [];
-    setFeedbacks(storedFeedbacks);
+    fetch('/feedbacks')
+      .then(response => response.json())
+      .then(data => setFeedbacks(data))
+      .catch(error => console.error('Error fetching feedbacks:', error));
   }, []);
 
   const handleFeedbackChange = (e) => {
@@ -25,19 +26,35 @@ const FeedbackComponent = () => {
     e.preventDefault();
 
     if (newFeedback.trim() && email.trim()) {
-      const updatedFeedbacks = [...feedbacks, { feedback: newFeedback, email }];
-      setFeedbacks(updatedFeedbacks);
-      localStorage.setItem('feedbacks', JSON.stringify(updatedFeedbacks));
-      sendEmail();
-      setNewFeedback('');
-      setEmail('');
+      const feedback = { feedback: newFeedback, email };
+
+      fetch('/feedbacks', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(feedback),
+      })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(data => {
+          setFeedbacks([...feedbacks, data]);
+          sendEmail(newFeedback, email);
+          setNewFeedback('');
+          setEmail('');
+        })
+        .catch(error => console.error('Error submitting feedback:', error));
     }
   };
 
-  const sendEmail = () => {
+  const sendEmail = (feedback, email) => {
     const templateParams = {
-      feedback: newFeedback,
-      email: email,
+      feedback,
+      email,
     };
 
     emailjs.send('service_t6mkxje', 'template_09dkr2y', templateParams, 'uYcQfADfKeUw-K3Js')
@@ -49,8 +66,13 @@ const FeedbackComponent = () => {
   };
 
   const handleClearFeedbacks = () => {
-    localStorage.removeItem('feedbacks');
-    setFeedbacks([]);
+    fetch('/feedbacks', {
+      method: 'DELETE',
+    })
+      .then(() => {
+        setFeedbacks([]);
+      })
+      .catch(error => console.error('Error clearing feedbacks:', error));
   };
 
   return (
@@ -71,7 +93,7 @@ const FeedbackComponent = () => {
               placeholder="Your email address"
               className='feedback-input'
             />
-            <button type="submit" className='feedback-button'>Send feedback</button>
+            <button type="submit" className='feedback-button'>Submit</button>
           </form>
         </div>
         <h3 className='feedback-h3'>All Feedbacks</h3>
@@ -79,7 +101,7 @@ const FeedbackComponent = () => {
           <div className='feedback-ul'>
             {feedbacks.map((item, index) => (
               <p key={index} className='feedback-li'>
-                {item.feedback}  {item.email}
+                {item.feedback} (Email: {item.email})
               </p>
             ))}
           </div>
@@ -91,4 +113,3 @@ const FeedbackComponent = () => {
 };
 
 export default FeedbackComponent;
-
