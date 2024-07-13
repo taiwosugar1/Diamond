@@ -3,6 +3,7 @@
   width: 400px;
   align-content: center;
   position: relative;
+
 }
 .feedback-container {
     width: 100%;
@@ -10,12 +11,12 @@
     height: 320px;
     padding: 10px;
     font-family: Arial, sans-serif;
-    background-color: #0d2041;
+    background: rgb(6,6,64);
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden scroll;
     scrollbar-width: thin;
-    scrollbar-color: #0d2041 #0d2041;
+    scrollbar-color: rgb(6,6,64) rgb(6,6,64);
     display: flex;
     align-items: center;
     justify-content: right;
@@ -37,7 +38,8 @@
     width: 100%;
     position: sticky;
     z-index: 1;
-    background: #0d2041;
+    background: rgb(6,6,64);
+        /* background: #3f3e3e; */
   }
   
   .feedback-form {
@@ -113,6 +115,7 @@
       right: 0;
       top: 450px;
       position: relative;
+      border-bottom: 0.5px solid grey;
     }
     .large-screen-feedback{
       display: none;

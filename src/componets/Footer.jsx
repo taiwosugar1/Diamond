@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="footer-ul">
         <ul>
           <h3>ABOUT US</h3>
-         <li><a href="tel: +1234567890"> Call Us</a></li> 
+         <li><a href="https://wa.me/message/NL7UY3M3Q6ZOG1"> Quick chat here <FaWhatsapp/></a></li> 
           <li>Book a Flight</li>
         </ul>
         <ul className='footer-media-large-screen'>
@@ -22,7 +22,6 @@ const Footer = () => {
        to={"https://instagram.com/diamondvisa/"}><li><FaInstagram/></li></Link>
       <Link to={"https://facebook.com/diamondvisa"}><li><FaFacebook/></li></Link>
       <Link to={"https://twitter.com/diamondvisa"}><li><FaTwitter/></li></Link>
-      <Link to={"https://wa.me/message/NL7UY3M3Q6ZOG1"}><li><FaWhatsapp/></li></Link>
     </ul>
       </div>
 
@@ -35,11 +34,9 @@ const Footer = () => {
 
       <div className="footer-ul">
         <ul className='visa'>
-          <Link to={"wa.watsapp.com"}><h3>VISA</h3></Link>
-          <li>List of Visa</li>
-          <li>Visa Type</li>
-          <li>Available Hotel</li>
-          <li>Agent</li>
+        <Link to={"https://wa.me/message/NL7UY3M3Q6ZOG1"}><h3>VISA</h3></Link>
+          <li>List of Visacd </li>
+          <Link to={"/hotel"}><li>Available Hotel</li></Link>
           <li>Management</li>
         </ul>
       </div>
