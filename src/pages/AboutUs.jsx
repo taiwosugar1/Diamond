@@ -27,7 +27,7 @@ const AboutUs = () => {
               <div className='about-details-drop'> 
              
               <div>
-              <h4>DIAMOND VISA AND IMMIGRATION SERVICES</h4>
+              <h4>DIAMOND VISA AND  IMMIGRATION SERVICES</h4>
                   <p>- Visa applications (tourist, student, work, family)</p>
                   <p>- Immigration services (permanent residence, citizenship)</p>
                   <p>- Document preparation and review</p>

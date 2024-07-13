@@ -48,8 +48,9 @@
     background: #333;
     border-radius: 4px;
 }
-.about-details h2{
-    
+.about-details .h3{
+    text-align: center;
+    margin-right: -20px;
     color: white;
     font-weight: bolder;
     font-family: "sanserif";
@@ -98,7 +99,7 @@
  }
  .about-details-drop div h4{
     color: #fff;
-    margin-left: -350px;
+    margin-left: -330px;
  }
 .about-details-drop p{
     color: white;
@@ -237,58 +238,9 @@ footer{
 }
 
 
- /* ------------------tab screen---------------------- */
-
-@media screen and (max-width: 768px){
-.about-details div h3{
-        color: #fff;
-        margin-left: 260px;
-    }
-.about p{
-        color: white;
-        font-family: "roboto";
-        font-size: 20px;
-        width: 450px;
-    }
-.about h3{
-        width: 500px;
-        color: #8c8f91;
-}
-    .about-footer{
-        margin-top: 30px;
-        width: 100%;
-        height: auto;
-       display: grid;
-       grid-template-columns: auto auto ;
-       place-content: center;
-       grid-gap: 20px;
-    }
-    .about-footer div{
-        margin: 10px;
-        width: 300px;
-        height: 200px;
-       
-    }
-    .about-footer div p{
-        width: 220px;
-    }
-    .about-footer div a h3 {
-       
-        margin-left: 0px;
-        margin-bottom: -20px;
-       font-family: "sanserif";
-    }
-    .about-footer div h3 {
-       
-        margin-left: 0px;
-        margin-bottom: -20px;
-       font-family: "sanserif";
-    }
-}
-
 /* ------------------mobile screen---------------------- */
 
-@media screen and  ( max-width: 480px) {
+@media screen and  ( max-width: 768px) {
     
   
     .about-details div{
@@ -298,9 +250,8 @@ footer{
         margin-left: 140px;
         border-bottom: 1px solid rgb(6, 6, 64);
     }
-    .about-details div h3{
-        color: #fff;
-        margin-left: 60px;
+    .about-details div .h3{
+        margin-left: 90px;
         font-family: "sanserif";
     }
     .about-details div ul{
@@ -330,18 +281,14 @@ footer{
     .about-details-drop div{
     margin-right: 100px;
     height: 100%;
-    display: flex;
     align-items: start;
-    justify-content: center;
-    flex-direction: column;
+   
     }
     .about-details-drop div h4{
-       color: #fff;
        margin-left: 50px;
     }
     .about-details-drop p{
         font-size: 14px;
-        font-family: "serif";
         margin-left: 60px;
     }
      .about-details-drop div ul{
