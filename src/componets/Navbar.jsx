@@ -19,7 +19,7 @@ const Navbar = ({ filterHotelsByCategory }) => {
     <div className='navbar'>
       <header className='header'>
         <div className="logo">
-          <h1>D<span>v</span></h1>
+          <img src="diamond-logo.png" alt="" />
         </div>
         <div className="mobile-icon" onClick={handleMobileToggle}>
           {isMobile ? <FaTimes /> : <FaBars />}

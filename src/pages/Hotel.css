@@ -23,7 +23,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(6,6,64);
+    background: white;
 }
 .hotel-footer ul li{
     margin: 0px 10px;

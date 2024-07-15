@@ -2,7 +2,7 @@
 .about{
     width: 100%;
     overflow-x: hidden;
-    background: rgb(6, 6, 64);
+    background: white;
 }
 
 .about-details{
@@ -44,7 +44,7 @@
     border:1px solid #333;
 }
 .about-details div ul li:hover{
-    color: aqua;
+    color: pink;
     background: #333;
     border-radius: 4px;
 }
@@ -110,12 +110,12 @@
 .about-details-drop div .drop-ul .drop-li{
     width: 100px;
     box-shadow: 2px 2px 5px grey;
-    background: rgb(06, 06, 64);
+    background: purple;
     color: white;
 }
 .about-details-drop div .drop-ul .drop-li:hover{
-    background: rgb(7, 7, 75);
-    color: aqua;
+    background: purple;
+    color: white;
 }
 
 
@@ -130,7 +130,7 @@ section{
 .about h3{
     font-family: "sanserif";
     width: 650px;
-    color: aqua;
+    color: grey;
 }
 .about-staff{
  display: grid;grid-template-columns: auto auto auto auto;
@@ -145,7 +145,7 @@ section{
     width: 200px;
     height: 400px;
     margin: 40px 20px;
-    background: rgb(6, 6, 64);
+    background: white;
  
 }
 .about-staff .staff img{
@@ -155,10 +155,10 @@ section{
     object-fit: cover;
 }
 .about-staff .staff h2{
-    color: aqua;
+    color: grey;
 }
 .about-staff .staff p{
-    color: aqua;
+    color: #666;
     font-size: 14px;
     width: 170px;
     font-family: "san-serif";
@@ -173,8 +173,8 @@ section{
     width: 30px;
     height: 30px;
     margin: 3px;
-    color: aqua;
-    border: 1px solid aqua;
+    color: grey;
+    border: 1px solid grey;
     border-radius: 50%;
 }
 
@@ -303,7 +303,7 @@ footer{
     font-family: serif;
         font-size: 17px;
         width: 400px;
-        color: #35e0d2;
+        color: white;
 }
 
     .about-staff{

@@ -3,7 +3,7 @@ import React from 'react'
 import "./Footer.css"
 import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
-import Feedback from './Feedback'
+import Feedback from './NewsletterComponent'
 
 
 const Footer = () => {
@@ -35,7 +35,7 @@ const Footer = () => {
       <div className="footer-ul">
         <ul className='visa'>
         <Link to={"https://wa.me/message/NL7UY3M3Q6ZOG1"}><h3>VISA</h3></Link>
-          <li>List of Visacd </li>
+          <li>List of Visa</li>
           <Link to={"/hotel"}><li>Available Hotel</li></Link>
           <li>Management</li>
         </ul>

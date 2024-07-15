@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import "./TourList.css"
-import { countryList } from '../componets/countryList.js';
+import { countryList } from '../componets/countryList.js'
 
 const TourList = () => {
   return (
@@ -21,7 +21,7 @@ const TourList = () => {
           
          <div>
            <h3>country:</h3> <p>{country.name}</p>
-           <Link to={`/tour/${country.id} `}><p className='view'>view</p></Link>
+           <Link to={`/tour/${country.id} `}><p className='view'>view Details</p></Link>
           
          </div>
        
