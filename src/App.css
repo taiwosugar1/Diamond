@@ -1,11 +1,20 @@
 .App {
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
 }
-li, a,h1,h2, h3, h4, h5, p{
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+li, a, p{
   text-decoration: none;
   list-style: none;
-  font-family: "montserrat, poppins";
+  
 }
 @media screen and (max-width: 480px) {
   li, a,h1,h2, h3, h4, h5, p{

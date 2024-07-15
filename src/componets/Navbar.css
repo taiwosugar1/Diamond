@@ -43,6 +43,10 @@
     font-family: "roboto";
     border-bottom: none;
 }
+.header ul li:hover {
+    color: aqua;
+    text-decoration: underline;
+}
 
 
 .contact-details {
