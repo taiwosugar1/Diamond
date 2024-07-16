@@ -1,12 +1,13 @@
 import React from 'react'
 import "./Contact.css"
+import Swal from 'sweetalert2'
 
 const Contact = () => {
     const onSubmit = async (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
     
-        formData.append("access_key", "9ab45988-b259-4d8c-b405-77bab6aef08c");
+        formData.append("access_key","9ab45988-b259-4d8c-b405-77bab6aef08c");
     
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
@@ -21,7 +22,11 @@ const Contact = () => {
         }).then((res) => res.json());
     
         if (res.success) {
-          console.log("Success", res);
+          Swal.fire({
+            title: "Success",
+            text: "Message sent successfully",
+            icon: "success"
+          });
         }
       };
   return (
