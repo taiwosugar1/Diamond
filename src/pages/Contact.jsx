@@ -31,20 +31,17 @@ const Contact = () => {
       };
   return (
     <section className='contact-form'>
-        <h1>Contact</h1>
+        <h1>Send Us Message</h1>
         <form onSubmit={onSubmit}>
             <div className="input-box">
-                <label>Full Name</label>
                 <input type="text" placeholder='Full Name' name='name' required className='field' />
             </div>
 
             <div className="input-box">
-               <label>Email Address</label>
                <input type="email" placeholder='Enter your email' name='email' required className='field' />
             </div>
 
             <div className="input-box">
-               <label>Your Message</label>
                <textarea name="message" placeholder='Enter your message' required className='field message' ></textarea>
             </div>
 

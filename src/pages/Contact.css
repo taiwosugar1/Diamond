@@ -1,27 +1,32 @@
 .contact-form{
     display: flex;
     align-items: center;
-    height: 500px;
+    height: 400px;
+    width: 380px;
     background: #826afb;
     margin-top: -50px;
 }
 
 .contact-form form{
-    max-width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
     background: #fff;
-    padding: 2px 5px 5px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     color: #333;
     margin: 10px;
 }
 
-.contact-form form h1{
-   font-size: 25px;
+.contact-form h1{
+   font-size: 20px;
    text-align: center;
+   color: #fff;
 }
 .contact-form form .input-box{
     margin-top: 15px;
+    width: 100%;
 }
 .contact-form form .input-box .field{
     width: 90%;
