@@ -4,6 +4,7 @@ import { FaFacebook, FaInstagram, FaTwitter, FaBars, FaTimes, FaWhatsapp } from 
 import { Link } from 'react-router-dom';
 import Contact from '../pages/Contact';
 
+
 const Navbar = ({ filterHotelsByCategory }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
