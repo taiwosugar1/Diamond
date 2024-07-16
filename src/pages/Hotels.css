@@ -38,7 +38,8 @@
 .view-hotel{
     color: white;
     padding: 5px;
-    background: blue;
+    background: black;
+    width: 140px;
     border-radius: 5px;
     border: 2px 2px 5px rgba(0,0,0,0.5);
 }

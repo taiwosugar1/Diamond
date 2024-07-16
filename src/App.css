@@ -45,7 +45,7 @@ li, a, p{
   top: 400px;
 }
 .side-box:hover, .side-box2:hover{
-   background: blue;
+   background: rgb(82, 5, 82);
 }
 .side-box h6, .side-box2 h6{
   color: white;
@@ -74,7 +74,7 @@ li, a, p{
 }
 
 .App-link {
-  color: #61dafb;
+  color: #666;
 }
 
 @keyframes App-logo-spin {
