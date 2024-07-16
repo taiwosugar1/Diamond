@@ -44,12 +44,11 @@ const NavMenu = ({ isOpen, isMobile, handleToggle, filterHotelsByCategory }) => 
       <li onClick={handleToggle}>Contact</li>
       {isOpen && (
         <div className="contact-details">
+          
           <Contact/>
-          {/* <h3>Trust Diamond Visa and Immigration Services for a stress-free application process</h3>
-          <p>Navigating your path to a brighter future with Diamond Visa and Immigration Services.</p> */}
+        
           <ul>
             <li><a href="tel: +1-614-707-6245" className='a1'>Phone</a></li>
-            {/* <li><a href="mailto: info@diamondvisa.com" className='a2'>Email</a></li> */}
             <li><a href="https://wa.me/message/NL7UY3M3Q6ZOG1" className='a3'>Whatsapp </a></li>
           </ul>
         </div>
