@@ -187,7 +187,7 @@
         justify-content: center;
         flex-direction: column;
         width: 80%;
-        height: 400px;
+        height: 600px;
         background: white;
         border: 1px solid grey;
         z-index: 2000;
@@ -207,7 +207,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: Row;
         margin-right: 40px;
     }.contact-details ul li a{
         padding: 8px 20px;
