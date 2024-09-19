@@ -16,13 +16,7 @@ li, a, p{
   list-style: none;
   
 }
-@media screen and (max-width: 480px) {
-  li, a,h1,h2, h3, h4, h5, p{
-    text-decoration: none;
-    list-style: none;
-    font-family: "montserrat, poppins ";
-  }
-}
+
 .side-box, .side-box2 {
   width: 70px;
   height: 57px;
@@ -54,35 +48,10 @@ li, a, p{
   margin: 0;
 }
 
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #666;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width: 480px) {
+  li, a,h1,h2, h3, h4, h5, p{
+    text-decoration: none;
+    list-style: none;
+    font-family: "montserrat, poppins ";
   }
 }
