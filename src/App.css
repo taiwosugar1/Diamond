@@ -44,8 +44,7 @@ li, a, p{
 }
 .side-box h6, .side-box2 h6{
   color: white;
-  padding: 0;
-  margin: 0;
+  text-align: center;
 }
 
 @media screen and (max-width: 480px) {

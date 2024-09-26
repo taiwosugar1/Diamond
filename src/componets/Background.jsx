@@ -29,7 +29,7 @@ const Background = () => {
     <div className='bg-home'>
       
       <div className="background-video">
-      <video autoPlay loop playsInline>
+      <video autoPlay muted loop playsInline>
       
         <source src={backgroundVideo} type="video/mp4" />
         
