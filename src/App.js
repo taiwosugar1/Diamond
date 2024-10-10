@@ -1,30 +1,76 @@
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import './App.css';
 import Navbar from './componets/Navbar';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
-import { FaPhone, FaWhatsapp } from 'react-icons/fa';
+import { FaLongArrowAltUp, FaPhone, FaWhatsapp } from 'react-icons/fa';
 import Tour from './pages/Tour';
 import TourList from './pages/TourList';
 import Hotel from './pages/Hotel';
 import Hotels from './pages/Hotels';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 // index.js or App.js
 import '@fontsource/montserrat'; // Defaults to weight 400
 import '@fontsource/poppins'; // Defaults to weight 400
 
 
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
 
-function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page when the route changes
+  }, [pathname]);
+
+  return null;
+};
+
+const App = () => {
+  const [showScrollButton, setShowScrollButton] = useState(false); 
   const [filteredCategory, setFilteredCategory] = useState('');
   const filterHotelsByCategory = (category) => {
     setFilteredCategory(category);
   };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setShowScrollButton(true);
+      } else {
+        setShowScrollButton(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Scroll to top functionality
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
+
+
+ 
 
   return (
     <div className="App">
       <BrowserRouter>
+
+      <ScrollToTop /> {/* Ensure pages start at the top when navigating */}
+
+          {/* Scroll to Top Button */}
+          {showScrollButton && (
+            <button className="scroll-to-top" onClick={scrollToTop}>
+              <FaLongArrowAltUp />
+            </button>
+          )}
+
+
           <Navbar filterHotelsByCategory={filterHotelsByCategory} />
              
                 <a href='tel: +1-614-707-6245'>
