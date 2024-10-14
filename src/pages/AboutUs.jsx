@@ -19,14 +19,13 @@ const AboutUs = () => {
     <div className='about'>
       <div className='about-details'>
         <div >
-          <h3 className='h3'>DIAMOND VISA AND <br/> IMMIGRATION SERVICE</h3>
+          <h3>DIAMOND VISA AND IMMIGRATION SERVICE</h3>
           <ul>
-            <Link to={"/tourList"}><li> Tour</li></Link>
-            <li onClick={handleToggle}>Booking</li>
+            <Link to={"/tourList"}><li className='about-link'> Tour</li></Link>
+            <li onClick={handleToggle} className='about-link'>Booking</li>
+            </ul>  
             {isOpen && (
               <div className='about-details-drop'> 
-             
-              <div>
               <h4>DIAMOND VISA AND  IMMIGRATION SERVICES</h4>
                   <p>- Visa applications (tourist, student, work, family)</p>
                   <p>- Immigration services (permanent residence, citizenship)</p>
@@ -37,22 +36,19 @@ const AboutUs = () => {
                     <Link to={"https://wa.me/message/NL7UY3M3Q6ZOG1"}><li className='drop-li' style={{marginLeft:'80px'}}>Chat with Us</li></Link>
                     <Link to={"mailto: info@diamondvisa.com"}><li className='drop-li'>Send Mail</li></Link>
                   </ul>
-                  </div>
+      
                 </div>
             )}
-          </ul>      
+              
         </div>
 
-        
-        <h1>About Us</h1>
-        <p><b>
-Welcome to Diamond Visa and immigration services:</b> Your trusted partner for simplified and expedited visa processing, offering comprehensive and reliable services.
-</p>
+        <p className='about-paragraph'><b>Welcome to Diamond Visa and immigration services:</b> Your trusted partner for simplified and expedited visa processing, offering comprehensive and reliable services.
+       </p>
       </div>
 
 
       {/* ------------------About staff----------------- */}
-     <section>
+     <section className='about-staff-section'>
 
       <h3><b>Diamond Visa and immigration services</b>,
          We are your trusted partner for achieving your travel dreams, offering professional, efficient, and personalized visa services. Reach out to us for expert guidance and support.</h3>
