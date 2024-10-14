@@ -1,7 +1,5 @@
 import React from 'react'
 import Background from '../componets/Background'
-import Footer from '../componets/Footer';
-import NewsletterComponent from '../componets/NewsletterComponent';
 import "./Home.css"
 
 const Home = () => {
@@ -11,10 +9,9 @@ const Home = () => {
        <Background/>
       
       <div className="small-screen-feedback">
-          <NewsletterComponent/>
           </div>
           
-       <Footer/>
+     
       
       
     </div>

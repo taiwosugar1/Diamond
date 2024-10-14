@@ -1,239 +1,141 @@
-.navbar {
-    position: sticky;
+/* Reset default padding/margin */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    position: fixed;
     top: 0;
     z-index: 1000;
-    width: 100%;
-    margin: 0;
-}
-.header {
+  }
+  
+  .navbar-container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-evenly;
-    z-index: 1000;
-    background: white;
-    width: 100%;
-    height: 60px;
-    box-shadow: 0px 5px 5px grey;
-}
-
-.header .logo {
-    display: flex;
-    align-items: center;
-    margin-left: 15px;
-}
-
-.header .logo img{
-    width: 50px;
-    height: 50px;
-}
-.header .mobile-icon {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-}
-.header ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.header ul li {
-    color: rgb(86, 84, 84);
-    font-size: 20px;
-    cursor: pointer;
-    margin: 10px;
-    padding: 3px 8px;
-    border-radius: 5px;
-    list-style: none;
-    font-weight: 500;
-    font-family: "roboto";
-    border-bottom: none;
-}
-.header ul li:hover {
-    color: gold;
-    text-decoration: underline;
-}
-
-
-.contact-details {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 400px;
-    height: 700px;
-    background: white;
-    z-index: 2000;
-    left: 0;
-    top: 60px;
-    border: 0.5px solid grey;
-    position: absolute;
-}
-.contact-details ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 40px;
-}
-.contact-details h3{
-    width: 90%;
-    margin: 3px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.contact-details p{
-    width: 80%;
-}
-
-.contact-details ul li a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2px 3px;
-    margin: 5px;
-    color: #666;
-    box-shadow: 1px 1px 3px green;
-}
-.contact-details ul li a:hover{
-    background: rgb(222, 220, 220);
-}
-.hotel {
+    padding: 1rem 2rem;
     position: relative;
-    
-}
-.hotel ul {
+  }
+  
+  .logo img {
+    width: 60px;
+    cursor: pointer;
+  }
+  
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-menu li {
+    cursor: pointer;
+  }
+  
+  .nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .nav-menu li:hover a {
+    color: #f39c12;
+  }
+  
+  /* Dropdown styling */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    display: none;
     position: absolute;
     top: 100%;
-    left: -40px;
-    background-color: white;
-    padding: 10px;
-    border: 1px solid #ddd;
-    display: none;
-}
-.hotel:hover ul {
-    width: 120px;
+    left: 0;
+    background-color: #444;
+    padding: 0.5rem;
+    list-style: none;
+    z-index: 100;
+  }
+  
+  .dropdown:hover .dropdown-menu {
     display: block;
-    background: rgb(244, 240, 240);
-}
-.hotel ul li {
+  }
+  
+  .dropdown-menu li {
+    padding: 0.5rem;
+  }
+  
+  .dropdown-menu li a {
+    color: white;
+  }
+  
+  .dropdown-menu li:hover a {
+    color: #f39c12;
+  }
+  
+  /* Mobile View */
+  .mobile-icon {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .nav-menu.active {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-}
-.hotel ul li:hover{
-    background: #313131;
-    color: aqua;
-    border-radius: 1px;
-}
-
-.hotel ul li:last-child {
-    border-bottom: none;
-}
-.media {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    height: 60vh;
+    width: 100%;
+    background-color: #333;
+    padding: 1rem;
+    transition: top 1.5s ease; 
+  }
+  
+  .social-icons {
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-@media screen and (max-width: 768px) {
-    .header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        z-index: 1000;
-        background: white;
-        width: 100%;
-        height: 60px;
-        box-shadow: 0px 5px 5px grey;
-        
+    gap: 1rem;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .nav-menu {
+      display: none;
+      flex-direction: column;
     }
-    .header .mobile-icon {
-        display: block;
+
+    .nav-menu li{
+        margin: 20px;
+    }
+  
+    .mobile-icon {
+      display: block;
+      position: absolute;
+      top: 15px;
+      right: 10px;
+
+    }
+  
+    .logo img {
+      width: 40px;
+    }
+
+    .social-icons{
         margin-right: 50px;
     }
-    .header ul.nav-details {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 48px;
-        height: 300px;
-        right: 0;
-        width: 100%;
-        background: white;
-        padding: 10px;
-        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
-    }
-    .header ul li{
-        border-bottom: 1px solid grey;
-    }
-    .header ul.nav-details.open {
-        display: flex;
-    }
-    .header ul.nav-details li {
-        margin: 10px 0;
-        width: 100%;
-        align-items: left;
-        font-size: 18px;
-        text-decoration: none;
-    }   
-    .header .media {
-        display: none;
-    }
-   
-    .contact-details {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 80%;
-        height: 600px;
-        background: white;
-        border: 1px solid grey;
-        z-index: 2000;
-        margin-left: 50px;
-        right: 0;
-        top: 100px;
-        position: absolute;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
-    }
-   
-    .contact-details p{
-        width: 80%;
-        color: #353535;
-        font-family: "roboto";
-    }
-    .contact-details ul{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: Row;
-        margin-right: 40px;
-    }.contact-details ul li a{
-        padding: 8px 20px;
-    }
-   
-    .hotel:hover div ul {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        background: white;
-        top: 40px;
-        left: 25%;
-        width: 250px;
-        border-radius: 5px;
-        border: 0.5px solid grey;
-        height: 270px;
-        z-index: 999;
-    }
-    .hotel div ul li{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        color: #0d2041;
-        border-bottom: 1px solid grey;
-    }
-    
-}
+  }
+  

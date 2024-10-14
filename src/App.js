@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter as  Router, Route, Routes, useLocation } from 'react-router-dom';
 import './App.css';
 import Navbar from './componets/Navbar';
 import Home from './pages/Home';
@@ -13,6 +13,8 @@ import { useEffect, useState } from 'react';
 // index.js or App.js
 import '@fontsource/montserrat'; // Defaults to weight 400
 import '@fontsource/poppins'; // Defaults to weight 400
+import Footer from './componets/Footer';
+import Contact from './pages/Contact';
 
 
 const ScrollToTop = () => {
@@ -59,7 +61,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <Router>
 
       <ScrollToTop /> {/* Ensure pages start at the top when navigating */}
 
@@ -89,11 +91,13 @@ const App = () => {
           <Route path='/tour/:id' element={<Tour/>}/>
           <Route path="/tourList" element={<TourList/>}/>
          <Route path='/about-us' element={<AboutUs/>}/>
+         <Route path='/contact' element={<Contact/>}/>
          
          </Routes>
+         <Footer/>
         
          
-     </BrowserRouter>
+     </Router>
       
     </div>
   );

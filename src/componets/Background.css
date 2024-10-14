@@ -1,211 +1,191 @@
+/* Container for background video and content */
+.bg-home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
 
+.background-video video {
+  width: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+}
 
-.homeNav {
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Overlay with semi-transparent black */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  animation: fadeInOverlay 1s ease-out;
+}
+
+/* Animation for overlay fade-in effect */
+@keyframes fadeInOverlay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hero-container {
   display: flex;
   justify-content: space-between;
-  margin: 30px 0px;
-  padding: 20px;
-  background: transparent;
-  width: 80%;
-  height: auto;
-  border-bottom: 2px solid grey;
-  
-}
-
-
-.background-video {
-  top: 50px;
-  left: 0;
-  width: 100%;
-  height: 750px;
-  z-index: -1;
- display: flex;
- align-items: center;
- justify-content: center;
-}
-
-.background-video video {
-  position: absolute;
-  top: 60px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* Filter: grayscale(100%); */
-  animation: slowMotion 300s infinite linear;
-  
-}
-
-
-.overlay{
-  position: absolute;
-  top: 60px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-   background: linear-gradient(rgba(39, 11, 96, 0.3), rgba(39, 11, 96, 0.3)); 
- 
-}
-.hero-container{
-  display: flex;
-  width: 100%;
   align-items: center;
-  justify-content: space-evenly;
-  flex-direction: row;
-}
-.hero{
-  display: flex;
-  justify-content: center;
-  margin-top: 100px;
-  align-items: center;
-  text-align: left;
-  flex-direction: column;
+  text-align: center;
   color: white;
-  padding: 20px 50px;
-
-}
-.hero h1{
-  font-size: 45px;
-  text-shadow: 1px 1px 2px black;
-  text-transform: uppercase;
+  z-index: 2;
 }
 
-.hero p{
-  color: white;
-  font-family: "roboto";
-  font-weight: 800;
-  text-shadow: 1px 1px 2px black;
-}
-.hero div{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-.heroBox{
-  background: orange;
-width: 300px;
-height: 300px;
-transition: background  0.5s;
-margin-left: -50px;
-}
-.heroBox img{
-  width: 300px;
-  height: 300px;
-  translate: -5px -5px 0;
-  cursor: pointer;
-  
+.hero {
+  margin-bottom: 2rem;
+  animation: slideUpText 1.5s ease-in-out;
 }
 
-.datch{
-width: 5px;
-height: 1px;
-margin: 10px;
-background: grey;
-}
-.tags{
-padding-left: -50px;
-color: grey;
-}
-.tags p{
-font-size: 12px;
-}
-
-/* ------------------tab screen---------------------- */
-
-@media screen and (max-width: 768px){
-.hero-container{
-  display: flex;
-  width: 100%;
-  height: 550px;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.background-video {
-  top: 50px;
-  left: 0;
-  width: 100%;
-  height: 600px;
-  z-index: -1;
-  
+/* Slide-up animation for the text */
+@keyframes slideUpText {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
   }
-  .overlay{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    top: 50px;
-    left: 0;
-    
-    }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
-
-/* -------------Mobile screen------------- */
-
-@media screen and (max-width: 480px) {
-
-
-.background-video {
-top: 50;
-left: 0;
-width: 100%;
-height: 400px;
-z-index: -1;
-
+.hero h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
 }
-.background-video video {
-  position: absolute;
-  top: 60px;
-  left: 0;
+
+.tags {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  animation: fadeInText 2s ease-in;
+}
+
+/* Fading animation for the description */
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* HeroBox Styling */
+.heroBox {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+  position: relative;
+  animation: imageFadeIn 2s ease-in-out;
+}
+
+.heroBox img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* Filter: grayscale(100%); */
-  animation: slowMotion 300s infinite linear;
-  
+  border-radius: 15px;
+  animation: zoomIn 1.5s ease-in-out;
+  transition: transform 0.3s ease;
 }
-.overlay{
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-position: relative;
-top: 80px;
-left: 0;
-width: 100%;
-height: 100%;
-/* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 5)); */
+
+.heroBox img:hover {
+  transform: scale(1.05);
 }
-.hero h1{
-font-size: 25px;
-text-shadow: 1px 1px 2px black;
+
+/* Image fade-in animation */
+@keyframes imageFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-.hero div{
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
+
+/* Image zoom animation */
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
 }
-.hero-container{
-display: flex;
-width: 100%;
-align-items: center;
-justify-content: center;
-flex-direction: column;
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .bg-home{
+    height: 150vh;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .tags {
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+  }
 }
-.heroBox{
-background: orange;
-width: 200px;
-height: 150px;
-transition: background  0.5s;
+
+@media (max-width: 768px) {
+  .bg-home{
+    height: 100vh;
+  }
+
+  .hero-container{
+    flex-direction: column;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    max-width: 600px;
+  }
+
+  .heroBox {
+    max-width: 350px;
+    height: 200px;
+  }
 }
-.heroBox img{
-width: 200px;
-height: 150px;
-translate: -5px -5px 0;
-cursor: pointer;
-}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+    max-width: 400px;
+  }
+
+  .heroBox {
+    max-width: 300px;
+    height: 180px;
+  }
 }

@@ -1,44 +1,41 @@
 import React from 'react';
-import "./Hotel.css";
-import { hotelList } from '../componets/hotelList.js';
+import './Hotel.css';
 import { Link, useParams } from 'react-router-dom';
+import { hotelList } from '../componets/hotelList';
 
 const Hotel = () => {
   const { Id } = useParams();
   const hotel = hotelList.find((hotel) => hotel.id === parseInt(Id));
 
   if (!hotel) {
-    return <div>Hotel not found</div>;
+    return <div className="not-found">Hotel not found</div>;
   }
 
   return (
-    <div>
-      <div className="tour-button">
-        <Link to="/hotels"><button>Back to Hotels</button></Link>
-        <Link to="/"><button>Home</button></Link>
-        <Link to="/about-us"><button>About</button></Link>
-      </div>
-      <hr style={{ color: "white", width: "100%" }} />
-      <br />
+    <div className='hotel-container'>
 
-      <div className='tour-detail'>
+      <hr className="divider" />
+
+      <div className='hotel-detail'>
         <h1>{hotel.name}</h1>
-        <div className='tour-details-container'>
-          <img src={hotel.image} alt={hotel.name} />
-          <div className='tour-description'>
-            <p className='info'>More information about </p><h3>{hotel.name}</h3>
-            <p className='description'>{hotel.description}</p>
-            <a href="https://wa.me/message/NL7UY3M3Q6ZOG1"><button className="book-hotel">Book this</button></a>
+        <div className='hotel-details-wrapper'>
+          <img src={hotel.image} alt={hotel.name} className="hotel-image" />
+          <div className='hotel-description'>
+            <h3>About {hotel.name}</h3>
+            <p>{hotel.description}</p>
+            <a href="https://wa.me/message/NL7UY3M3Q6ZOG1">
+              <button className="book-hotel">Book this</button>
+            </a>
           </div>
         </div>
       </div>
 
       <div className="hotel-footer">
-        <ul>
+        <ul className="social-links">
           <li><a href="https://www.facebook.com/">Facebook</a></li>
           <li><a href="https://www.instagram.com/">Instagram</a></li>
           <li><a href="https://www.twitter.com/">Twitter</a></li>
-          <li><a href="https://www.youtube.com/">Youtube</a></li>
+          <li><a href="https://www.youtube.com/">YouTube</a></li>
         </ul>
       </div>
     </div>

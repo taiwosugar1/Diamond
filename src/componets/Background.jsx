@@ -5,12 +5,6 @@ import './Background.css'
 
 import backgroundVideo from '../Asset/backgroundVideo.mp4'
 
-
-
-
-
-
-
 const Background = () => {
   const [imageIndex, setImageIndex] = useState(0);
 
