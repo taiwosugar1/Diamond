@@ -2,7 +2,12 @@
 .footer {
     background-color: #333;
     color: #fff;
-    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 50px 0;
     text-align: center;
   }
   
@@ -12,6 +17,7 @@
     justify-content: space-between;
     align-items: flex-start;
     gap: 2rem;
+    width: 90%;
   }
   
   .footer-ul {
