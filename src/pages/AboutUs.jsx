@@ -103,7 +103,7 @@ const AboutUs = () => {
             </div>
            
         </div>
-        <p className="paragraph">Copyright 2024 © <b>Diamond Visa and immigration services </b>All rights reserved.</p>
+        
       </footer>
     </div>
   );

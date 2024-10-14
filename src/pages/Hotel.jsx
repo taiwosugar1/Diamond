@@ -12,11 +12,11 @@ const Hotel = () => {
   }
 
   return (
-    <div className='hotel-container'>
+    <div className='single-hotel-container'>
 
       <hr className="divider" />
 
-      <div className='hotel-detail'>
+      <div className='single-hotel-detail'>
         <h1>{hotel.name}</h1>
         <div className='hotel-details-wrapper'>
           <img src={hotel.image} alt={hotel.name} className="hotel-image" />

@@ -23,6 +23,12 @@
     text-align: center;
     animation: fadeInDown 1.2s ease-in-out;
   }
+  .about-details ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+  }
   .about-link{
     text-decoration: none;
     color: #fff;
@@ -48,6 +54,11 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     animation: fadeIn 0.8s ease-in-out;
     text-align: left;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
   }
   
   .about-details-drop h4 {
@@ -62,6 +73,7 @@
   }
   .drop-ul{
     display: flex;
+    margin-left: -100px;
   }
   .drop-ul .drop-li{
     margin: 10px;
@@ -69,7 +81,7 @@
     color: white;
     padding:10px;
     border: inset;
-    border-radius: 15px;
+    border-radius: 5px;
   }
   .about-paragraph{
     width: 80%;

@@ -1,17 +1,14 @@
-/* General Styles */
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
-  .hotel-container {
+ .single-hotel-container {
     padding: 2rem;
     background-color: #333;
     color: #fff;
     min-height: 100vh;
     text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   
   .button-group {
@@ -42,7 +39,7 @@ body {
     margin: 20px 0;
   }
   
-  .hotel-detail h1 {
+  .single-hotel-detail h1 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     color: #f39c12;

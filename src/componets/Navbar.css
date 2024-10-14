@@ -119,7 +119,11 @@
     }
 
     .nav-menu li{
-        margin: 20px;
+        padding: 20px;
+    }
+
+    .nav-menu li:hover{
+        background: #575757;
     }
   
     .mobile-icon {

@@ -15,19 +15,19 @@ const Hotel = ({ filteredCategory }) => {
   }, [filteredCategory]);
 
   return (
-    <div className='hotel-list'>
+    <div className='hotel-lists'>
 
       <hr className="divider" />
       
       <h1>List of Hotels</h1>
 
-      <div className="hotel-container">
+      <div className="hotels-container">
         {filteredHotels.map((hotel) => (
-          <div key={hotel.id} className="hotel-box">
+          <div key={hotel.id} className="hotels-box">
             <img src={hotel.image} alt={hotel.name} />
-            <div className="hotel-details">
+            <div className="hotels-details">
               <h4>{hotel.name}</h4>
-              <p>Location: <span className="hotel-location">{hotel.location}</span></p>
+              <p>Location: <span className="hotels-location">{hotel.location}</span></p>
               <Link to={`/hotel/${hotel.id}`}>
                 <button className='view-hotel'>View more details</button>
               </Link>
