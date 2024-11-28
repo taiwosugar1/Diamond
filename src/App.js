@@ -8,9 +8,9 @@ import { FaLongArrowAltUp, FaPhone, FaWhatsapp } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 import Footer from './componets/Footer';
 import Contact from './componets/contact/Contact';
-import { AiFillMessage } from 'react-icons/ai';
 import MessageIcon from './componets/MessageIcon';
 import Contact1 from './componets/contact/Contact1';
+import VisaList from './componets/VisaList';
 
 
 const ScrollToTop = () => {
@@ -88,6 +88,8 @@ const App = () => {
          <Route path='/about' element={<AboutUs/>}/>
          <Route path='/contact' element={<Contact/>}/>
          <Route path='/contact1' element={<Contact1/>}/>
+         <Route path="/visa" exact element={<VisaList/>}/>
+         
          
          </Routes>
          <Footer/>
