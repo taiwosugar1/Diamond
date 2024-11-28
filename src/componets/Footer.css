@@ -48,16 +48,26 @@
     transition: color 0.3s ease;
   }
   
-  .footer-ul li a:hover {
+  .footer-ul .vis a:hover {
     color: #f39c12;
   }
   
+  .visa{
+    display: flex;
+    flex-direction: column;
+  }
+
   .visa h3 {
     font-size: 1.5rem;
     color: #ff0000;
     margin-bottom: 1rem;
   }
   
+  .visa .vi{
+    color: white;
+    margin: 7px;
+  }
+
   /* Social Media Icons */
   .footer-media-large-screen {
     display: flex;

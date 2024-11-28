@@ -34,10 +34,9 @@ const Footer = () => {
 
       <div className="footer-ul">
         <ul className='visa'>
-        <Link to={"https://wa.me/message/NL7UY3M3Q6ZOG1"}><h3>VISA</h3></Link>
-          <li>List of Visa</li>
-          <Link to={"/hotel"}><li>Available Hotel</li></Link>
-          <li>Management</li>
+          <h3>DIAMOND VISA</h3>
+          <Link to={"/visa"} className='vi'>List Of Visa</Link>
+          <Link className='vi'>Management</Link>
         </ul>
       </div>
      
