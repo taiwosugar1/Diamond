@@ -40,7 +40,7 @@
     font-family: "Playfair Display", serif;
     font-size: 1.8rem;
     text-align: left;
-    color: #00255c; /* Blue color */
+    color: #00255c;
     line-height: 1.5;
     margin: 10px;
   }
@@ -76,7 +76,7 @@
   }
 
   /* Responsive adjustments */
-  @media (max-width: 480px) {
+  @media (max-width: 600px) {
   
     .image-box {
       margin-left: 0;

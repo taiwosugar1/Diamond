@@ -1,0 +1,45 @@
+/* Fixed Position Container */
+.fixed-message-icon {
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ff0000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: pulse 2s infinite; /* Breathing Effect */
+    box-shadow: 0 0 10px rgba(255, 0, 153, 0.5);
+    border: 3px solid rgba(255, 0, 153, 0.5);
+    border: 6px double rgba(255, 0, 153, 0.8); /* Two-layer border */
+  }
+  
+  /* Icon Style */
+  .message-icon {
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  /* Breathing Effect for Border */
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 10px rgba(255, 0, 153, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 30px rgba(255, 0, 153, 0.8);
+    }
+    100% {
+      box-shadow: 0 0 10px rgba(255, 0, 153, 0.5);
+    }
+  }
+  
+  /* Hover Effect */
+  .fixed-message-icon:hover {
+    cursor: pointer;
+    animation: none; /* Stops the breathing animation */
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.9);
+  }
+  
