@@ -10,12 +10,12 @@
   /* The moving train */
   .moving-train {
     display: flex;
-    gap: 50px; /* Spacing between the words */
+    gap: 50px;
     animation: train-scroll 40s linear infinite;
     font-family: "Playfair Display", serif;
     font-size: 7.5rem;
     font-weight: bold;
-    color: #ff0000; /* Blue color for the text */
+    color: #ff0000; 
     white-space: nowrap; 
   }
   
@@ -37,7 +37,7 @@
       transform: translateX(100%); /* Start off-screen on the right */
     }
     to {
-      transform: translateX(-400%); /* End off-screen on the left */
+      transform: translateX(-350%); /* End off-screen on the left */
     }
   }
   
@@ -46,5 +46,22 @@
     .moving-train {
       font-size: 5.6rem; /* Adjust font size for smaller screens */
     }
+    
+    @keyframes train-scroll {
+      to {
+        transform: translateX(-300%); /* End off-screen on the left */
+      }
+    } 
+    
+  }
+
+  @media (max-width: 480px) {
+
+    @keyframes train-scroll {
+      to {
+        transform: translateX(-500%); /* End off-screen on the left */
+      }
+    } 
+    
   }
   
