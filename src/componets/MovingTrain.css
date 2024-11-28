@@ -44,7 +44,7 @@
   /* Media Query for Mobile Screens */
   @media (max-width: 768px) {
     .moving-train {
-      font-size: 1.2rem; /* Adjust font size for smaller screens */
+      font-size: 2.6rem; /* Adjust font size for smaller screens */
     }
   }
   
