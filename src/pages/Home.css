@@ -68,6 +68,8 @@
   
     .image-box {
       margin-left: 0;
+      width: 95%
+
     }
   
     .content-box {
@@ -75,13 +77,5 @@
     }
   }
 
-  /* Responsive adjustments */
-  @media (max-width: 600px) {
-  
-    .image-box {
-      margin-left: 0;
-      width: 95%
-    }
-  
-  }
+ 
   

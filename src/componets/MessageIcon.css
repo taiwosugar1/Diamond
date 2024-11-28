@@ -11,35 +11,38 @@
     align-items: center;
     justify-content: center;
     z-index: 1000;
-    animation: pulse 2s infinite; /* Breathing Effect */
-    box-shadow: 0 0 10px rgba(255, 0, 153, 0.5);
-    border: 3px solid rgba(255, 0, 153, 0.5);
-    border: 6px double rgba(255, 0, 153, 0.8); /* Two-layer border */
+    animation: blink-border 1.5s infinite; /* Blinking Border Animation */
+    border: 4px solid transparent; /* Outer Border Layer */
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.6); /* Subtle Glow */
   }
   
   /* Icon Style */
   .message-icon {
-    font-size: 24px;
+    font-size: 20px;
     color: #fff;
   }
   
-  /* Breathing Effect for Border */
-  @keyframes pulse {
+  /* Keyframes for Blinking Double Border */
+  @keyframes blink-border {
     0% {
-      box-shadow: 0 0 10px rgba(255, 0, 153, 0.5);
+      border-color: rgba(255, 255, 255, 1); /* White Border Visible */
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
     }
     50% {
-      box-shadow: 0 0 30px rgba(255, 0, 153, 0.8);
+      border-color: rgba(255, 0, 0, 1); /* Inner Red Border Visible */
+      box-shadow: 0 0 20px rgba(255, 0, 0, 1); /* Intense Glow */
     }
     100% {
-      box-shadow: 0 0 10px rgba(255, 0, 153, 0.5);
+      border-color: rgba(255, 255, 255, 1); /* White Border Visible Again */
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
     }
   }
   
   /* Hover Effect */
   .fixed-message-icon:hover {
     cursor: pointer;
-    animation: none; /* Stops the breathing animation */
-    box-shadow: 0 0 15px rgba(255, 165, 0, 0.9);
+    animation: none; /* Stops the blinking animation */
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.9); /* Enhanced Glow */
+    border: 4px solid #ff7300; /* Orange border on hover */
   }
   
