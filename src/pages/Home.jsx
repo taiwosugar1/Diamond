@@ -19,7 +19,7 @@ const Home = () => {
       </div>
       <div className="image-box">
         <img
-          src="/images/ad.png"
+          src="/images/ac.png"
           alt="About our company"
           className="about-image"
         />

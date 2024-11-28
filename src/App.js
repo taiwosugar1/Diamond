@@ -7,9 +7,10 @@ import AboutUs from './pages/AboutUs';
 import { FaLongArrowAltUp, FaPhone, FaWhatsapp } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 import Footer from './componets/Footer';
-import Contact from './pages/Contact';
+import Contact from './componets/contact/Contact';
 import { AiFillMessage } from 'react-icons/ai';
 import MessageIcon from './componets/MessageIcon';
+import Contact1 from './componets/contact/Contact1';
 
 
 const ScrollToTop = () => {
@@ -76,7 +77,7 @@ const App = () => {
                     <h6><FaWhatsapp/><br/>Book Now</h6> 
                 </div></a> */}
 
-                <a href='https://wa.me/message/NL7UY3M3Q6ZOG1'> 
+                <a href='/contact'> 
                  <MessageIcon/>
                </a>
 
@@ -86,6 +87,7 @@ const App = () => {
           <Route path="/" exact element={<Home/>}/>
          <Route path='/about' element={<AboutUs/>}/>
          <Route path='/contact' element={<Contact/>}/>
+         <Route path='/contact1' element={<Contact1/>}/>
          
          </Routes>
          <Footer/>

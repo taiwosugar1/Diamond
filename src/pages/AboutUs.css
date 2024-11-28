@@ -8,7 +8,7 @@ body {
 .about-hero {
   position: relative;
   height: 60vh;
-  background: url("https://www.istockphoto.com/photo/pilots-in-the-cockpit-gm451410811-29531142") no-repeat center center/cover;
+  background: url(../../public/images/ad.png) no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,14 +1,19 @@
 import React from "react";
 import "./Advert.css";
+import { LiaPlaneDepartureSolid } from "react-icons/lia";
+import { GiAutoRepair } from "react-icons/gi";
+import { GrUserExpert } from "react-icons/gr";
+import { FaLightbulb, FaAward } from "react-icons/fa6";
+import { MdBookmarkAdded } from "react-icons/md";
 
 const Advert = () => {
   const adverts = [
-    { title: "Faster & Reliable", icon: "🚀" },
-    { title: "Executant", icon: "🛠️" },
-    { title: "Accurate & Expert Advice", icon: "🎯" },
-    { title: "Immigration Process Responsibility", icon: "💡" },
-    { title: "Legal Immigration", icon: "📜" },
-    { title: "Success", icon: "🏆" },
+    { title: "Faster & Reliable", icon: <LiaPlaneDepartureSolid/> },
+    { title: "Executant", icon: <GiAutoRepair /> },
+    { title: "Accurate & Expert Advice", icon: <GrUserExpert /> },
+    { title: "Immigration Process Responsibility", icon: <FaLightbulb /> },
+    { title: "Legal Immigration", icon: <MdBookmarkAdded /> },
+    { title: "Success", icon: <FaAward /> },
   ];
 
   return (

@@ -4,8 +4,8 @@ import "./Hero.css";
 const Hero = () => {
   return (
     <section className="hero">
-      <div className="hero-content">
-        <p className="hero-subtext">
+      <div className="herro-content">
+        <p className="herro-subtext">
           Gateway to Global Opportunities
         </p>
         <h1 className="herro-heading">

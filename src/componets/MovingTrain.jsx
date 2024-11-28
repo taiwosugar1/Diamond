@@ -12,6 +12,8 @@ const MovingTrain = () => {
         <span className="sp1">Advice</span>
         <span className="sp2">/</span>
         <span className="sp2">Easy</span>
+        <span className="sp1">/</span>
+        <span className="sp1">Processing</span>
       </div>
     </div>
   );

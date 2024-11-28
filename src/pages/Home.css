@@ -48,7 +48,7 @@
   /* Image box styling */
   .image-box {
     position: relative;
-    width: 300px;
+    width: 600px;
     height: 300px;
     margin-bottom: -150px; /* Pull the image halfway */
     z-index: 1;

@@ -4,6 +4,16 @@ import "./Country.css";
 const Country = () => {
   const countries = [
     {
+        name: "Nigeria",
+        flag: "https://flagcdn.com/ng.svg",
+        description: "The Giant of Africa, rich in culture and diversity.",
+      },
+      {
+        name: "Ghana",
+        flag: "https://flagcdn.com/gh.svg",
+        description: "The gateway to Africa with rich culture and heritage.",
+      },
+    {
       name: "United States",
       flag: "https://flagcdn.com/us.svg",
       description: "Land of opportunities and innovation.",
