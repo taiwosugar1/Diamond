@@ -5,14 +5,7 @@ import Navbar from './componets/Navbar';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import { FaLongArrowAltUp, FaPhone, FaWhatsapp } from 'react-icons/fa';
-import Tour from './pages/Tour';
-import TourList from './pages/TourList';
-import Hotel from './pages/Hotel';
-import Hotels from './pages/Hotels';
 import { useEffect, useState } from 'react';
-// index.js or App.js
-import '@fontsource/montserrat'; // Defaults to weight 400
-import '@fontsource/poppins'; // Defaults to weight 400
 import Footer from './componets/Footer';
 import Contact from './pages/Contact';
 
@@ -29,10 +22,7 @@ const ScrollToTop = () => {
 
 const App = () => {
   const [showScrollButton, setShowScrollButton] = useState(false); 
-  const [filteredCategory, setFilteredCategory] = useState('');
-  const filterHotelsByCategory = (category) => {
-    setFilteredCategory(category);
-  };
+  
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 200) {
@@ -73,7 +63,7 @@ const App = () => {
           )}
 
 
-          <Navbar filterHotelsByCategory={filterHotelsByCategory} />
+          <Navbar  />
              
                 <a href='tel: +1-614-707-6245'>
                  <div className='side-box'>
@@ -85,12 +75,8 @@ const App = () => {
                 </div></a>
 
          <Routes>
-          <Route path="/hotels" element={<Hotels filteredCategory={filteredCategory} />}/>
           <Route path="/" exact element={<Home/>}/>
-          <Route path='hotel/:Id' element={<Hotel/>}/>
-          <Route path='/tour/:id' element={<Tour/>}/>
-          <Route path="/tourList" element={<TourList/>}/>
-         <Route path='/about-us' element={<AboutUs/>}/>
+         <Route path='/about' element={<AboutUs/>}/>
          <Route path='/contact' element={<Contact/>}/>
          
          </Routes>

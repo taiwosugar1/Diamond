@@ -1,0 +1,50 @@
+/* Container for the moving train */
+.train-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden; 
+    background: #f7f7f7;
+    padding: 10px 0;
+  }
+  
+  /* The moving train */
+  .moving-train {
+    display: flex;
+    gap: 50px; /* Spacing between the words */
+    animation: train-scroll 20s linear infinite;
+    font-family: "Playfair Display", serif;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: #ff0000; /* Blue color for the text */
+    white-space: nowrap; 
+  }
+  
+  /* Individual words */
+  .moving-train .sp1 {
+    background: #f7f7f7; 
+    color: #ff0000; 
+    padding: 25px;
+  }
+  .moving-train .sp2 {
+    background: transparent; 
+    color: grey; 
+    padding: 25px;
+  }
+  
+  /* Animation for the train */
+  @keyframes train-scroll {
+    from {
+      transform: translateX(100%); /* Start off-screen on the right */
+    }
+    to {
+      transform: translateX(-100%); /* End off-screen on the left */
+    }
+  }
+  
+  /* Media Query for Mobile Screens */
+  @media (max-width: 768px) {
+    .moving-train {
+      font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+  }
+  

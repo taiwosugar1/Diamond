@@ -1,0 +1,64 @@
+/* Advert Container */
+.advert-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+  
+  /* Individual Advert Cards */
+  .advert-card {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  .advert-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    background: #ff0000;
+    color: white;
+  }
+  
+  .advert-card:hover .icon {
+    background: #fff;
+    color: #ff0000;
+    transform: scale(1.2);
+  }
+  
+  /* Icon Styling */
+  .icon {
+    font-size: 40px;
+    background: #00255c;
+    color: white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    margin-bottom: 10px;
+  }
+  
+  /* Card Title */
+  .title {
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    color: #00255c;
+    transition: color 0.3s;
+  }
+  

@@ -1,7 +1,7 @@
 /* General Footer Styling */
 .footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #020247;
+    color: #e4e0e0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,7 +29,7 @@
   .footer-ul h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #f39c12;
+    color: #ece8e8;
   }
   
   .footer-ul ul {
@@ -54,7 +54,7 @@
   
   .visa h3 {
     font-size: 1.5rem;
-    color: #f39c12;
+    color: #ff0000;
     margin-bottom: 1rem;
   }
   
@@ -81,7 +81,7 @@
   }
   
   .large-screen-feedback h3 {
-    color: #f39c12;
+    color: #ff0000;
   }
   
   .large-screen-feedback input[type="email"] {
@@ -93,7 +93,7 @@
   
   .large-screen-feedback button {
     padding: 0.7rem 1.2rem;
-    background-color: #f39c12;
+    background-color: #ff0000;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -111,9 +111,9 @@
     font-size: 1rem;
     color: #ddd;
   }
-  
+
   .home-footer-under-large b {
-    color: #f39c12;
+    color: #ff0000;
   }
   
   /* Media Queries for Responsiveness */

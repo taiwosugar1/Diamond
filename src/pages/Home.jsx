@@ -1,12 +1,18 @@
 import React from 'react'
-import Background from '../componets/Background'
 import "./Home.css"
+import Hero from '../componets/Hero'
+import Advert from '../componets/Advert'
+import MovingTrain from '../componets/MovingTrain'
 
 const Home = () => {
   return (
     <div className='home'>
+      <Hero/>
+      <MovingTrain/>
+      <Advert/>
+      
 
-       <Background/>
+       {/* <Background/> */}
       
       <div className="small-screen-feedback">
           </div>
