@@ -12,7 +12,7 @@
     /* Add background image with gradient overlay */
     background:
     linear-gradient(rgba(0, 37, 92, 0.9), rgba(12, 0, 92, 0.9)),
-      url("https://images.unsplash.com/photo-1617758387451-79bcae2d86eb?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center/cover no-repeat;
+      url(../../public/images/hero.png)center/cover no-repeat;
   }
   
   /* Hero Content */
@@ -137,6 +137,13 @@
   
   /* Responsive Design */
   @media (max-width: 768px) {
+    .hero{
+      height: 65vh;
+    }
+
+    .hero-heading{
+      font-size: 2rem;
+    }
     .hero-heading {
       font-size: 2.5rem;
     }

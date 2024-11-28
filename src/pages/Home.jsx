@@ -3,6 +3,7 @@ import "./Home.css"
 import Hero from '../componets/Hero'
 import Advert from '../componets/Advert'
 import MovingTrain from '../componets/MovingTrain'
+import Country from '../componets/Country'
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Hero/>
       <MovingTrain/>
       <Advert/>
+      <Country/>
       
 
        {/* <Background/> */}
