@@ -10,6 +10,21 @@ const Home = () => {
     <div className='home'>
       <Hero/>
       <MovingTrain/>
+      <div className="about-ssection">
+      <div className="content-box">
+        <p className="abbout-title">// ABOUT OUR COMPANY //</p>
+        <h2 className="abbout-heading">
+          Experts In Professional Immigration & Visa Processing
+        </h2>
+      </div>
+      <div className="image-box">
+        <img
+          src="/images/ad.png"
+          alt="About our company"
+          className="about-image"
+        />
+      </div>
+    </div>
       <Advert/>
       <Country/>
       

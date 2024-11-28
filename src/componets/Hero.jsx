@@ -8,7 +8,7 @@ const Hero = () => {
         <p className="hero-subtext">
           Gateway to Global Opportunities
         </p>
-        <h1 className="hero-heading">
+        <h1 className="herro-heading">
           Your Trusted Immigration & Visa Partner
         </h1>
         <button className="hero-button">Get Started</button>

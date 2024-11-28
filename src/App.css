@@ -1,3 +1,21 @@
+:root {
+  
+  --body-font-family: "DM Sans", sans-serif;
+  --heading-font-family: "Playfair Display", serif;
+  --body-font-size: 1rem;
+  --body-font-weight: 400;
+  --body-font-bold: 600;
+  --text-color: #5d666f;
+  --link-color: #fd413b;
+  --link-hover-color: #5b8c51;
+  --entry-meta-color: #819291;
+  --headings: #00255c;
+  --btn-font-size: 14px;
+  --theme-light-background: #f4f5f8;
+  --mobile-menu-item-indicator-bg-color: var(--theme-color2);
+  --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+}
+
 .App {
   text-align: center;
 }
@@ -75,20 +93,4 @@ button, a{
   }
 }
 
-:root {
-  
-  --body-font-family: "DM Sans", sans-serif;
-  --heading-font-family: "Playfair Display", serif;
-  --body-font-size: 1rem;
-  --body-font-weight: 400;
-  --body-font-bold: 600;
-  --text-color: #5d666f;
-  --link-color: #fd413b;
-  --link-hover-color: #5b8c51;
-  --entry-meta-color: #819291;
-  --headings: #00255c;
-  --btn-font-size: 14px;
-  --theme-light-background: #f4f5f8;
-  --mobile-menu-item-indicator-bg-color: var(--theme-color2);
-  --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
-}
+
