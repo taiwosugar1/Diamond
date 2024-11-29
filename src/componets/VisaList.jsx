@@ -1,46 +1,55 @@
 import React from "react";
+import { FaPlane, FaGraduationCap, FaBriefcase, FaBusinessTime, FaHome, FaCoins, FaAddressCard, FaHeartbeat } from "react-icons/fa";
 import "./VisaList.css";
 
 const visas = [
   {
     type: "Tourist Visa",
     description: "Perfect for those who want to explore and travel.",
-    icon: "fas fa-plane",
+    icon: <FaPlane />,
+    backgroundImage: "/images/st2.png",
   },
   {
     type: "Student Visa",
     description: "For those pursuing education in top institutions abroad.",
-    icon: "fas fa-graduation-cap",
+    icon: <FaGraduationCap />,
+    backgroundImage: "/images/st1.png",
   },
   {
     type: "Work Visa",
     description: "Opportunities to work legally in advanced economies.",
-    icon: "fas fa-briefcase",
+    icon: <FaBriefcase />,
+    backgroundImage: "/images/st3.png",
   },
   {
     type: "Business Visa",
     description: "For entrepreneurs and business trips.",
-    icon: "fas fa-business-time",
+    icon: <FaBusinessTime />,
+    backgroundImage: "/images/st4.png",
   },
   {
     type: "Family Visa",
     description: "Reunite with loved ones abroad.",
-    icon: "fas fa-home",
+    icon: <FaHome />,
+    backgroundImage: "/images/st5.png",
   },
   {
     type: "Investor Visa",
     description: "For investors looking to grow their wealth overseas.",
-    icon: "fas fa-coins",
+    icon: <FaCoins />,
+    backgroundImage: "/images/st6.png",
   },
   {
     type: "Permanent Residency",
     description: "Live and settle permanently in a foreign country.",
-    icon: "fas fa-address-card",
+    icon: <FaAddressCard />,
+    backgroundImage: "/images/st7.png",
   },
   {
     type: "Medical Visa",
     description: "Access world-class healthcare facilities abroad.",
-    icon: "fas fa-heartbeat",
+    icon: <FaHeartbeat />,
+    backgroundImage: "/images/st8.png",
   },
 ];
 
@@ -50,10 +59,12 @@ const VisaList = () => {
       <h2 className="visa-list-heading">Our Visa Services</h2>
       <div className="visa-grid">
         {visas.map((visa, index) => (
-          <div key={index} className="visa-card">
-            <div className="visa-icon">
-              <i className={visa.icon}></i>
-            </div>
+          <div
+            key={index}
+            className="viisa-card"
+            style={{ backgroundImage: `url(${visa.backgroundImage})` }}
+          >
+            <div className="visa-icon">{visa.icon}</div>
             <h3 className="visa-title">{visa.type}</h3>
             <p className="visa-description">{visa.description}</p>
           </div>
