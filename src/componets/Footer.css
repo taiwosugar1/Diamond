@@ -135,7 +135,8 @@
   
     .footer-media-large-screen {
       justify-content: center;
-      gap: 1rem;
+      font-size: 1.5rem;
+      gap: 0.8rem;
     }
   
     .footer-ul {
@@ -144,48 +145,12 @@
     }
   
     .footer-ul h3 {
-      font-size: 1.2rem;
-    }
-  
-    .footer-ul li {
-      font-size: 0.9rem;
-    }
-  
-    .large-screen-feedback {
-      text-align: center;
-      margin-top: 2rem;
-    }
-  
-    .large-screen-feedback input[type="email"] {
-      width: 100%;
-      margin-bottom: 1rem;
-    }
-  
-    .large-screen-feedback button {
-      width: 100%;
-    }
-  
-    .home-footer-under-large {
-      font-size: 0.9rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .footer-media-large-screen {
-      font-size: 1.5rem;
-      gap: 0.8rem;
-    }
-  
-    .footer-ul h3 {
       font-size: 1.1rem;
     }
   
-    .footer-ul li {
-      font-size: 0.85rem;
-    }
-  
-    .home-footer-under-large {
+    .footer-ul li, .home-footer-under-large {
       font-size: 0.8rem;
     }
+    
   }
   
