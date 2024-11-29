@@ -5,6 +5,7 @@ import Advert from '../componets/Advert'
 import MovingTrain from '../componets/MovingTrain'
 import Country from '../componets/Country'
 import { Link } from 'react-router-dom'
+import WorkingProcess from '../componets/WorkingProcess'
 
 const Home = () => {
   return (
@@ -53,12 +54,11 @@ const Home = () => {
       <div className="down-sec">
         <img src="/images/h2.png" alt="" className='down-sec-img one'/>
         <img src="/images/h1.png" alt="" className='down-sec-img two'/>
-        
 
           </div>
           
      
-      
+      <WorkingProcess/>
       
     </div>
   )
