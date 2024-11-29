@@ -8,14 +8,21 @@ const Contact1 = () => {
     <div className="contact-page">
       {/* Header Section */}
       <header className="contact-header">
-        <h1 className="animated-heading">Contact Us</h1>
         <p>We’re here to assist you. Reach out to us!</p>
       </header>
+
+      <div className="contact-banner">
+        <div className="overlay">
+          <h1>Contact Us</h1>
+        </div>
+      </div>
 
       {/* Contact Details and Map */}
       <div className="contact-container">
         {/* Contact Details */}
         <div className="contact-details">
+        
+      
           <h2>Get in Touch</h2>
           <p>Feel free to reach out to us via the details below.</p>
           <ul className="contact-info">
@@ -46,6 +53,15 @@ const Contact1 = () => {
         </div>
 
         {/* Contact Form */}
+        <div className="content-box">
+        <p className="abbout-title">// Need any help? //</p>
+        <h2 className="abbout-heading">
+        Get in touch with us
+        </h2>
+        <p className='desc'>Our expert consultants evaluate your eligibility and guide you through the most suitable visa options based on your qualifications, skills, and</p>
+
+      </div>
+
         <div className="contact-form">
          <Contact/>
         </div>
