@@ -9,7 +9,7 @@ import NewsletterComponent from './NewsletterComponent'
 const Footer = () => {
   return (
     <div className='footer'>
-    <div className='home-footer' style={{marginLeft:"20px"}}>
+    <div className='home-footer'>
 
       <div className="footer-ul">
         <ul>
