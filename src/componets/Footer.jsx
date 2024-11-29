@@ -48,8 +48,10 @@ const Footer = () => {
         
     </div>
 
-
-    <p className='home-footer-under-large'>Copyright 2024 © <b>Diamond Visa and immigration services </b>All rights reserved.</p>
+    <div className='home-footer-under-large'>
+    <p>Copyright 2024 © <b>Diamond Visa and immigration services </b>All rights reserved.
+    <a href="http://www.oguntoyinbo.com.ng/" style={{color:"#12e1e1"}}> Multibrand</a></p>
+    </div>
     
     
     

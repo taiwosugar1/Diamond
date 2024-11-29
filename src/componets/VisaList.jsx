@@ -18,7 +18,7 @@ const visas = [
   {
     type: "K1/i-130 Visa application ",
     description: "A great Opportunities to Visit Kenya. ",
-    icon: <FaBriefcase />,
+    icon: <FaPlane />,
     backgroundImage: "/images/st3.png",
   },
   {

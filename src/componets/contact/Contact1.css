@@ -57,7 +57,7 @@
   }
   
   .social-icons a:hover {
-    color: #ff0099;
+    color: var(--link-color);
   }
   
   .map-container {

@@ -107,7 +107,7 @@ const continents = [
     name: "South America",
     description:
       "Uncover unique opportunities for study, business, and travel across South America, including Brazil and Argentina.",
-    image: "/images/hotel6.jpg", // South America flag CDN
+    image: "https://flagicons.lipis.dev/flags/4x3/sa.svg", // South America flag CDN
     keyPoints: [
       "Travel visas for Brazil and Chile",
       "Work opportunities in Argentina",
