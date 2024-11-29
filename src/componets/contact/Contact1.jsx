@@ -19,12 +19,26 @@ const Contact1 = () => {
 
       {/* Contact Details and Map */}
       <div className="contact-container">
+
+        {/* Contact Form */}
+        <div className="content-box">
+
+      </div>
+
+        <div className="contact-form">
+         <Contact/>
+        </div>
+
         {/* Contact Details */}
         <div className="contact-details">
         
-      
-          <h2>Get in Touch</h2>
-          <p>Feel free to reach out to us via the details below.</p>
+       
+        <p className="abbout-title">// Need any help? //</p>
+        <h2 className="abbout-heading">
+        Feel free to reach out to us via the details below.
+        </h2>
+        <p className='dessc'>Our expert consultants evaluate your eligibility and guide you through the most suitable visa options based on your qualifications, skills, and other eligibility</p>
+
           <ul className="contact-info">
             <li>
               <strong>Phone:</strong> +1 (614) 707 6245
@@ -50,20 +64,6 @@ const Contact1 = () => {
               </a>
             </div>
           </div>
-        </div>
-
-        {/* Contact Form */}
-        <div className="content-box">
-        <p className="abbout-title">// Need any help? //</p>
-        <h2 className="abbout-heading">
-        Get in touch with us
-        </h2>
-        <p className='desc'>Our expert consultants evaluate your eligibility and guide you through the most suitable visa options based on your qualifications, skills, and</p>
-
-      </div>
-
-        <div className="contact-form">
-         <Contact/>
         </div>
 
       </div>
