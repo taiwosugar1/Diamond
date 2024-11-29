@@ -14,8 +14,7 @@ const WorkingProcess = () => {
           <div className="process-box-text">
           <h3>Fastest Working Process</h3>
           <p>
-            Our streamlined visa application process ensures that you receive
-            timely updates and approvals, minimizing unnecessary delays.
+          Our streamlined process ensures timely updates and quick approvals.
           </p>
           </div>
           <img src="/images/logo.png" alt="" className="pro-icon" />
@@ -29,8 +28,7 @@ const WorkingProcess = () => {
           <div className="process-box-text">
           <h3>Expertise in Visa Processing</h3>
           <p>
-            With years of experience, we have a proven track record of
-            successful visa applications for various countries around the world.
+          We have years of success in handling visa applications worldwide.
           </p>
           </div>
           <img src="/images/logo.png" alt="" className="pro-icon" />
@@ -42,8 +40,7 @@ const WorkingProcess = () => {
           <div className="process-box-text">
           <h3>Expert Support Personnel</h3>
           <p>
-            Our dedicated team of professionals is always ready to assist you
-            with personalized guidance for all your visa-related needs.
+          Our team offers personalized guidance for all your visa needs.
           </p>
           </div>
           <img src="/images/logo.png" alt="" className="pro-icon" />
