@@ -71,7 +71,7 @@
   /* Social Media Icons */
   .footer-media-large-screen {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     font-size: 2rem;
     gap: 1.5rem;
   }
@@ -116,22 +116,12 @@
       gap: 1rem;
     }
   
-    .footer-media-large-screen {
-      justify-content: center;
-      font-size: 1.5rem;
-      gap: 0.8rem;
-    }
-  
-    .footer-ul {
-      text-align: center;
-      margin-bottom: 1.5rem;
-    }
   
     .footer-ul h3 {
       font-size: 1.1rem;
     }
   
-    .footer-ul li, .home-footer-under-large {
+   .home-footer-under-large {
       font-size: 0.8rem;
     }
     

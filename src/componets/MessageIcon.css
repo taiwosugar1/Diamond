@@ -25,15 +25,15 @@
   /* Keyframes for Blinking Double Border */
   @keyframes blink-border {
     0% {
-      border-color: rgba(255, 255, 255, 1); /* White Border Visible */
+      border-color: rgba(255, 255, 255, 1); 
       box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
     }
     50% {
-      border-color: rgba(255, 0, 0, 1); /* Inner Red Border Visible */
-      box-shadow: 0 0 20px rgba(255, 0, 0, 1); /* Intense Glow */
+      border-color: rgba(255, 0, 0, 1);
+      box-shadow: 0 0 20px rgba(255, 0, 0, 1); 
     }
     100% {
-      border-color: rgba(255, 255, 255, 1); /* White Border Visible Again */
+      border-color: rgba(255, 255, 255, 1); 
       box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
     }
   }
@@ -41,8 +41,8 @@
   /* Hover Effect */
   .fixed-message-icon:hover {
     cursor: pointer;
-    animation: none; /* Stops the blinking animation */
-    box-shadow: 0 0 15px rgba(255, 165, 0, 0.9); /* Enhanced Glow */
-    border: 4px solid #ff7300; /* Orange border on hover */
+    animation: none; 
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.9);
+    border: 4px solid #ff7300; 
   }
   
