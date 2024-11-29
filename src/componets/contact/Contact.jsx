@@ -42,11 +42,19 @@ const Contact = () => {
       <h1>Message Us here</h1>
       <form onSubmit={onSubmit} ref={formRef}>
         <div className="input-box">
-          <input type="text" placeholder='Full Name' name='name' required className='field' />
+          <input type="text" placeholder='Full Name' name='Your Name' required className='field' />
         </div>
 
         <div className="input-box">
-          <input type="email" placeholder='Enter your email' name='email' required className='field' />
+          <input type="email" placeholder='Enter Email' name='email' required className='field' />
+        </div>
+
+        <div className="input-box">
+          <input type="text" placeholder='Subject' name='subject' required className='field' />
+        </div>
+
+        <div className="input-box">
+          <input type="text" placeholder='Phone' name='phone number' required className='field' />
         </div>
 
         <div className="input-box">

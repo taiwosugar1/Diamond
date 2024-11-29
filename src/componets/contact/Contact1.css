@@ -17,21 +17,21 @@
   .contact-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 20px;
   }
   
-  .contact-details, .contact-form {
+  .contact-details{
     flex: 1;
     max-width: 500px;
     margin: 10px;
     padding: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   
   .contact-details {
     background: #f4f4f4;
     border-radius: 8px;
+    color: #00255c;
   }
   
   .contact-info {
