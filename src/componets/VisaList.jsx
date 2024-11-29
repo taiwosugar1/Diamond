@@ -16,8 +16,8 @@ const visas = [
     backgroundImage: "/images/st1.png",
   },
   {
-    type: "Work Visa",
-    description: "Opportunities to work legally in advanced economies.",
+    type: "K1/i-130 Visa application ",
+    description: "A great Opportunities to Visit Kenya. ",
     icon: <FaBriefcase />,
     backgroundImage: "/images/st3.png",
   },

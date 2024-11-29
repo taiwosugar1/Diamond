@@ -11,6 +11,7 @@ import Contact from './componets/contact/Contact';
 import MessageIcon from './componets/MessageIcon';
 import Contact1 from './componets/contact/Contact1';
 import VisaList from './componets/VisaList';
+import Service from './componets/Service';
 
 
 const ScrollToTop = () => {
@@ -89,6 +90,8 @@ const App = () => {
          <Route path='/contact' element={<Contact/>}/>
          <Route path='/contact1' element={<Contact1/>}/>
          <Route path="/visa" exact element={<VisaList/>}/>
+         <Route path="/services" exact element={<Service/>}/>
+         
          
          
          </Routes>

@@ -67,7 +67,7 @@
     text-align: start;
   }
 
-  .content-box .read-more{
+  .content-box .read-more, .read-more{
     background-color: var(--link-color);
     padding:15px 25px;
     font-size: 1rem;

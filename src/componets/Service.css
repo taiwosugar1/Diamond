@@ -1,0 +1,125 @@
+/* General Page Styling */
+.services-page {
+    padding: 2rem;
+    background: #f7f7f7;
+    font-family: "Playfair Display", serif;
+    color: #333;
+  }
+  
+  .intro-section {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .services-heading {
+    font-size: 3rem;
+    color: #00255c;
+  }
+  
+  .services-description {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Services Grid */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+  
+  .service-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .service-info {
+    padding: 1rem;
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .service-description {
+    color: #555;
+  }
+  
+  /* Continent Section */
+  .continent-section {
+    padding: 2rem 0;
+  }
+  
+  .continent-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #00255c;
+  }
+  
+  .continent-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .continent-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .continent-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .continent-info {
+    padding: 1.5rem;
+  }
+  
+  .continent-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #00255c;
+  }
+  
+  .continent-description {
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  .continent-keypoints {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .continent-keypoints li {
+    margin-bottom: 0.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .service-card {
+      margin-bottom: 20px;
+    }
+  }
