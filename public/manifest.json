@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Visa Services",
+  "name": "Visa Processing and Consultancy",
   "icons": [
     {
       "src": "favicon.ico",
@@ -18,8 +18,11 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#00255c",
+  "background_color": "#f7f7f7",
+  "description": "Streamlined visa application services with expert guidance to make your international travel dreams a reality.",
+  "orientation": "portrait-primary",
+  "lang": "en-US"
 }
