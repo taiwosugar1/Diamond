@@ -1,6 +1,7 @@
 /* Advert Container */
 .advert-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     flex-wrap: wrap;
     justify-content: center;
     gap: 5px;
@@ -12,7 +13,6 @@
   /* Individual Advert Cards */
   .advert-card {
     position: relative;
-    width: 190px;
     height: 210px;
     margin: 0;
     display: flex;
