@@ -48,8 +48,14 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1; 
+  background: rgba(0, 0, 0, 0.4); /* Default overlay */
+  z-index: 1;
+  transition: background 0.3s ease;
+}
+
+/* Deepen the overlay on hover */
+.viisa-card:hover::before {
+  background: rgba(0, 0, 0, 0.8); /* Darker overlay when hovered */
 }
 
 /* Ensuring content sits above the overlay */
@@ -58,17 +64,18 @@
   z-index: 2;
 }
 
-
 .viisa-card:hover {
   transform: translateY(-5px);
   opacity: 0.9;
 }
+
 /* Ensuring other content is always visible */
 .viisa-card .visa-icon,
 .viisa-card .visa-title {
-  z-index: 2; /* Ensures icon and title are always above the overlay */
+  z-index: 2; 
   transition: transform 0.3s ease;
 }
+
 .viisa-card:hover .visa-icon,
 .viisa-card:hover .visa-title {
   transform: translateY(-10px); /* Adds a subtle lift effect */
@@ -95,14 +102,13 @@
   font-size: 1rem;
   line-height: 1.5;
   text-align: start;
-  z-index: 2; 
+  z-index: 2;
 }
 
 /* Show description on hover */
 .viisa-card:hover .visa-description {
   opacity: 1;
 }
-
 
 /* Responsive Design */
 @media (max-width: 768px) {

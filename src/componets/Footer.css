@@ -59,7 +59,7 @@
 
   .visa h3 {
     font-size: 1.5rem;
-    color: #ff0000;
+    color: var(--link-color);
     margin-bottom: 1rem;
   }
   
@@ -91,7 +91,7 @@
   }
   
   .large-screen-feedback h3 {
-    color: #ff0000;
+    color: var(--link-color);
   }
   
   .large-screen-feedback input[type="email"] {
@@ -103,7 +103,7 @@
   
   .large-screen-feedback button {
     padding: 0.7rem 1.2rem;
-    background-color: #ff0000;
+    background-color: var(--link-color);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -123,7 +123,7 @@
   }
 
   .home-footer-under-large b {
-    color: #ff0000;
+    color: var(--link-color);
   }
   
   /* Media Queries for Responsiveness */

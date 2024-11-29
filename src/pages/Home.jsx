@@ -4,6 +4,7 @@ import Hero from '../componets/Hero'
 import Advert from '../componets/Advert'
 import MovingTrain from '../componets/MovingTrain'
 import Country from '../componets/Country'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -26,6 +27,17 @@ const Home = () => {
       </div>
     </div>
       <Advert/>
+      <div className="about-ssection">
+      <div className="content-box">
+        <p className="abbout-title">// COUNTRY //</p>
+        <h2 className="abbout-heading">
+        Immigration Choose Your Country
+        </h2>
+        <p className='desc'>Our expert consultants evaluate your eligibility and guide you through the most suitable visa options based on your qualifications, skills, and</p>
+         <Link to={"/visa"} className='read-more'>Read More</Link>
+
+      </div>
+    </div>
       <Country/>
       
 

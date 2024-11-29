@@ -33,7 +33,7 @@
     transform: translateY(-10px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     background: #082d64;
-    color: #ff0000;
+    color: var(--link-color);
   }
   
   .advert-card:hover .icon{
@@ -64,7 +64,7 @@
     transition: color 0.3s;
   }
   .advert-card:hover .title {
-    color: #ff0000;
+    color: var(--link-color);
   }
 
   

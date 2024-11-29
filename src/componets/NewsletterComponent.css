@@ -42,12 +42,12 @@
 .newsletter-button {
   padding: 10px;
   border: none;
-  background-color: #007bff;
+  background: var(--link-color);
   color: white;
   cursor: pointer;
   border-radius: 4px;
 }
 
 .newsletter-button:hover {
-  background-color: #0056b3;
+  background: #ff0000;
 }

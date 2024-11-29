@@ -15,14 +15,14 @@
     font-family: "Playfair Display", serif;
     font-size: 7.5rem;
     font-weight: bold;
-    color: #ff0000; 
+    color: var(--link-color); 
     white-space: nowrap; 
   }
   
   /* Individual words */
   .moving-train .sp1 {
     background: #f7f7f7; 
-    color: #ff0000; 
+    color: var(--link-color); 
     padding: 25px;
   }
   .moving-train .sp2 {

@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="navbar-brand"><img src="/images/logo192.png" alt="" /> 
+      <div className="navbar-brand"><img src="/images/logo.png" alt="" /> 
       <h3>Diamond</h3>
       </div>
       <div className="navbar-toggle" onClick={toggleMenu}>
