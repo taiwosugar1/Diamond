@@ -40,8 +40,15 @@ const Home = () => {
     </div>
       <Country/>
       
+      <div className="content-box">
+        <p className="abbout-title">// OUR SERVICE AREAS //</p>
+        <h2 className="abbout-heading">
+        Visa & Immigration Consulting Firm In US
+        </h2>
+        <p className='desc'>We provide meticulous support in preparing and organizing the required documents, ensuring a smooth and error-free submission process.We provide meticulous support in preparing</p>
+         <Link to={"/sevices"} className='read-more'>Read More</Link>
 
-       {/* <Background/> */}
+      </div>
       
       <div className="small-screen-feedback">
           </div>
