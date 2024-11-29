@@ -50,14 +50,14 @@
   
 .test-icon {
     font-size: 56px;
-    color: var(--link-color); /* Default color */
+    color: var(--link-color); 
     margin-bottom: 10px;
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
   
 .test-card:hover .test-icon {
-    transform: rotateY(180deg); /* Reverses the icon */
-    color: white; /* Changes icon color to white */
+    transform: rotateY(180deg); 
+    color: white;
 }
   
 .test-title {
@@ -69,7 +69,7 @@
 }
   
 .test-card:hover .test-title {
-    color: white; /* Changes title color to white */
+    color: white; 
 }
   
 .test-description {

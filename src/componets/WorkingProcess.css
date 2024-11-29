@@ -73,11 +73,8 @@
     opacity: 0.06;
   }
   .process-box:hover .icon-wrapper {
-    transform: rotateY(180deg); /* Flipping effect */
-  }
-  
-  .process-box:hover .icon-wrapper {
-    background: #ff0000; /* Change icon color */
+    transform: rotateY(180deg); 
+    background: #ff0000;
   }
   
   /* Text Styling */
