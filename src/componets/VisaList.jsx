@@ -1,12 +1,13 @@
 import React from "react";
 import { FaPlane, FaGraduationCap, FaBriefcase, FaBusinessTime, FaHome, FaCoins, FaAddressCard, FaHeartbeat } from "react-icons/fa";
 import "./VisaList.css";
+import { FaMap, FaMapLocation } from "react-icons/fa6";
 
 const visas = [
   {
     type: "Tourist Visa",
     description: "Perfect for those who want to explore and travel.",
-    icon: <FaPlane />,
+    icon: <FaMapLocation />,
     backgroundImage: "/images/st2.png",
   },
   {

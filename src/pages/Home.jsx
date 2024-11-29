@@ -6,6 +6,7 @@ import MovingTrain from '../componets/MovingTrain'
 import Country from '../componets/Country'
 import { Link } from 'react-router-dom'
 import WorkingProcess from '../componets/WorkingProcess'
+import TestPreparation from '../componets/TestPreparation'
 
 const Home = () => {
   return (
@@ -59,6 +60,8 @@ const Home = () => {
           
      
       <WorkingProcess/>
+
+      <TestPreparation/>
       
     </div>
   )
