@@ -44,13 +44,13 @@ const visas = [
     type: "Permanent Residency",
     description: "Live and settle permanently in a foreign country.",
     icon: <FaAddressCard />,
-    backgroundImage: "/images/st7.png",
+    backgroundImage: "/images/st8.png",
   },
   {
     type: "Medical Visa",
     description: "Access world-class healthcare facilities abroad.",
     icon: <FaHeartbeat />,
-    backgroundImage: "/images/st8.png",
+    backgroundImage: "/images/st7.png",
   },
 ];
 
