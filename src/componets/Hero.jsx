@@ -11,7 +11,7 @@ const Hero = () => {
         <h1 className="herro-heading">
           Your Trusted Immigration & Visa Partner
         </h1>
-        <button className="hero-button">Get Started</button>
+        <button className="hero-button" >Get Started</button>
       </div>
     </section>
   );

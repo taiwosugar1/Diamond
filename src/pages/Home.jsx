@@ -14,7 +14,7 @@ const Home = () => {
       <Hero/>
       <MovingTrain/>
       <div className="about-ssection">
-      <div className="content-box">
+      <div className="content-box" data-aos="zoom-in">
         <p className="abbout-title">// ABOUT OUR COMPANY //</p>
         <h2 className="abbout-heading">
           Experts In Professional Immigration & Visa Processing
@@ -30,7 +30,7 @@ const Home = () => {
     </div>
       <Advert/>
       <div className="about-ssection">
-      <div className="content-box">
+      <div className="content-box" data-aos="zoom-in">
         <p className="abbout-title">// COUNTRY //</p>
         <h2 className="abbout-heading">
         Immigration Choose Your Country
@@ -42,7 +42,7 @@ const Home = () => {
     </div>
       <Country/>
       
-      <div className="content-box">
+      <div className="content-box" data-aos="zoom-in">
         <p className="abbout-title">// OUR SERVICE AREAS //</p>
         <h2 className="abbout-heading">
         Visa & Immigration Consulting Firm In US

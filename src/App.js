@@ -12,6 +12,7 @@ import MessageIcon from './componets/MessageIcon';
 import Contact1 from './componets/contact/Contact1';
 import VisaList from './componets/VisaList';
 import Service from './componets/Service';
+import AosAnimation from './componets/AosAnimation';
 
 
 const ScrollToTop = () => {
@@ -65,8 +66,8 @@ const App = () => {
               <FaLongArrowAltUp />
             </button>
           )}
-
-
+         
+          <AosAnimation/>
           <Navbar  />
              
                 {/* <a href='tel: +1-614-707-6245'>

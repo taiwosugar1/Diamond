@@ -57,12 +57,12 @@ const visas = [
 const VisaList = () => {
   return (
     <section className="visa-list-container">
-      <h2 className="visa-list-heading">Our Visa Services</h2>
+      <h2 className="visa-list-heading" data-aos="zoom-in">Our Visa Services</h2>
       <div className="visa-grid">
         {visas.map((visa, index) => (
           <div
             key={index}
-            className="viisa-card"
+            className="viisa-card " data-aos="flip-right"
             style={{ backgroundImage: `url(${visa.backgroundImage})` }}
           >
             <div className="visa-icon">{visa.icon}</div>

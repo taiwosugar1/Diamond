@@ -30,10 +30,10 @@ const Contact1 = () => {
         </div>
 
         {/* Contact Details */}
-        <div className="contact-details">
+        <div className="contact-details" data-aos="zoom-in">
         
        
-        <p className="abbout-title">// Need any help? //</p>
+        <p className="abbout-title" >// Need any help? //</p>
         <h2 className="abbout-heading">
         Feel free to reach out to us via the details below.
         </h2>
@@ -50,7 +50,7 @@ const Contact1 = () => {
               <strong>Address:</strong> 512 Main St, Anytown, USA
             </li>
           </ul>
-          <div className="social-media">
+          <div className="social-media" data-aos="zoom-in">
             <h3>Follow Us</h3>
             <div className="social-icons">
               <a href="https://facebook.com" target="_blank" rel="noreferrer">
@@ -69,7 +69,7 @@ const Contact1 = () => {
       </div>
 
       {/* Map */}
-      <div className="map-container">
+      <div className="map-container" data-aos="flip-up">
         <h2>Our Location</h2>
         <iframe
           title="Google Map"

@@ -58,7 +58,7 @@ const Country = () => {
   return (
     <div className="countries-container">
       {countries.map((country, index) => (
-        <div className="country-card" key={index}>
+        <div className="country-card" key={index} data-aos="flip-left">
           <img
             src={country.flag}
             alt={`${country.name} flag`}

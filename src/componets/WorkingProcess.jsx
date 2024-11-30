@@ -50,14 +50,15 @@ const WorkingProcess = () => {
 
       {/* Right Section (Short Write-Up and Image) */}
       <div className="working-process-right">
-      <div className="content-box">
-        <p className="abbout-title">// VISA CATEGORY //</p>
+      <div className="content-box" >
+        <p className="abbout-title" data-aos="flip-right">// VISA CATEGORY //</p>
         <h2 className="abbout-heading">
         Start To End Immigration Visa Services
         </h2>
         <p className='desc'>We provide meticulous support in preparing and organizing the required documents, ensuring a smooth and error-free submission process.We provide meticulous support in preparing</p>
       </div>
         <img
+          data-aos="zoom-in"
           src="/images/h3.png"
           alt="Expert Support"
           className="working-process-image"

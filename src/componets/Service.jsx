@@ -132,7 +132,7 @@ const Service = () => {
 
       <div className="services-grid">
         {services.map((service, index) => (
-          <div className="service-card" key={index}>
+          <div className="service-card" key={index} data-aos="zoom-in">
             <img
               src={service.image}
               alt={service.title}
@@ -152,7 +152,7 @@ const Service = () => {
         <h2 className="continent-heading">Visa Services by Continent</h2>
         <div className="continent-grid">
           {continents.map((continent, index) => (
-            <div className="continent-card" key={index}>
+            <div className="continent-card" key={index} data-aos="fade-up">
               <img
                 src={continent.image}
                 alt={continent.name}
