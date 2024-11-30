@@ -1,4 +1,7 @@
 .test-preparation-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }

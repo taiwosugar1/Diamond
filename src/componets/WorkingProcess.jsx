@@ -7,7 +7,7 @@ const WorkingProcess = () => {
     <section className="working-process-container">
       {/* Left Section (Boxes) */}
       <div className="working-process-left">
-        <div className="process-box">
+        <div className="process-box" data-aos="zoom-out">
           <div className="icon-wrapper">
             <FaRocket className="process-icon" />
           </div>
@@ -20,7 +20,7 @@ const WorkingProcess = () => {
           <img src="/images/logo.png" alt="" className="pro-icon" />
 
         </div>
-        <div className="process-box">
+        <div className="process-box" data-aos="zoom-out">
           <div className="icon-wrapper">
             <FaClipboardCheck className="process-icon" />
           </div>
@@ -33,7 +33,7 @@ const WorkingProcess = () => {
           </div>
           <img src="/images/logo.png" alt="" className="pro-icon" />
         </div>
-        <div className="process-box">
+        <div className="process-box" data-aos="zoom-out">
           <div className="icon-wrapper">
             <FaUserTie className="process-icon" />
           </div>
@@ -50,8 +50,8 @@ const WorkingProcess = () => {
 
       {/* Right Section (Short Write-Up and Image) */}
       <div className="working-process-right">
-      <div className="content-box" >
-        <p className="abbout-title" data-aos="flip-right">// VISA CATEGORY //</p>
+      <div className="content-box" data-aos="flip-right">
+        <p className="abbout-title" >// VISA CATEGORY //</p>
         <h2 className="abbout-heading">
         Start To End Immigration Visa Services
         </h2>

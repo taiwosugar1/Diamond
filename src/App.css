@@ -18,6 +18,8 @@
 
 .App {
   text-align: center;
+  overflow: hidden auto;
+  box-sizing: border-box;
 }
 body {
   font-family: var(--body-font-family);
