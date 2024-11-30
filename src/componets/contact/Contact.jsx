@@ -39,30 +39,30 @@ const Contact = () => {
 
   return (
     <section className='contact-form'>
-      <p className="abbout-title" data-aos="zoom-in">// SEND US MESSAGE //</p>
+      <p className="abbout-title" >// SEND US MESSAGE //</p>
       <h2 className="abbout-heading">Feel Free to write</h2>
-      <form onSubmit={onSubmit} ref={formRef}>
-        <div className="input-box" data-aos="flip-up">
+      <form onSubmit={onSubmit} ref={formRef} data-aos="zoom-out-up">
+        <div className="input-box">
           <input type="text" placeholder='Full Name' name='Your Name' required className='field' />
         </div>
 
-        <div className="input-box" data-aos="flip-up">
+        <div className="input-box">
           <input type="email" placeholder='Enter Email' name='email' required className='field' />
         </div>
 
-        <div className="input-box" data-aos="flip-up">
+        <div className="input-box">
           <input type="text" placeholder='Subject' name='subject' required className='field' />
         </div>
 
-        <div className="input-box" data-aos="flip-up">
+        <div className="input-box">
           <input type="text" placeholder='Phone' name='phone number' required className='field' />
         </div>
 
-        <div className="input-box" data-aos="flip-up">
+        <div className="input-box">
           <textarea name="message" placeholder='Enter your message' required className='field message'></textarea>
         </div>
 
-        <button type='submit' data-aos="flip-up">Send Message</button>
+        <button type='submit'>Send Message</button>
       </form>
     </section>
   );
