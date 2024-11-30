@@ -13,7 +13,7 @@ const Contact1 = () => {
 
       <div className="contact-banner">
         <div className="overlay">
-          <h1>Contact Us</h1>
+          <h1 data-aos="zoom-in">Contact Us</h1>
         </div>
       </div>
 
