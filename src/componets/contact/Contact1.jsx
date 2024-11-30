@@ -74,7 +74,7 @@ const Contact1 = () => {
         <iframe
           title="Google Map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509005!2d-122.4205817846814!3d37.77492977975938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085814e5f2a8e5b%3A0xc5b62e2b57b1a54f!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2sin!4v1614360049001!5m2!1sen!2sin"
-          width="100%"
+          width="p0%"
           height="400"
           allowFullScreen
           loading="lazy"
