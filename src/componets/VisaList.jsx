@@ -1,8 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { FaPlane, FaGraduationCap, FaBusinessTime, FaHome, FaCoins, FaAddressCard, FaHeartbeat } from "react-icons/fa";
 import "./VisaList.css";
-import { FaMapLocation } from "react-icons/fa6";
 
 const visas = [
   {
@@ -18,7 +16,7 @@ const visas = [
     type: "Emergency Visa",
     description: "Immediate attention and processing.",
     icon: "FaGraduationCap",
-    backgroundImage: "/images/st1.png",
+    backgroundImage: "/images/im1.png",
     details: "The Emergency Visa is designed for urgent situations, providing expedited processing for individuals facing time-sensitive travel needs.",
     link: "https://wa.me/16147076245?text=Hi, I need assistance with an Emergency Visa.",
   },
@@ -44,7 +42,7 @@ const visas = [
     type: "Business Visa",
     description: "For business-related travel and meetings.",
     icon: "FaBusinessTime",
-    backgroundImage: "/images/st5.png",
+    backgroundImage: "/images/st4.png",
     details: "The Business Visa is designed for individuals traveling for business purposes, such as attending conferences, meetings, or exploring investment opportunities.",
   },
   {
@@ -52,7 +50,7 @@ const visas = [
     type: "Visa Extension",
     description: "Apply for an extension to your existing visa.",
     icon: "FaCoins",
-    backgroundImage: "/images/st6.png",
+    backgroundImage: "/images/im2.png",
     details: "The Visa Extension allows individuals to extend their stay in a foreign country beyond their initial visa expiration. It is ideal for those who wish to continue working, studying, or staying in the country under the same visa category. If you need assistance with applying for a Visa Extension, we are here to help you navigate the process.",
   },
 ];
