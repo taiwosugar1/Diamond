@@ -2,9 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 3px 20px;
   height: 50px;
-  background: #f7f7f7;
+  background: var(--bg);
   color: var( --headings);
   position: sticky;
   top: 0;
@@ -46,13 +46,13 @@
 }
 
 .navbar-menu a {
-  color: red;
+  color: #00255c;
   text-decoration: none;
   font-size: 1rem;
 }
 
 .navbar-menu a:hover {
-  color: rgb(215, 11, 11);
+  color: rgb(183, 245, 84);
 }
 
 /* Desktop View */
@@ -81,7 +81,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #f7f7f7;
+    background: var(--bg);
     flex-direction: column;
     align-items: center;
     padding-top: 50px;

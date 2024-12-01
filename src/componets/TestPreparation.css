@@ -4,6 +4,7 @@
     padding: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
 }
   
 .test-card {
@@ -13,7 +14,7 @@
     justify-content: center;
     height: 400px;
     position: relative;
-    background-color: white;
+    background-color: var(--ye);
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;

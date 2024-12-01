@@ -5,7 +5,7 @@
    flex-direction: column;
     width: 100%;
     height: auto;
-    
+    background: var(--bg);
 }
 
 /* Main section wrapper */
@@ -15,7 +15,7 @@
     justify-content: center;
     flex-wrap: wrap;
     padding: 40px 20px;
-    background: #f7f7f7; /* Blue background */
+    background: var(--ye); /* Blue background */
     position: relative;
   }
   
@@ -80,7 +80,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    background-color: #f7f7f7;
+    background: var(--ye);
     width: 100%;
     margin: 0;
   }

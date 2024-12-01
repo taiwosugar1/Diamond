@@ -1,6 +1,7 @@
 
   .contact-page {
     text-align: center;
+    background: var(--ye);
   }
   
   .contact-header {
@@ -47,7 +48,7 @@
   font-weight: bold;
 }
   .contact-details {
-    background: #f4f4f4;
+    background: var(--ye);
     border-radius: 8px;
     color: #00255c;
     max-width: 500px;

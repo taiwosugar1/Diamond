@@ -1,7 +1,7 @@
 /* General Page Styling */
 .services-page {
     padding: 2rem;
-    background: #f7f7f7;
+    background: var(--ye);
     font-family: "Playfair Display", serif;
     color: #333;
   }

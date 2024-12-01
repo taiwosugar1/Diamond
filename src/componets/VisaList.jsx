@@ -1,7 +1,7 @@
 import React from "react";
-import { FaPlane, FaGraduationCap, FaBriefcase, FaBusinessTime, FaHome, FaCoins, FaAddressCard, FaHeartbeat } from "react-icons/fa";
+import { FaPlane, FaGraduationCap, FaBusinessTime, FaHome, FaCoins, FaAddressCard, FaHeartbeat } from "react-icons/fa";
 import "./VisaList.css";
-import { FaMap, FaMapLocation } from "react-icons/fa6";
+import { FaMapLocation } from "react-icons/fa6";
 
 const visas = [
   {
@@ -18,9 +18,9 @@ const visas = [
   },
   {
     type: "K1/i-130 Visa application ",
-    description: "A great Opportunities to Visit Kenya. ",
+    description: "Fiancé(e) or relative visa for U.S. immigration. ",
     icon: <FaPlane />,
-    backgroundImage: "/images/st3.png",
+    backgroundImage: "/images/st9.png",
   },
   {
     type: "Business Visa",

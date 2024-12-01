@@ -3,7 +3,7 @@
     position: relative;
     width: 100%;
     overflow: hidden; 
-    background: #f7f7f7;
+    background: var(--ye);
     padding: 10px 0;
   }
   
@@ -17,16 +17,17 @@
     font-weight: bold;
     color: var(--link-color); 
     white-space: nowrap; 
+    background: var(--ye);
   }
   
   /* Individual words */
   .moving-train .sp1 {
-    background: #f7f7f7; 
+    background: var(--ye); 
     color: var(--link-color); 
     padding: 25px;
   }
   .moving-train .sp2 {
-    background: transparent; 
+    background: var(--ye);
     color: grey; 
     padding: 25px;
   }

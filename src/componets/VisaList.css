@@ -1,7 +1,7 @@
 /* Container Styles */
 .visa-list-container {
   padding: 3rem 1rem;
-  background: #f7f7f7;
+  background: var(--ye);
   color: #fff;
   font-family: "Playfair Display", serif;
   text-align: center;
