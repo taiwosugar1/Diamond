@@ -20,7 +20,7 @@ const visas = [
     type: "Emergency Visa",
     description: "Immediate attention and processing.",
     icon: <GrEmergency />,
-    backgroundImage: "/images/st1.png",
+    backgroundImage: "/images/im1.png",
     details: "The Emergency Visa is designed for urgent situations, providing expedited processing for individuals facing time-sensitive travel needs.",
     link: "https://wa.me/16147076245?text=Hi, I need assistance with an Emergency Visa.",
   },
@@ -45,7 +45,7 @@ const visas = [
     type: "Business Visa",
     description: "For business-related travel and meetings.",
     icon: <FaBusinessTime />,
-    backgroundImage: "/images/st5.png",
+    backgroundImage: "/images/st4.png",
     details: "The Business Visa is designed for individuals traveling for business purposes, such as attending conferences, meetings, or exploring investment opportunities.",
   },
   {
@@ -66,10 +66,19 @@ const VisaList = () => {
       // For Emergency Visa, navigate to WhatsApp
       window.open(visa.link, "_blank");
     } else {
-      // Navigate to Single Visa Page with data
-      navigate(`/visa/${visa.id}`, { state: { visa } });
+      // Navigate to Single Visa Page with serializable data
+      navigate(`/visa/${visa.id}`, {
+        state: {
+          id: visa.id,
+          type: visa.type,
+          description: visa.description,
+          backgroundImage: visa.backgroundImage,
+          details: visa.details,
+        },
+      });
     }
   };
+  
 
   return (
     <section className="visa-list-container">

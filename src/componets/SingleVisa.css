@@ -41,3 +41,28 @@
   color: var(--headings);
   line-height: 1.6;
 }
+@media (max-width: 768px) {
+  .visa-banner {
+    height: 250px; /* Smaller banner on mobile */
+  }
+
+  .visa-title {
+    font-size: 2rem; /* Smaller title font */
+  }
+
+  .visa-details {
+    padding: 15px;
+  }
+
+  .visa-details h2 {
+    font-size: 1.5rem; /* Adjust heading size */
+  }
+
+  .visa-details p {
+    font-size: 1rem; /* Adjust paragraph size */
+  }
+
+  .visa-icon-large {
+    font-size: 3rem; /* Smaller icon size */
+  }
+}
