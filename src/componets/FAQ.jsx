@@ -15,7 +15,7 @@ const FAQ = ({ visaType }) => {
     },
     {
       question: "Can I extend my visa once issued?",
-      answer: "Some visas are extendable. It is recommended to check the specific visa guidelines or contact the embassy for more details.",
+      answer: "Some visas are extendable. It is recommended to check the specific visa guidelines or contact us for more details.",
     },
     {
       question: "How do I know if my visa has been approved?",

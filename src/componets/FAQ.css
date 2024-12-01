@@ -1,5 +1,6 @@
 .faq-container {
     margin-top: 5rem;
+    max-width: 700px;
   }
   
   .faq-list {
@@ -8,7 +9,7 @@
   
   .faq-item {
     margin-bottom: 0.5rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--headings);
     border-radius: 5px;
     overflow: hidden;
   }
