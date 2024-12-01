@@ -77,7 +77,7 @@ const VisaList = () => {
         {visas.map((visa) => (
           <div
             key={visa.id}
-            className="visa-card"
+            className="viisa-card"
             data-aos="flip-right"
             style={{ backgroundImage: `url(${visa.backgroundImage})` }}
             onClick={() => handleCardClick(visa)}
