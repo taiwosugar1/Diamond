@@ -85,7 +85,7 @@
 .visa-icon {
   font-size: 4rem;
   margin-bottom: 1rem;
-  color: #ff0000;
+  color: var(--link-color);
 }
 
 /* Visa Title */
