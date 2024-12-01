@@ -22,7 +22,7 @@ const Advert = () => {
     <div className="advert-container">
       
       {adverts.map((advert, index) => (
-        <Link to={"https//:instagram.com/zeavix"}>
+        <Link to={"https://www.instagram.com/zeavixeventandmore/profilecard/?igsh=YmxydG1wZmg0bXdu"}>
         <div key={index} className="advert-card">
           <div className="icon">{advert.icon}</div>
           <h3 className="title">{advert.title}</h3>
