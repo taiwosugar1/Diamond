@@ -24,7 +24,7 @@ const Footer = () => {
         </ul>
         <ul className='footer-media-large-screen'>
       <Link
-       to={"https://www.instagram.com/diamondvisaservices?igsh=MTJ3dHR1YXF5OXQ5eA=="}><li><FaInstagram/></li></Link>
+       to={"https://www.instagram.com/diamondvisaservices"}><li><FaInstagram/></li></Link>
       <Link to={"https://facebook.com/diamondvisa"}><li><FaFacebook/></li></Link>
       <Link to={"https://twitter.com/diamondvisa"}><li><FaTwitter/></li></Link>
     </ul>
