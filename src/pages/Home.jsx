@@ -22,7 +22,7 @@ const Home = () => {
       </div>
       <div className="image-box">
         <img
-          src="/images/ac.png"
+          src="/images/h.png"
           alt="About our company"
           className="about-image"
         />
@@ -33,9 +33,9 @@ const Home = () => {
       <div className="content-box" data-aos="zoom-in">
         <p className="abbout-title">// COUNTRY //</p>
         <h2 className="abbout-heading">
-        Immigration Choose Your Country
+        What Visa Services Are You Needing Today?
         </h2>
-        <p className='desc'>Our expert consultants evaluate your eligibility and guide you through the most suitable visa options based on your qualifications, skills, and</p>
+        <p className='desc'>Our expert consultants evaluate your eligibility and guide you through the most suitable visa options based on your qualifications and skills</p>
          <Link to={"/visa"} className='read-more'>Read More</Link>
 
       </div>

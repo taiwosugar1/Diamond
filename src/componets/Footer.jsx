@@ -1,7 +1,7 @@
 
 import React from 'react'
 import "./Footer.css"
-import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa'
+import { FaFacebook, FaInstagram, FaPhone, FaTwitter, FaWhatsapp } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import NewsletterComponent from './NewsletterComponent'
 
@@ -16,6 +16,10 @@ const Footer = () => {
           <h3>ABOUT US</h3>
          <li><a href="https://wa.me/message/NL7UY3M3Q6ZOG1"> Quick chat here <FaWhatsapp/></a></li> 
           <li>Book a Flight</li>
+          <a href='tel: +1-614-707-6245' >
+                 <div >
+                    <h5 style={{color: "white"}}>tel: +1 614 707 6245</h5>
+                </div> </a>
         </ul>
         <ul className='footer-media-large-screen'>
       <Link

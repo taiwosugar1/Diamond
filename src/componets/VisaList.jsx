@@ -11,8 +11,8 @@ const visas = [
     backgroundImage: "/images/st2.png",
   },
   {
-    type: "Student Visa",
-    description: "For those pursuing education in top institutions abroad.",
+    type: "Emergency Visa",
+    description: "",
     icon: <FaGraduationCap />,
     backgroundImage: "/images/st1.png",
   },
@@ -35,8 +35,8 @@ const visas = [
     backgroundImage: "/images/st5.png",
   },
   {
-    type: "Investor Visa",
-    description: "For investors looking to grow their wealth overseas.",
+    type: "Visa Extention",
+    description: "",
     icon: <FaCoins />,
     backgroundImage: "/images/st6.png",
   },
