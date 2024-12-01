@@ -48,7 +48,7 @@ const Home = () => {
         Visa & Immigration Consulting Firm In US
         </h2>
         <p className='desc'>We provide meticulous support in preparing and organizing the required documents, ensuring a smooth and error-free submission process.We provide meticulous support in preparing</p>
-         <Link to={"/sevices"} className='read-more'>Read More</Link>
+         <Link to={"/services"} className='read-more'>Read More</Link>
 
       </div>
       
