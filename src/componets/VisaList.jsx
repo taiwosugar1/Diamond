@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./VisaList.css";
+import FAQ from "./FAQ";
 
 const visas = [
   {
@@ -26,7 +27,8 @@ const visas = [
     description: "Fiancé(e) or relative visa for U.S. immigration.",
     icon: "FaPlane",
     backgroundImage: "/images/st9.png",
-    details: "The K1/i-130 Visa is for those seeking U.S. immigration through a fiancé(e) or a close relative. It facilitates family reunification.",
+    details: "The K1/i-130 Visa is for those seeking U.S. immigration through a fiancé(e) or a close relative. It facilitates family reunification. An Advance payment of 600 dollars is included and Compulsory to be paid firstly for an appointment to be approved",
+
   },
   {
     id: 4,
@@ -86,6 +88,8 @@ const VisaList = () => {
           </div>
         ))}
       </div>
+      {/* FAQ Component */}
+      <FAQ />
     </section>
   );
 };

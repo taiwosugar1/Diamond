@@ -22,8 +22,6 @@ const SingleVisa = () => {
         <p>{visa.description}</p> {/* Added description here */}
       </div>
 
-      {/* FAQ Component */}
-      <FAQ visaType={visa.type} />
     </div>
   );
 };
