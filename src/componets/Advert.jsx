@@ -1,19 +1,20 @@
 import React from "react";
 import "./Advert.css";
 import { LiaPlaneDepartureSolid } from "react-icons/lia";
-import { GiAutoRepair } from "react-icons/gi";
-import { GrUserExpert } from "react-icons/gr";
-import { FaLightbulb, FaAward } from "react-icons/fa6";
-import { MdBookmarkAdded } from "react-icons/md";
+
+import { GrHome, GrUserExpert } from "react-icons/gr";
+import {MdCarRental } from "react-icons/md";
+import { TbWorldCheck } from "react-icons/tb";
+import { FaExternalLinkSquareAlt } from "react-icons/fa";
 
 const Advert = () => {
   const adverts = [
-    { title: "Faster & Reliable", icon: <LiaPlaneDepartureSolid/> },
-    { title: "Executant", icon: <GiAutoRepair /> },
+    { title: "Consultancy", icon: <FaExternalLinkSquareAlt/> },
+    { title: "Trip Planning", icon: <LiaPlaneDepartureSolid /> },
+    { title: "Airbnb", icon: <GrHome /> },
+    { title: "Tourism", icon: <TbWorldCheck  /> },
+    { title: "Transportation Services", icon: <MdCarRental /> },
     { title: "Accurate & Expert Advice", icon: <GrUserExpert /> },
-    { title: "Immigration Process Responsibility", icon: <FaLightbulb /> },
-    { title: "Legal Immigration", icon: <MdBookmarkAdded /> },
-    { title: "Success", icon: <FaAward /> },
   ];
 
   return (

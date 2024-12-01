@@ -13,6 +13,12 @@ import Contact1 from './componets/contact/Contact1';
 import VisaList from './componets/VisaList';
 import Service from './componets/Service';
 import AosAnimation from './componets/AosAnimation';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import VisaPage from './componets/SingleVisa';
+import SingleVisa from './componets/SingleVisa';
+
+AOS.init();
 
 
 const ScrollToTop = () => {
@@ -92,7 +98,7 @@ const App = () => {
          <Route path='/contact1' element={<Contact1/>}/>
          <Route path="/visa" exact element={<VisaList/>}/>
          <Route path="/services" exact element={<Service/>}/>
-         
+         <Route path="/visa/:visaType" element={<SingleVisa />} />
          
          
          </Routes>

@@ -20,6 +20,7 @@ const Footer = () => {
                  <div >
                     <h5 style={{color: "white"}}>tel: +1 614 707 6245</h5>
                 </div> </a>
+                <p>Email:  Diamondimmigrationservices@gmail.com</p>
         </ul>
         <ul className='footer-media-large-screen'>
       <Link
