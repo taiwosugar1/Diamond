@@ -7,8 +7,8 @@
   --body-font-bold: 600;
   --text-color: #5d666f;
   --link-color: #fd413b;
-  --ye: #f0e8d5;
-  --bg: #dce8f3  ;
+  --bg: #f7f7f7;
+  --ye: #dce8f3  ;
   --headings: #00255c;
   --btn-font-size: 14px;
   --theme-light-background: #f4f5f8;
@@ -19,13 +19,11 @@
 .App {
   text-align: center;
   overflow: hidden auto;
-  box-sizing: border-box;
 }
 body {
   font-family: var(--body-font-family);
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6 {
