@@ -12,7 +12,7 @@ const Advert = () => {
   const adverts = [
     { title: "Consultancy", icon: <FaExternalLinkSquareAlt/> },
     { title: "Trip Planning", icon: <LiaPlaneDepartureSolid /> },
-    { title: "Airbnb", icon: <GrHome /> },
+    { title: "Airbnb", icon: <GrHome />, link: "https://www.instagram.com/zeavixeventandmore/" },
     { title: "Tourism", icon: <TbWorldCheck  /> },
     { title: "Transportation Services", icon: <MdCarRental /> },
     { title: "Accurate & Expert Advice", icon: <GrUserExpert /> },
@@ -22,7 +22,7 @@ const Advert = () => {
     <div className="advert-container">
       
       {adverts.map((advert, index) => (
-        <Link to={"https://www.instagram.com/zeavixeventandmore/profilecard/?igsh=YmxydG1wZmg0bXdu"}>
+        <Link to={advert.link}>
         <div key={index} className="advert-card">
           <div className="icon">{advert.icon}</div>
           <h3 className="title">{advert.title}</h3>
