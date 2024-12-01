@@ -32,12 +32,13 @@ const visas = [
   },
   {
     id: 4,
-    type: "Other Visa Application Services",
-    description: "Assistance with various visa types including work, business, and more.",
-    icon: "FaBusinessTime",
-    backgroundImage: "/images/st4.png",
-    details: "Our Other Visa Application Services include a wide range of visas, such as work, business, and other specialized types of visas for individuals seeking entry into various countries for different purposes.",
+    type: "Naija Wife / Resident Permit",
+    description: "Helping you secure residency or permits through marriage or other legal means.",
+    icon: "FaAddressCard",
+    backgroundImage: "/images/st10.png",
+    details: "The Naija Wife / Resident Permit service is designed for individuals who are married to Nigerian citizens or seeking residency permits through marriage or other legal pathways. We provide guidance and assistance with the necessary documentation, ensuring compliance with immigration regulations and a smooth application process. Whether you are a foreign spouse or an individual seeking long-term residency, we are here to help.",
   },
+  
   {
     id: 5,
     type: "Business Visa",
