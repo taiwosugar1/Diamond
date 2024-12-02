@@ -33,7 +33,7 @@
     font-size: 1.8em;
     margin-bottom: 20px;
     color: #fff;
-  font-family: "Playfair Display", serif;
+   font-family: "Playfair Display", serif;
   }
   
   /* Form Group */
@@ -52,7 +52,7 @@
   select {
     padding: 10px;
     border: none;
-    border-bottom: 2px solid grey;
+    border-bottom: 1px solid rgb(181, 178, 178);
     background: transparent;
     border-radius: 5px;
     font-size: 1em;

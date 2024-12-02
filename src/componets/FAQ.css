@@ -38,6 +38,7 @@
     font-size: 1rem;
     width: 80%;
     text-align: left;
+    font-family: "Playfair Display", serif;
   }
   .faq-h2{
     color: white;
@@ -58,6 +59,8 @@
     background-color: var(--bg);
     font-size: 0.95rem;
     color: var(--headings);
+    font-family: "Playfair Display", serif;
+    
   }
   
   .faq-answer p {
