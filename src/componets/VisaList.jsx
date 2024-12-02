@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./VisaList.css";
 import FAQ from "./FAQ";
 import { FaMapLocation, FaGraduationCap, FaPlane, FaAddressCard, FaBusinessTime, FaCoins } from "react-icons/fa6";
@@ -83,6 +83,11 @@ const VisaList = () => {
   return (
     <section className="visa-list-container">
       <h2 className="visa-list-heading" data-aos="zoom-in">Our Visa Services</h2>
+      <div className="back-link">
+        <Link to="/">
+          <span>← Back Home</span>
+        </Link>
+      </div>
       <div className="visa-grid">
         {visas.map((visa) => (
           <div

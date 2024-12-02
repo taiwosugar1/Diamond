@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Hero.css";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -31,13 +32,13 @@ const Hero = () => {
             <h2 className="popup-welcome">Welcome to Diamond Visa Services!</h2>
             <ul className="popup-list">
               <li>
-                <a href="/visa-application">Visa Application</a>
+                <Link to={"/visa"}>Visa Application</Link>
               </li>
               <li>
-                <a href="/immigration-advice">Immigration Advice</a>
+                <a href="/contact">Immigration Advice</a>
               </li>
               <li>
-                <a href="/talk-to-agency">Talk to an Immigration Agency</a>
+                <a href="https://wa.me/message/NL7UY3M3Q6ZOG1">Talk to an Immigration Agency</a>
               </li>
             </ul>
           </div>

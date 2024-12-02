@@ -7,6 +7,7 @@ import Country from '../componets/Country'
 import { Link } from 'react-router-dom'
 import WorkingProcess from '../componets/WorkingProcess'
 import TestPreparation from '../componets/TestPreparation'
+import Testimony from '../componets/Testimony'
 
 const Home = () => {
   return (
@@ -62,6 +63,7 @@ const Home = () => {
       <WorkingProcess/>
 
       <TestPreparation/>
+      <Testimony/>
       
     </div>
   )
