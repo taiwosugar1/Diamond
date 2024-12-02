@@ -63,7 +63,8 @@
   color: white;
   font-family: 'roboto', 'san-serif';
 }
-.testimony-card:hover .testimony-text, .testimony-card:hover .test-p{
+.testimony-card:hover .testimony-text, .testimony-card:hover .test-p,
+.testimony-card:hover .testimony-name{
   color: #fff;
 }
 .testimony-card:hover .testimony-image, .testimony-card:hover .testimony-image span {
