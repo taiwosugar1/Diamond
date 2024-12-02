@@ -13,9 +13,9 @@ const Advert = () => {
     { title: "Consultancy", icon: <FaExternalLinkSquareAlt/> },
     { title: "Trip Planning", icon: <LiaPlaneDepartureSolid /> },
     { title: "Airbnb", icon: <GrHome />, link: "https://www.instagram.com/zeavixeventandmore/" },
-    { title: "Tourism", icon: <TbWorldCheck  /> },
-    { title: "Transportation Services", icon: <MdCarRental /> },
-    { title: "Accurate & Expert Advice", icon: <GrUserExpert /> },
+    { title: "Tourism", icon: <TbWorldCheck />, link: "/services" },
+    { title: "Transportation Services", icon: <MdCarRental />, link:"/services" },
+    { title: "Accurate & Expert Advice", icon: <GrUserExpert />, link:"https://wa.me/message/NL7UY3M3Q6ZOG1" },
   ];
 
   return (

@@ -6,19 +6,16 @@
     gap: 20px;
     place-content: center;
     padding: 40px 0px;
-    background: var(--bg); /* Light background for contrast */
+    background: var(--bg);
   }
   
-  /* Individual country card */
   .country-card {
     text-align: center;
     background: var(--ye);
     padding: 20px;
-    margin: 10px;
-    
+    margin: 3px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
@@ -27,7 +24,6 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
   
-  /* Flag styling */
   .country-flag {
     width: 80px;
     height: 80px;
@@ -36,7 +32,6 @@
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
   }
   
-  /* Country name styling */
   .country-name {
     font-family: "Playfair Display", serif;
     font-size: 1.2rem;
@@ -44,7 +39,6 @@
     margin: 10px 0;
   }
   
-  /* Country description styling */
   .country-description {
     font-family: "Arial", sans-serif;
     font-size: 0.9rem;

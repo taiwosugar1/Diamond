@@ -40,6 +40,7 @@ const services = [
     image: "https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=400",
   },
   {
+    id:'5',
     title: "Hotel Booking & Reservations",
     description:
       "Secure your stay at top-rated luxury hotels worldwide. We offer tailored recommendations and easy booking for a seamless travel experience.",

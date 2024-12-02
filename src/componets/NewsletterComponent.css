@@ -21,6 +21,7 @@
 .newsletter-box-for-form h2{
   font-size: 19px;
   color: #00255c;
+  font-family: "Playfair Display", serif;
 }
 
 .newsletter-form {
@@ -32,8 +33,12 @@
 .newsletter-input {
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--link-color);
   border-radius: 4px;
+}
+
+.newsletter-form input::placeholder{
+  color: #00255c;
 }
 
 .newsletter-button {
@@ -43,6 +48,7 @@
   color: white;
   cursor: pointer;
   border-radius: 4px;
+  font-family: "Playfair Display", serif;
 }
 
 .newsletter-button:hover {

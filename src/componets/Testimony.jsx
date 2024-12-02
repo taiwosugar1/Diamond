@@ -14,7 +14,8 @@ const testimonies = [
     text: "I was impressed by the efficiency and professionalism. The process was quick and smooth.",
     name: "Sarah Smith",
     country: "Canada",
-    image: "https://images.pexels.com/photos/3985228/pexels-photo-3985228.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: "/images/st2.png",
+
 
   },
   {
@@ -22,14 +23,16 @@ const testimonies = [
     text: "The customer service was excellent. I was guided through the process and highly recommend it.",
     name: "Michael Lee",
     country: "UK",
-    image: "https://via.placeholder.com/150",
+    image: "/images/st3.png",
+
   },
   {
     id: 4,
     text: "I had an emergency, and this service helped me get my visa processed quickly. Grateful!",
     name: "Emily Zhang",
     country: "China",
-    image: "https://images.pexels.com/photos/3985228/pexels-photo-3985228.jpeg?auto=compress&cs=tinysrgb&w=600",
+     image: "/images/st4.png",
+
 
   },
   {
@@ -37,14 +40,16 @@ const testimonies = [
     text: "The process was straightforward, and the team was helpful. Now enjoying my stay in the UK.",
     name: "Aisha Bello",
     country: "Nigeria",
-    image: "https://via.placeholder.com/150",
+    image: "/images/st5.png",
+
   },
   {
     id: 6,
     text: "I got my business visa with ease, and the team was very knowledgeable. Highly recommend.",
     name: "Ahmed Farouk",
     country: "Egypt",
-    image: "https://images.pexels.com/photos/3985228/pexels-photo-3985228.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: "/images/st6.png",
+
 
   },
   {
@@ -52,21 +57,23 @@ const testimonies = [
     text: "I couldn’t have asked for a better experience. Everything from consultation to approval was smooth.",
     name: "Laura Wilson",
     country: "Australia",
-    image: "https://via.placeholder.com/150",
+    image: "/images/t1.png",
+
   },
   {
     id: 8,
     text: "Excellent service! My visa was approved within the week. The instructions were clear and easy.",
     name: "Luis Gomez",
     country: "Spain",
-    image: "https://via.placeholder.com/150",
+    image: "/images/im1.png",
   },
   {
     id: 9,
     text: "This company is amazing! Their attention to detail is exceptional. I felt supported throughout the process.",
     name: "David Kim",
     country: "South Korea",
-    image: "https://images.pexels.com/photos/3985228/pexels-photo-3985228.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: "/images/im2.png",
+
 
   },
   {
@@ -74,14 +81,16 @@ const testimonies = [
     text: "The visa service was efficient and stress-free. I received constant updates and felt well-informed.",
     name: "Priya Sharma",
     country: "India",
-    image: "https://via.placeholder.com/150",
+    image: "/images/hotel1.png",
+
   },
   {
     id: 11,
     text: "The team was fantastic. My visa was processed quickly, and I was kept updated throughout.",
     name: "Samantha Jones",
     country: "New Zealand",
-    image: "https://via.placeholder.com/150",
+    image: "/images/hotel2.png",
+
   },
   {
     id: 12,
@@ -95,28 +104,32 @@ const testimonies = [
     text: "Incredible experience! The team was extremely helpful. My visa was approved quickly, and I’m happy.",
     name: "Raj Patel",
     country: "India",
-    image: "https://via.placeholder.com/150",
+    image: "/images/hotel3.png",
+
   },
   {
     id: 14,
     text: "I had a great experience. The application process was smooth, and I’ll recommend this service.",
     name: "Olivia Brown",
     country: "USA",
-    image: "https://via.placeholder.com/150",
+    image: "/images/hotel4.png",
+
   },
   {
     id: 15,
     text: "This company offers the best visa service! My application was processed quickly, and the staff helped.",
     name: "James Miller",
     country: "Canada",
-    image: "https://via.placeholder.com/150",
+    image: "/images/hotel5.png",
+
   },
   {
     id: 16,
     text: "I can’t thank this service enough. My visa application was quick, with constant updates. Highly recommend.",
     name: "Sophia Wong",
     country: "Singapore",
-    image: "https://via.placeholder.com/150",
+    image: "/images/hotel6.png",
+
   },
   {
     id: 17,

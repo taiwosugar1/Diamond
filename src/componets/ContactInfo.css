@@ -1,5 +1,3 @@
-
-  
   .contact-container {
     display: flex;
     justify-content: space-between;
@@ -40,7 +38,7 @@
   .contact-link-button:hover {
     background-color: #0056b3;
   }
-  
+ 
   /* For large screens */
   @media (min-width: 1024px) {
     .contact-container {
