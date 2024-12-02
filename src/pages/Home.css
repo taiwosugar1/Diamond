@@ -97,6 +97,17 @@
     width: 60%;
 
   }
+
+  .faq-con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background: var(--headings);
+    width: 100%;
+    padding:10px 0;
+    margin:10px 0;
+  }
   
   
   /* Responsive adjustments */
@@ -124,6 +135,11 @@
     .down-sec .one, .down-sec .two{
       margin:7px 10px;
       width: 95%;
+    }
+
+    .faq-con{
+      
+      flex-direction: column;
     }
     
   }

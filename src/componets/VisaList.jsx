@@ -1,8 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./VisaList.css";
-import FAQ from "./FAQ";
-import { FaMapLocation, FaGraduationCap, FaPlane, FaAddressCard, FaBusinessTime, FaCoins } from "react-icons/fa6";
+import { FaMapLocation, FaPlane, FaAddressCard, FaBusinessTime, FaCoins } from "react-icons/fa6";
 import { GrEmergency } from "react-icons/gr";
 
 
@@ -104,8 +103,6 @@ const VisaList = () => {
           </div>
         ))}
       </div>
-      {/* FAQ Component */}
-      <FAQ />
     </section>
   );
 };

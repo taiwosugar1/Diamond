@@ -29,7 +29,10 @@
 
 .testimony-card:hover{
   background: var(--link-color);
+  background: var(--link-color);
 }
+
+
 .img-container{
   display: flex;
 }
@@ -84,7 +87,7 @@
   margin-bottom: 10px;
   position: relative;
   text-align: start;
-  font-family: 'poppins', sans-serif;
+  font-family: "Playfair Display", serif;
 } 
 .testimony-text::before{
   font-size: 3.5rem;

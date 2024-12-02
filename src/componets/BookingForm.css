@@ -1,0 +1,100 @@
+.form-message {
+    padding:20px;
+    margin: 20px;
+    text-align: center;
+    font-size: 1em;
+    color: #fff;
+  }
+  /* Form Container */
+.booking-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 40%;
+    background: var(--headings);
+    padding: 20px;
+  }
+  
+  /* Booking Form */
+  .booking-form {
+    background: var(--link-color);
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    color: white;
+  }
+  
+  .book-f{
+    font-family: "Playfair Display", serif;
+  }
+  .form-title {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #fff;
+  font-family: "Playfair Display", serif;
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+   margin-left: 20px;
+    text-align: left;
+  }
+  
+  input,
+  select {
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid grey;
+    background: transparent;
+    border-radius: 5px;
+    font-size: 1em;
+    color: white;
+  }
+  
+  input::placeholder {
+    color: white;
+    font-size: 12px;
+  }
+  
+  input:focus,
+  select:focus {
+    outline: none;
+    border-bottom: 2px solid darkgrey;
+  }
+  
+  /* Submit Button */
+  .form-button {
+    width: 40%;
+    padding: 10px;
+    font-size: 1em;
+    color: white;
+    background-color: #222;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "Playfair Display", serif;
+    transition: background-color 0.3s;
+  }
+  
+  .form-button:hover {
+    background-color: #444;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .booking-form-container {
+        width: 80%;
+    }
+    .booking-form {
+      padding: 20px;
+    }
+  }
+  

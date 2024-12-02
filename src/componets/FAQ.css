@@ -1,6 +1,10 @@
 .faq-container {
     margin-top: 5rem;
-    max-width: 700px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   
   .faq-list {
@@ -9,13 +13,13 @@
   
   .faq-item {
     margin-bottom: 0.5rem;
-    border: 1px solid var(--headings);
+    border: 1px solid rgb(40, 40, 151);
     border-radius: 5px;
     overflow: hidden;
   }
   
   .faq-question {
-    background-color: var(--ye);
+    background-color: var(--heading);
     padding: 1rem;
     cursor: pointer;
     font-weight: bold;
@@ -26,17 +30,23 @@
   }
   
   .faq-question:hover {
-    background: var(--ye);
+    background: var(--link-color);
   }
 
-  .faq-container h2, .faq-question h3{
-    color: var(--headings);
+  .faq-question h3{
+    color: white;
+    font-size: 1rem;
+    width: 80%;
+    text-align: left;
+  }
+  .faq-h2{
+    color: white;
   }
   
   .faq-arrow {
     transition: transform 0.3s ease;
     font-size: 1.2rem;
-    color: var(--headings);
+    color: white;
   }
   
   .faq-arrow.rotate {
@@ -52,5 +62,11 @@
   
   .faq-answer p {
     margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .faq-container {
+      width: 100%;
+    }
   }
   

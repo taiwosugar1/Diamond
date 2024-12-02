@@ -37,7 +37,12 @@ const FAQ = ({ visaType }) => {
 
   return (
     <div className="faq-container">
-      <h2>Frequently Asked Questions about {visaType}</h2>
+        <p className="abbout-title">// COUNTRY //</p>
+        <h2 className="faq-h2">
+          Frequently Asked Questions
+        </h2>
+       
+
       <div className="faq-list">
         {faqs.map((faq, index) => (
           <div key={index} className="faq-item">
