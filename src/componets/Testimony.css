@@ -13,9 +13,8 @@
   gap: 20px;
 }
 .testimony-card {
-  flex: 0 0 100%;
   max-width: 40%;
-  text-align: center;
+  text-align: start;
   background-color: rgb(232, 234, 234);
   margin: 0 10px;
   border-radius: 10px;
@@ -30,13 +29,18 @@
   color: #fff;
 }
 
+.test-p{
+  font-size: 14px;
+  color: var(--link-color);
+  margin-top: 0;
+}
+
 .testimony-text {
   font-size: 1rem;
   color: #555;
   margin-bottom: 10px;
-  line-height: 1.5;
   position: relative;
-  text-align-last: left;
+  text-align: start;
   font-family: 'poppins', sans-serif;
 } 
 .testimony-text::before{
@@ -60,6 +64,7 @@
 .testimony-name {
   font-size: 1.2rem;
   font-weight: bold;
+
   color: var(--headings);
 }
 .testimony-nav {
@@ -87,7 +92,7 @@
 }
 @media screen and (max-width: 768px){
   .testimony-card {
-    flex: 0 0 100%;
+   
     max-width: 80%;
   }
 }

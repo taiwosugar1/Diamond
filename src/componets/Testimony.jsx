@@ -4,113 +4,114 @@ import './Testimony.css';
 const testimonies = [
   {
     id: 1,
-    text: "This service changed my life! The visa application was seamless, and I received it faster than expected. Amazing support.",
+    text: "This service changed my life! The visa application was seamless and faster than expected.",
     name: "John Doe",
     country: "USA",
   },
   {
     id: 2,
-    text: "I was impressed by the efficiency and professionalism. The process was quick, and my questions were answered promptly. Highly recommend!",
+    text: "I was impressed by the efficiency and professionalism. The process was quick and smooth.",
     name: "Sarah Smith",
     country: "Canada",
   },
   {
     id: 3,
-    text: "The customer service is excellent. I was guided through the application process. I’d definitely use this service again.",
+    text: "The customer service was excellent. I was guided through the process and highly recommend it.",
     name: "Michael Lee",
     country: "UK",
   },
   {
     id: 4,
-    text: "I had an emergency, and this service helped me get my visa processed quickly. I’m very grateful for the support!",
+    text: "I had an emergency, and this service helped me get my visa processed quickly. Grateful!",
     name: "Emily Zhang",
     country: "China",
   },
   {
     id: 5,
-    text: "The process was straightforward, and the team was extremely helpful. I’m now enjoying my stay in the UK, thanks to you.",
+    text: "The process was straightforward, and the team was helpful. Now enjoying my stay in the UK.",
     name: "Aisha Bello",
     country: "Nigeria",
   },
   {
     id: 6,
-    text: "I got my business visa with ease, and the team was very knowledgeable. I highly recommend this reliable service to anyone.",
+    text: "I got my business visa with ease, and the team was very knowledgeable. Highly recommend.",
     name: "Ahmed Farouk",
     country: "Egypt",
   },
   {
     id: 7,
-    text: "I couldn’t have asked for a better experience. Everything, from consultation to approval, was smooth and well-organized. Thank you so much!",
+    text: "I couldn’t have asked for a better experience. Everything from consultation to approval was smooth.",
     name: "Laura Wilson",
     country: "Australia",
   },
   {
     id: 8,
-    text: "Excellent service! My visa was approved within the week. The instructions were clear and easy to follow. Thanks for the support!",
+    text: "Excellent service! My visa was approved within the week. The instructions were clear and easy.",
     name: "Luis Gomez",
     country: "Spain",
   },
   {
     id: 9,
-    text: "This company is amazing! Their attention to detail is exceptional. I felt supported throughout the entire visa process. Highly recommend!",
+    text: "This company is amazing! Their attention to detail is exceptional. I felt supported throughout the process.",
     name: "David Kim",
     country: "South Korea",
   },
   {
     id: 10,
-    text: "The visa service was efficient and stress-free. I received constant updates and always felt informed. Will definitely use them again!",
+    text: "The visa service was efficient and stress-free. I received constant updates and felt well-informed.",
     name: "Priya Sharma",
     country: "India",
   },
   {
     id: 11,
-    text: "The team was fantastic. My visa was processed quickly, and I was kept in the loop at all times. Highly recommend!",
+    text: "The team was fantastic. My visa was processed quickly, and I was kept updated throughout.",
     name: "Samantha Jones",
     country: "New Zealand",
   },
   {
     id: 12,
-    text: "I’m very pleased with the service. The visa application was simple, and I received it much quicker than I expected.",
+    text: "I’m very pleased with the service. The visa application was simple and much quicker than expected.",
     name: "Daniel Martinez",
     country: "Mexico",
   },
   {
     id: 13,
-    text: "Incredible experience! The team was extremely helpful. My visa was approved in record time. I couldn’t be happier.",
+    text: "Incredible experience! The team was extremely helpful. My visa was approved quickly, and I’m happy.",
     name: "Raj Patel",
     country: "India",
   },
   {
     id: 14,
-    text: "I had a great experience. The application process was smooth and efficient. I will definitely recommend this service to others.",
+    text: "I had a great experience. The application process was smooth, and I’ll recommend this service.",
     name: "Olivia Brown",
     country: "USA",
   },
   {
     id: 15,
-    text: "This company offers the best visa service! My application was processed quickly, and the staff was supportive throughout the process.",
+    text: "This company offers the best visa service! My application was processed quickly, and the staff helped.",
     name: "James Miller",
     country: "Canada",
   },
   {
     id: 16,
-    text: "I can’t thank this service enough. My visa application was quick and easy, with constant updates. Highly recommend it to anyone!",
+    text: "I can’t thank this service enough. My visa application was quick, with constant updates. Highly recommend.",
     name: "Sophia Wong",
     country: "Singapore",
   },
   {
     id: 17,
-    text: "Amazing service! From start to finish, everything was organized. I had no issues with my visa application. Definitely the best service.",
+    text: "Amazing service! Everything was organized. I had no issues with my visa application. Best service ever.",
     name: "Victor Lee",
     country: "South Korea",
   },
   {
     id: 18,
-    text: "This service made the visa process easy and fast. I was kept updated every step of the way, and it was stress-free.",
+    text: "This service made the visa process easy and fast. I was kept updated every step of the way.",
     name: "Emily Taylor",
     country: "UK",
   },
 ];
+
 
 
 const Testimony = () => {
@@ -171,7 +172,7 @@ const Testimony = () => {
         <h2 className="abbout-heading">
         Let’s Explore Why People Say About Us
         </h2>
-        <p className='desc'>Our client love us and alway get impress by our decisive services</p>
+        <p className='desc'>Our client love us and alway get impress by our decisive services.</p>
 
       </div>
       <div className="testimony-nav">
@@ -201,11 +202,10 @@ const Testimony = () => {
               transition: 'transform 0.5s ease',
             }}
           >
-            
-            <p className="testimony-text">{testimony.text}</p>
             <p className="testimony-name">
-              <strong>{testimony.name}</strong> - {testimony.country} 
+              <strong>{testimony.name}</strong> <br /> <p className='test-p'>{testimony.country} </p>
             </p>
+            <p className="testimony-text">{testimony.text}</p>
           </div>
         ))}
       </div>

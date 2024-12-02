@@ -1,6 +1,6 @@
 /* General Footer Styling */
 .footer {
-    background-color: #020247;
+    background-color: var(--headings);
     color: #e4e0e0;
     display: flex;
     align-items: center;
@@ -24,6 +24,7 @@
     list-style: none;
     padding: 0;
     flex: 1;
+    text-align: center;
   }
   
   .footer-ul h3 {
@@ -88,6 +89,7 @@
   /* Feedback Component */
   .large-screen-feedback {
     margin-top: 2rem;
+    margin-left: 20px;
   }
   
   .large-screen-feedback h3 {
@@ -112,12 +114,24 @@
   @media (max-width: 768px) {
     .home-footer {
       flex-direction: column;
-      align-items: center;
+      align-items: start;
       gap: 1rem;
+    }
+
+    .footer-ul{
+      padding-left: 10px;
+      text-align: left;
+    }
+    .footer-ul ul{
+      margin-top: 40px;
     }
   
     .footer-ul h3 {
       font-size: 1.1rem;
+    }
+
+    .foot-p{
+      text-align: start;
     }
   
    .home-footer-under-large {

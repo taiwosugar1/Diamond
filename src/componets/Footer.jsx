@@ -1,7 +1,7 @@
 
 import React from 'react'
 import "./Footer.css"
-import { FaFacebook, FaInstagram, FaPhone, FaTwitter, FaWhatsapp } from 'react-icons/fa'
+import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import NewsletterComponent from './NewsletterComponent'
 
@@ -14,13 +14,8 @@ const Footer = () => {
       <div className="footer-ul">
         <ul>
           <h3>ABOUT US</h3>
-         <li><a href="https://wa.me/message/NL7UY3M3Q6ZOG1"> Quick chat here <FaWhatsapp/></a></li> 
+         <li><a href="https://wa.me/message/NL7UY3M3Q6ZOG1">  chat on Whatsapp</a></li> 
           <li>Book a Flight</li>
-          <a href='tel: +1-614-707-6245' >
-                 <div >
-                    <h5 style={{color: "white"}}>tel: +1 614 707 6245</h5>
-                </div> </a>
-                <p>Email:  Diamondimmigrationservices@gmail.com</p>
         </ul>
         <ul className='footer-media-large-screen'>
       <Link
@@ -33,7 +28,7 @@ const Footer = () => {
       <div className="footer-ul">
         <div>
   
-            <p> Contact us today to schedule a consultation and take the first step towards achieving your visa and immigration goals!</p>
+            <p className='foot-p'> Contact us today to schedule a consultation and take the first step towards achieving your visa and immigration goals!</p>
         </div>
       </div>
 
