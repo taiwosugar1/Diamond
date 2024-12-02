@@ -7,14 +7,15 @@ const testimonies = [
     text: "This service changed my life! The visa application was seamless and faster than expected.",
     name: "John Doe",
     country: "USA",
-    image: "https://via.placeholder.com/150",
+    image: "https://images.pexels.com/photos/3985228/pexels-photo-3985228.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
   {
     id: 2,
     text: "I was impressed by the efficiency and professionalism. The process was quick and smooth.",
     name: "Sarah Smith",
     country: "Canada",
-    image: "https://via.placeholder.com/150",
+    image: "https://images.pexels.com/photos/3985228/pexels-photo-3985228.jpeg?auto=compress&cs=tinysrgb&w=600",
+
   },
   {
     id: 3,
@@ -28,7 +29,8 @@ const testimonies = [
     text: "I had an emergency, and this service helped me get my visa processed quickly. Grateful!",
     name: "Emily Zhang",
     country: "China",
-    image: "https://via.placeholder.com/150",
+    image: "https://images.pexels.com/photos/3985228/pexels-photo-3985228.jpeg?auto=compress&cs=tinysrgb&w=600",
+
   },
   {
     id: 5,
@@ -42,7 +44,8 @@ const testimonies = [
     text: "I got my business visa with ease, and the team was very knowledgeable. Highly recommend.",
     name: "Ahmed Farouk",
     country: "Egypt",
-    image: "https://via.placeholder.com/150",
+    image: "https://images.pexels.com/photos/3985228/pexels-photo-3985228.jpeg?auto=compress&cs=tinysrgb&w=600",
+
   },
   {
     id: 7,
@@ -63,7 +66,8 @@ const testimonies = [
     text: "This company is amazing! Their attention to detail is exceptional. I felt supported throughout the process.",
     name: "David Kim",
     country: "South Korea",
-    image: "https://via.placeholder.com/150",
+    image: "https://images.pexels.com/photos/3985228/pexels-photo-3985228.jpeg?auto=compress&cs=tinysrgb&w=600",
+
   },
   {
     id: 10,
