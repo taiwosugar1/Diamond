@@ -1,0 +1,69 @@
+.team-page {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .team-header {
+    margin-bottom: 30px;
+  }
+  
+  .team-heading {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .team-description {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  .team-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .team-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .team-member-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .team-member-info {
+    padding: 15px;
+  }
+  
+  .team-member-name {
+    font-size: 1.25rem;
+    color: var(--heading);
+    margin: 10px 0;
+    font-family:  "Playfair Display", serif;
+  }
+  
+  .team-member-role {
+    font-size: 1rem;
+    color: var(--link-color);
+    margin-bottom: 10px;
+  }
+  
+  .team-member-description {
+    font-size: 0.95rem;
+    color: var(--heading);
+    line-height: 1.5;
+  }
+  

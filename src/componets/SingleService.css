@@ -1,0 +1,30 @@
+.single-service {
+    padding: 20px;
+  }
+  
+  .single-service-header {
+    text-align: center;
+  }
+  
+  .service-banner {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .single-service-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  

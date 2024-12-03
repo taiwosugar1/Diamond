@@ -1,52 +1,7 @@
 import React from "react";
 import "./Service.css";
 import { Link } from "react-router-dom";
-
-const services = [
-  {
-    title: "Visa Consultation",
-    description:
-      "Personalized visa guidance tailored to your unique travel or immigration goals.",
-    image: "/images/h1.png", // Replace with a real image
-  },
-  {
-    title: "Fast Processing",
-    description:
-      "Experience swift and hassle-free visa application processing with us.",
-    image: "https://images.pexels.com/photos/248747/pexels-photo-248747.jpeg?auto=compress&cs=tinysrgb&w=400", // Replace with a real image
-  },
-  {
-    title: "Business & Investor Visas",
-    description:
-      "Elite support for entrepreneurs and investors seeking opportunities abroad.",
-    image: "https://images.pexels.com/photos/3184416/pexels-photo-3184416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
-},
-  {
-    title: "Family Reunification",
-    description:
-      "Helping families unite and build new lives in foreign lands.",
-    image: "https://images.pexels.com/photos/1128317/pexels-photo-1128317.jpeg?auto=compress&cs=tinysrgb&w=400", 
-  },
-  {
-    title: "Study Abroad",
-    description:
-      "Expert assistance for students pursuing higher education overseas.",
-    image: "https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&cs=tinysrgb&w=400", 
-  },
-  {
-    title: "Luxury Car Transportation",
-    description:
-      "Experience premium comfort with luxury car transportation services for your travel needs, ensuring you move with style and convenience.",
-    image: "https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=400",
-  },
-  {
-    id:'5',
-    title: "Hotel Booking & Reservations",
-    description:
-      "Secure your stay at top-rated luxury hotels worldwide. We offer tailored recommendations and easy booking for a seamless travel experience.",
-    image: "/images/hotel6.jpg",
-  },
-];
+import services from "./array/services";
 
 const continents = [
   {
@@ -132,8 +87,8 @@ const Service = () => {
       </div>
 
       <div className="services-grid">
-        {services.map((service, index) => (
-          <div className="service-card" key={index} data-aos="zoom-in">
+        {services.map((service) => (
+          <div className="service-card" key={service.id} data-aos="zoom-in">
             <img
               src={service.image}
               alt={service.title}
@@ -142,7 +97,9 @@ const Service = () => {
             <div className="service-info">
               <h3 className="service-title">{service.title}</h3>
               <p className="service-description">{service.description}</p>
-              {/* <Link to={"/visa"} className='read-more'>Read More</Link> */}
+              <Link to={`/services/${service.id}`} className="read-more">
+                Read More
+              </Link>
             </div>
           </div>
         ))}

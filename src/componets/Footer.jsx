@@ -1,10 +1,27 @@
 import React from "react";
 import "./Footer.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa6";
+import visas from "./array/visas";
 import NewsletterComponent from './NewsletterComponent';
+import services from "./array/services";
 
 const Footer = () => {
+
+  const navigate = useNavigate();
+  const handleCardClick = (visa) => {
+    if (visa.link) {
+      // For Emergency Visa, navigate to WhatsApp
+      window.open(visa.link, "_blank");
+    } else {
+      // Navigate to Single Visa Page with serializable data
+      navigate(`/visa/${visa.id}`);
+    }
+  };
+
+  const handleClick = (service) => {
+      navigate(`/services/${service.id}`);
+  };
   return (
     <footer className="footer">
       <div className="footer-section">
@@ -40,8 +57,8 @@ const Footer = () => {
       <div className="footer-section">
         <h3>Links</h3>
         <ul>
-          <li><Link to="/about-company" className="footer-link footer-about-company">About Company</Link></li>
-          <li><Link to="/meet-the-team" className="footer-link footer-meet-team">Meet the Team</Link></li>
+          <li><Link to="/about" className="footer-link footer-about-company">About Company</Link></li>
+          <li><Link to="/team" className="footer-link footer-meet-team">Meet the Team</Link></li>
           <li><Link to="/payment-type" className="footer-link footer-payment-type">Payment Type</Link></li>
           <li><Link to="/news-media" className="footer-link footer-news-media">News & Media</Link></li>
           <li><Link to="/world-media-partner" className="footer-link footer-world-partner">World Media Partner</Link></li>
@@ -50,24 +67,23 @@ const Footer = () => {
 
       <div className="footer-section">
         <h3>Visa</h3>
-        <ul>
-          <li><Link to="/student-visa" className="footer-link footer-student-visa">Student Visa</Link></li>
-          <li><Link to="/family-visa" className="footer-link footer-family-visa">Family Visa</Link></li>
-          <li><Link to="/tourist-visa" className="footer-link footer-tourist-visa">Tourist Visa</Link></li>
-          <li><Link to="/business-visa" className="footer-link footer-business-visa">Business Visa</Link></li>
-          <li><Link to="/diplomatic-visa" className="footer-link footer-diplomatic-visa">Diplomatic Visa</Link></li>
-        </ul>
+        {visas.map((visa) => (
+          <ul
+            key={visa.id}
+            onClick={() => handleCardClick(visa)}
+          >
+            <li className="footer-link">{visa.type}</li>
+          </ul>
+        ))}
       </div>
 
       <div className="footer-section">
-        <h3>Services</h3>
-        <ul>
-          <li><Link to="/ielts-coaching" className="footer-link footer-ielts-coaching">IELTS Coaching</Link></li>
-          <li><Link to="/toefl-coaching" className="footer-link footer-toefl-coaching">TOEFL Coaching</Link></li>
-          <li><Link to="/gre-coaching" className="footer-link footer-gre-coaching">GRE Coaching</Link></li>
-          <li><Link to="/gmat-coaching" className="footer-link footer-gmat-coaching">GMAT Coaching</Link></li>
-          <li><Link to="/sat-coaching" className="footer-link footer-sat-coaching">SAT Coaching</Link></li>
-        </ul>
+       <h3>Services</h3>
+       {services.map((service, index) => (
+          <ul key={index} >
+              <li className="footer-link" onClick={() => handleClick(service)}>{service.title}</li>
+          </ul>
+        ))}
       </div>
 
       <div className="footer-section news">
