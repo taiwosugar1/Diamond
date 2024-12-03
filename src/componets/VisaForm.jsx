@@ -9,17 +9,29 @@ const VisaForm = () => {
     name: "",
     email: "",
     phone: "",
+    dob: "",
+    nationality: "",
+    passportNumber: "",
+    maritalStatus: "",
+    address: "",
+    supportingDocuments: null,
     message: "",
     visaType: visaType || "",
   });
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value, files } = e.target;
+    if (name === "supportingDocuments") {
+      setFormData({ ...formData, [name]: files[0] });
+    } else {
+      setFormData({ ...formData, [name]: value });
+    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Implement email submission here (e.g., using EmailJS or your API)
+    // Implement submission logic here (e.g., EmailJS or API request)
+    console.log(formData);
     alert(`Application for ${formData.visaType} submitted successfully!`);
   };
 
@@ -27,8 +39,9 @@ const VisaForm = () => {
     <div className="visa-form-container">
       <h2>Apply for {formData.visaType || "a Visa"}</h2>
       <form onSubmit={handleSubmit}>
+        {/* Visa Type */}
         <div className="form-group">
-          <label htmlFor="visaType" className="abbout-title">// Visa Type //</label>
+          <label htmlFor="visaType">Visa Type</label>
           <select
             id="visaType"
             name="visaType"
@@ -37,22 +50,17 @@ const VisaForm = () => {
             className="dropdown"
             required
           >
-            <option value="" disabled style={{color:"#ff0000", background:"white"}}>
-              Select Visa Type
-            </option>
+            <option value="" disabled>Select Visa Type</option>
             <option value="Tourist Visa">Tourist Visa</option>
             <option value="Emergency Visa">Emergency Visa</option>
-            <option value="K1/i-130 Visa Application">
-              K1/i-130 Visa Application
-            </option>
-            <option value="Naija Wife / Resident Permit">
-              Naija Wife / Resident Permit
-            </option>
+            <option value="K1/i-130 Visa Application">K1/i-130 Visa Application</option>
+            <option value="Naija Wife / Resident Permit">Naija Wife / Resident Permit</option>
             <option value="Business Visa">Business Visa</option>
             <option value="Visa Extension">Visa Extension</option>
           </select>
         </div>
 
+        {/* Full Name */}
         <div className="form-group">
           <input
             type="text"
@@ -65,6 +73,7 @@ const VisaForm = () => {
           />
         </div>
 
+        {/* Email */}
         <div className="form-group">
           <input
             type="email"
@@ -77,6 +86,7 @@ const VisaForm = () => {
           />
         </div>
 
+        {/* Phone */}
         <div className="form-group">
           <input
             type="tel"
@@ -89,6 +99,89 @@ const VisaForm = () => {
           />
         </div>
 
+        {/* Date of Birth */}
+        <div className="form-group">
+          <label htmlFor="dob">Date of Birth</label>
+          <input
+            type="date"
+            id="dob"
+            name="dob"
+            value={formData.dob}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        {/* Nationality */}
+        <div className="form-group">
+          <input
+            type="text"
+            id="nationality"
+            name="nationality"
+            value={formData.nationality}
+            onChange={handleChange}
+            required
+            placeholder="Nationality"
+          />
+        </div>
+
+        {/* Passport Number */}
+        <div className="form-group">
+          <input
+            type="text"
+            id="passportNumber"
+            name="passportNumber"
+            value={formData.passportNumber}
+            onChange={handleChange}
+            required
+            placeholder="Passport Number"
+          />
+        </div>
+
+        {/* Marital Status */}
+        <div className="form-group">
+          <select
+            id="maritalStatus"
+            name="maritalStatus"
+            value={formData.maritalStatus}
+            onChange={handleChange}
+            required
+          >
+            <option value="" disabled>Select Marital Status</option>
+            <option value="Single">Single</option>
+            <option value="Married">Married</option>
+            <option value="Divorced">Divorced</option>
+            <option value="Widowed">Widowed</option>
+          </select>
+        </div>
+
+        {/* Address */}
+        <div className="form-group">
+          <textarea
+            id="address"
+            name="address"
+            value={formData.address}
+            onChange={handleChange}
+            rows="2"
+            required
+            placeholder="Residential Address (Home,City, State, Country)"
+          />
+        </div>
+
+        {/* Supporting Documents */}
+        <div className="form-group">
+          <label htmlFor="supportingDocuments">Upload Your Passport Front Page</label>
+          <input
+            type="file"
+            id="supportingDocuments"
+            name="supportingDocuments"
+            onChange={handleChange}
+            accept=".pdf,.jpg,.jpeg,.png"
+            required
+          />
+        </div>
+
+        {/* Additional Details */}
         <div className="form-group">
           <textarea
             id="message"
@@ -100,6 +193,7 @@ const VisaForm = () => {
           />
         </div>
 
+        {/* Submit Button */}
         <button type="submit" className="submit-button">
           Submit Application
         </button>

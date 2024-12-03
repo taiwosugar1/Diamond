@@ -26,7 +26,10 @@
 
   }
   
-  
+  .form-group label{
+    text-align: left;
+    color: white;
+  }
   .form-group input,
   .form-group textarea,
   .form-group select {
