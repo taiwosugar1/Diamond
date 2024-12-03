@@ -25,7 +25,7 @@ const ContactInfo = () => {
         <p>30 Broklyn Street. USA</p>
       </div>
       <div className="contact-section contact-button">
-        <Link to={"/contact"} className="contact-link-button">
+        <Link to={"/contact"} className="button1">
           Contact Us
         </Link>
       </div>

@@ -74,7 +74,7 @@ button, a{
 .abbout-title {
   font-family: "Playfair Display", serif;
   font-size: 1rem;
-  color: var(--link-color); /* Orange title color */
+  color: var(--link-color); 
   margin: 10px;
   letter-spacing: 1px;
   text-align: left;
@@ -87,6 +87,15 @@ button, a{
   color: #00255c;
   line-height: 1.5;
   margin: 10px;
+}
+
+.button1 {
+  background-color: var(--link-color);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 768px) {

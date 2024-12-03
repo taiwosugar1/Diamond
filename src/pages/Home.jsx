@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 import WorkingProcess from '../componets/WorkingProcess'
 import TestPreparation from '../componets/TestPreparation'
 import Testimony from '../componets/Testimony'
-import ContactInfo from '../componets/ContactInfo'
+import ContactInfo from '../componets/contact/ContactInfo'
 import BookingForm from '../componets/BookingForm'
 import FAQ from '../componets/FAQ'
 
