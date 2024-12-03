@@ -39,42 +39,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Highlights Section */
-.highlights {
-  margin-top: 30px;
-  background-color: #fff;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  animation: fadeIn 1.8s ease-in-out;
-}
-
-.highlights h3 {
-  font-size: 1.75rem;
-  color: var(--headings);
-  margin-bottom: 10px;
-}
-
-.highlights ul {
-  list-style: none;
-  padding: 0;
-}
-
-.highlights li {
-  font-size: 1.125rem;
-  color: var(--headings);
-  margin-bottom: 8px;
-  animation: fadeIn 2s ease-in-out;
-}
-
-.highlights li:nth-child(even) {
-  animation-delay: 0.3s;
-}
-
-.highlights li:nth-child(odd) {
-  animation-delay: 0.5s;
-}
-
 /* Images Section */
 .images-container {
   width: 100%;
@@ -96,7 +60,7 @@ a:hover {
   }
   
   .image-timestamp {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-family: "Playfair Display", serif;
     margin-top: 5px;
     color: #ff0000;

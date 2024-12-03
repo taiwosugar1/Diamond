@@ -36,18 +36,6 @@ const AdvertDetails = () => {
         <p className='desc'>{description}</p>
       </div>
 
-      {/* Highlights Section */}
-      {highlights && highlights.length > 0 && (
-        <div className="highlights">
-          <h3>Service Highlights</h3>
-          <ul>
-            {highlights.map((highlight, index) => (
-              <li key={index}>{highlight}</li>
-            ))}
-          </ul>
-        </div>
-      )}
-
       {/* Display images */}
       <div className="images-container">
         {images &&
@@ -72,6 +60,7 @@ const AdvertDetails = () => {
           <p>{pricing}</p>
         </div>
       )}
+      <br /><br />
 
       {/* Button to navigate to external link */}
       <div className="navigate-button">

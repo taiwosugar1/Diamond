@@ -1,5 +1,6 @@
 import React from "react";
 import "./Team.css";
+import { useNavigate } from "react-router-dom";
 
 const teamMembers = [
   {
@@ -37,6 +38,7 @@ const teamMembers = [
 ];
 
 const Team = () => {
+    const navigate = useNavigate();
   return (
     <section className="team-page">
       <div className="content-box" data-aos="zoom-in">
@@ -47,7 +49,10 @@ const Team = () => {
         <p className='desc'> At Diamond Visa and Immigration Services, we take pride in our
           dedicated team of professionals who are committed to helping you
           achieve your immigration goals.</p>
-      </div>
+        </div>
+         <div className="back-arrow" onClick={() => navigate(-1)}>
+            ← Back
+         </div>
 
       <div className="team-grid">
         {teamMembers.map((member) => (
