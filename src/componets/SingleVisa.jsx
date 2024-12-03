@@ -1,11 +1,12 @@
 import React from "react";
-import { useLocation, Link } from "react-router-dom";
-import "./SingleVisa.css"; // Ensure your CSS aligns with this structure
+import { useLocation, Link, useNavigate } from "react-router-dom";
+import "./SingleVisa.css"; // Ensure you have appropriate styles
 import { FaMapLocation, FaPlane, FaAddressCard, FaBusinessTime, FaCoins } from "react-icons/fa6";
 import { GrEmergency } from "react-icons/gr";
 
 const SingleVisa = () => {
   const location = useLocation();
+  const navigate = useNavigate();
 
   // Get the visa data passed via state
   const { id, type, description, backgroundImage, details } = location.state;
@@ -18,6 +19,11 @@ const SingleVisa = () => {
     4: <FaAddressCard />,
     5: <FaBusinessTime />,
     6: <FaCoins />,
+  };
+
+  // Handle navigation to form
+  const handleFormNavigation = () => {
+    navigate("/visa-form", { state: { visaType: type } });
   };
 
   return (
@@ -47,6 +53,11 @@ const SingleVisa = () => {
 
         {/* Visa Icon Display */}
         <div className="visa-icon-large">{visaIcons[id]}</div>
+
+        {/* Button to Navigate to the Form */}
+        <button className="visa-form-button" onClick={handleFormNavigation}>
+          Apply for {type}
+        </button>
       </div>
     </div>
   );

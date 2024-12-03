@@ -109,7 +109,20 @@
 .viisa-card:hover .visa-description {
   opacity: 1;
 }
+.visa-form-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
 
+.visa-form-button:hover {
+  background-color: #0056b3;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
   .visa-list-heading {

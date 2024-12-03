@@ -15,8 +15,8 @@ import Service from './componets/Service';
 import AosAnimation from './componets/AosAnimation';
 import AOS from "aos";
 import "aos/dist/aos.css";
-import VisaPage from './componets/SingleVisa';
 import SingleVisa from './componets/SingleVisa';
+import VisaForm from './componets/VisaForm';
 
 AOS.init();
 
@@ -99,8 +99,9 @@ const App = () => {
          <Route path="/visa" exact element={<VisaList/>}/>
          <Route path="/services" exact element={<Service/>}/>
          <Route path="/visa/:visaType" element={<SingleVisa />} />
-         
-         
+
+        <Route path="/visa-form" element={<VisaForm />} />
+
          </Routes>
          <Footer/>
         

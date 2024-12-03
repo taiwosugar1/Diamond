@@ -59,12 +59,11 @@
     background-color: var(--bg);
     font-size: 0.95rem;
     color: var(--headings);
-    font-family: "Playfair Display", serif;
-    
   }
   
   .faq-answer p {
     margin: 0;
+  font-family: "Playfair Display", serif;
   }
 
   @media (max-width: 768px) {
