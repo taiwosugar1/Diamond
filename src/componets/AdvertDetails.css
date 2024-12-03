@@ -78,47 +78,15 @@ a:hover {
   .service-image:hover {
     transform: scale(1.05);
   }
-/* Testimonials Section */
-.testimonials {
-  margin-top: 40px;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  animation: fadeIn 2.5s ease-in-out;
-}
 
-.testimonials h3 {
-  font-size: 1.75rem;
-  color: var(--headings);
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.testimonial {
-  font-size: 1.125rem;
-  color: #555;
-  margin-bottom: 15px;
-  text-align: center;
-  transition: transform 0.3s ease-in-out;
-}
-
-.testimonial p {
-  font-style: italic;
-}
-
-.testimonial strong {
-  font-weight: bold;
-  color: var(--headings);
-}
-
-.testimonial:hover {
-  transform: translateY(-5px);
-}
 
 /* Pricing Information */
 .pricing {
-  margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  margin: 40px 0;
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -153,9 +121,7 @@ a:hover {
   .service-detail-container p {
     font-size: 1rem;
   }
-
-  .highlights h3,
-  .testimonials h3,
+  
   .pricing h3 {
     font-size: 1.5rem;
   }
