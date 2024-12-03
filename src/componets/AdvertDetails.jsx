@@ -23,13 +23,13 @@ const AdvertDetails = () => {
     return `${date} at ${time}`;
   };
 
-  const { title, description, images, link,  pricing } =
+  const { title, description, images, link, testimonials, pricing } =
     getServiceDetails(serviceId);
 
   return (
     <div className="service-detail-container">
       <br />
-      <Link to={"/"}> ← Go Back to Home page</Link>
+      <Link to={"/"}>← Go Back to Home page</Link>
       <br />
       <div className="content-box" data-aos="zoom-in">
         <h2 className="abbout-heading">// {title} // </h2>
@@ -69,6 +69,20 @@ const AdvertDetails = () => {
         </Link>
       </div>
 
+      {/* Testimonials Section */}
+      {testimonials && testimonials.length > 0 && (
+        <div className="testimonials">
+          <h3>What Our Clients Say</h3>
+          {testimonials.map((testimonial, index) => (
+            <div key={index} className="testimonial">
+              <p>"{testimonial.review}"</p>
+              <p>
+                <strong>- {testimonial.name}</strong>
+              </p>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 };

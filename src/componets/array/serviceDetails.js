@@ -37,10 +37,10 @@ title: "Airbnb Hosting Services",
 description:
 "Maximize your property’s potential with our Airbnb hosting services. From property listing optimization to guest management, we handle it all to ensure you earn more while providing an exceptional experience for your guests.",
 images: [
-"https://images.pexels.com/photos/2797466/pexels-photo-2797466.jpeg?auto=compress&cs=tinysrgb&w=400",
-"https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=400",
+"/images/z2.png",
+"/images/z1.png",
 ],
-link: "https://example.com/airbnb-hosting-services",
+link: "https://www.instagram.com/zeavixeventandmore",
 highlights: [
 { name: "Business Strategy", path: "business-strategy" },
 { name: "Marketing Consultation", path: "marketing-consultation" },
@@ -113,9 +113,9 @@ pricing: "Contact us for tailored pricing based on your property’s needs and l
         "Seamless transportation services to meet all your needs, from airport transfers to corporate transportation and logistics.",
       images: [
         "https://images.pexels.com/photos/97075/pexels-photo-97075.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "https://images.pexels.com/photos/2775264/pexels-photo-2775264.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "https://images.pexels.com/photos/13861/IMG_3496bfree.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       ],
-      link: "https://example.com/transportation-services",
+      link: "https://www.zeavix.com",
       highlights: [
         "Airport Transfers",
         "Corporate Transportation",
