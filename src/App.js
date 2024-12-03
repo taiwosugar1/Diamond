@@ -17,6 +17,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import SingleVisa from './componets/SingleVisa';
 import VisaForm from './componets/VisaForm';
+import AdvertDetails from './componets/AdvertDetails';
 
 AOS.init();
 
@@ -101,6 +102,7 @@ const App = () => {
          <Route path="/visa/:visaType" element={<SingleVisa />} />
 
         <Route path="/visa-form" element={<VisaForm />} />
+        <Route path="/service-details/:serviceId" element={<AdvertDetails />} />
 
          </Routes>
          <Footer/>
