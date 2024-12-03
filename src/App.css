@@ -59,7 +59,7 @@ li, a{
 .scroll-to-top:hover {
   opacity: 1;
 }
-button, a{
+a{
   text-decoration: none;
 }
 

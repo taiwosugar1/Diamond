@@ -24,7 +24,7 @@ const SingleService = () => {
       </div>
       <div className="single-service-content">
         <p>{service.description}</p>
-        <Link to="/services" className="back-button">Back to All Services</Link>
+        <Link to="/services" className="button1">Back to All Services</Link>
       </div>
     </div>
   );
