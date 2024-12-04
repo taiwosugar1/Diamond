@@ -92,7 +92,7 @@ li, a{
 
 /* Scroll to Top Button */
 .scroll-to-top {
-  bottom: 80px;
+  bottom: 100px;
   opacity: 0.7;
   border: 0.5px solid grey;
   color: white;
@@ -104,10 +104,9 @@ li, a{
   opacity: 1;
 }
 
-
 /* Fixed Position Container */
 .fixed-message-icon {
-  bottom: 15px;
+  bottom: 5px;
   animation: blink-border 1.5s infinite; 
   border: 4px solid transparent; 
   box-shadow: 0 0 5px rgba(255, 0, 0, 0.6); 
