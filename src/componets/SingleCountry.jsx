@@ -65,7 +65,7 @@ const SingleCountry = () => {
           
           
         
-        <Link className="button2" >
+        <Link to={"/visa-form"} className="button2" >
              Click here to Apply for a Visa
           </Link>
       </div>

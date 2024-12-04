@@ -34,30 +34,6 @@ li, a{
   
 }
 
-/* Scroll to Top Button */
-.scroll-to-top {
-  bottom: 80px;
-  border-radius: 50%;
-  height: 40px;
-  width: 40px;
-  opacity: 0.7;
-  position: fixed;
-  border: 0.5px solid grey;
-  background: var(--link-color);
-  z-index: 2222;
-  color: white;
-  font-size: 16px;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  right: 10px;
-}
-
-.scroll-to-top:hover {
-  opacity: 1;
-}
-
 .abbout-title {
   font-family: "Playfair Display", serif;
   font-size: 1rem;
@@ -99,5 +75,81 @@ li, a{
 .button2:hover {
   background: #0056b3;
 }
+
+
+
+/* Scroll to Top Button */
+.scroll-to-top {
+  bottom: 80px;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  opacity: 0.7;
+  position: fixed;
+  border: 0.5px solid grey;
+  background: var(--link-color);
+  z-index: 2222;
+  color: white;
+  font-size: 16px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  right: 10px;
+}
+
+.scroll-to-top:hover {
+  opacity: 1;
+}
+
+
+/* Fixed Position Container */
+.fixed-message-icon {
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ff0000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: blink-border 1.5s infinite; 
+  border: 4px solid transparent; 
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.6); 
+}
+
+/* Icon Style */
+.message-icon {
+  font-size: 20px;
+  color: #fff;
+}
+
+/* Keyframes for Blinking Double Border */
+@keyframes blink-border {
+  0% {
+    border-color: rgba(255, 255, 255, 1); 
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+  }
+  50% {
+    border-color: rgba(255, 0, 0, 1);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 1); 
+  }
+  100% {
+    border-color: rgba(255, 255, 255, 1); 
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+  }
+}
+
+/* Hover Effect */
+.fixed-message-icon:hover {
+  cursor: pointer;
+  animation: none; 
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.9);
+  border: 4px solid #ff7300; 
+}
+
 
 

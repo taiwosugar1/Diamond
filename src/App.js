@@ -1,5 +1,5 @@
 
-import { BrowserRouter as  Router, Route, Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter as  Router, Route, Routes, useLocation, Link } from 'react-router-dom';
 import './App.css';
 import Navbar from './componets/Navbar';
 import Home from './pages/Home';
@@ -23,6 +23,7 @@ import Team from './componets/Team';
 import NewsMedia from './componets/NewsMedia';
 import WorldMediaPartner from './componets/WorldMediaPartner';
 import SingleCountry from './componets/SingleCountry';
+import { AiFillMessage } from 'react-icons/ai';
 
 AOS.init();
 
@@ -91,9 +92,9 @@ const App = () => {
                     <h6><FaWhatsapp/><br/>Book Now</h6> 
                 </div></a> */}
 
-                <a href='/contact'> 
-                 <MessageIcon/>
-               </a>
+                <Link to='/contact' className="fixed-message-icon"> 
+                <AiFillMessage className="message-icon" />
+               </Link>
 
                 
 

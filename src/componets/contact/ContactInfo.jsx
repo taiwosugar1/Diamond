@@ -1,12 +1,12 @@
 import React from 'react';
-import './ContactInfo.css';  // Assuming you're styling with an external CSS file
+import './ContactInfo.css'; 
 import { Link } from 'react-router-dom';
 
 const ContactInfo = () => {
   return (
     <section className="contact-container">
       <div className="contact-section logo">
-        <img src="/images/logo.png" alt="Logo" className="logo-image" /> {/* Add your logo path */}
+        <img src="/images/logo.png" alt="Logo" className="logo-image" />
       </div>
       <div className="contact-section">
         <p>Phone:</p>
