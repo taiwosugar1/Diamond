@@ -34,15 +34,17 @@ const SingleCountry = () => {
         </div>
 
         <div className="single-country-details">
-          <h3 className="abbout-title">// Country Descriptions //</h3>
           <ul>
+          <h3 className="abbout-title">// Country Descriptions //</h3>
+
             {country.descriptions.map((desc, index) => (
               <li key={index} className="dessc">{desc}</li>
             ))}
           </ul>
 
-          <h3 className="abbout-heading">Visa Types</h3>
           <ul>
+          <h3 className="abbout-heading">Visa Types</h3>
+
             {country.visaTypes.map((visa, index) => (
               <li key={index}>
                 <Link to="/visa" className="visa-link" >
@@ -52,12 +54,20 @@ const SingleCountry = () => {
             ))}
           </ul>
 
-          <h3 className="abbout-title">Visa-Free Information</h3>
-          <p>{country.visaFree}</p> 
-          <Link className="button2" >
+          <ul>
+           <h3 className="abbout-title">Visa-Free Information</h3>
+           <p>{country.visaFree}</p> 
+          </ul>
+
+          </div>
+
+         
+          
+          
+        
+        <Link className="button2" >
              Click here to Apply for a Visa
           </Link>
-        </div>
       </div>
     </div>
   );
