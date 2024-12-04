@@ -26,7 +26,7 @@ const countries = [
       "A growing economy with vast natural resources.",
       "Known for its vibrant music and arts.",
     ],
-    visaTypes: ["Tourist Visa", "Business Visa", "Student Visa"],
+    visaTypes: ["Tourist Visa", "Business Visa", "Marriage Visa"],
     visaFree: "Visa required for most travelers.",
   },
   {
@@ -86,7 +86,8 @@ const countries = [
       "Offers high-quality education and healthcare.",
       "A welcoming country for immigrants.",
     ],
-    visaTypes: ["Tourist Visa", "Business Visa", "Work Visa", "Student Visa"],
+    visaTypes: ["Immigrant Visas (Permanent Residency)", "Tourist Visa", 
+      "Nonimmigrant Visas (Temporary Stay)","Business Visa", "Work Visa", "Naija wife Visa"],
     visaFree: "Visa required for most travelers.",
   },
   {
@@ -116,7 +117,7 @@ const countries = [
       "Rich in culture and heritage.",
       "Famous for its warm hospitality.",
     ],
-    visaTypes: ["Tourist Visa", "Business Visa"],
+    visaTypes: ["Tourist Visa", "Business Visa", "Marriage Visa"],
     visaFree: "Visa-free for select African countries.",
   },
   {
@@ -164,7 +165,7 @@ const countries = [
       "Home to iconic landmarks like the Eiffel Tower.",
       "Known for its luxury fashion and wines.",
     ],
-    visaTypes: ["Tourist Visa", "Student Visa", "Work Visa"],
+    visaTypes: ["Tourist Visa", "Business Visa", "Work Visa"],
     visaFree: "Visa-free for EU citizens and Schengen visa holders.",
   },
   {
@@ -200,7 +201,7 @@ const countries = [
       "A land of adventure and scenic landscapes.",
       "Rich in Aboriginal culture and heritage.",
     ],
-    visaTypes: ["Tourist Visa", "Work Visa", "Student Visa"],
+    visaTypes: ["Tourist Visa", "Work Visa", "Student Visa", "Business Visa"],
     visaFree: "Visa required for most travelers.",
   },
   {
@@ -236,7 +237,7 @@ const countries = [
       "Home to the Great Wall and Forbidden City.",
       "A leading global economic powerhouse.",
     ],
-    visaTypes: ["Tourist Visa", "Business Visa", "Student Visa"],
+    visaTypes: ["Tourist Visa", "Business Visa", "Student Visa", "Work Vsa"],
     visaFree: "Visa-free for certain Asian countries and regions.",
   },
   // More countries would follow with similar structure
