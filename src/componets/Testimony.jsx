@@ -7,7 +7,7 @@ const testimonies = [
     text: "This service changed my life! The visa application was seamless and faster than expected.",
     name: "John Doe",
     country: "USA",
-    image: "https://images.pexels.com/photos/3985228/pexels-photo-3985228.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: "/st4.png",
   },
   {
     id: 2,
@@ -97,7 +97,7 @@ const testimonies = [
     text: "I’m very pleased with the service. The visa application was simple and much quicker than expected.",
     name: "Daniel Martinez",
     country: "Mexico",
-    image: "https://via.placeholder.com/150",
+    image: "/images/h1.png",
   },
   {
     id: 13,
@@ -136,14 +136,14 @@ const testimonies = [
     text: "Amazing service! Everything was organized. I had no issues with my visa application. Best service ever.",
     name: "Victor Lee",
     country: "South Korea",
-    image: "https://via.placeholder.com/150",
+    image: "/images/st1.png",
   },
   {
     id: 18,
     text: "This service made the visa process easy and fast. I was kept updated every step of the way.",
     name: "Emily Taylor",
     country: "UK",
-    image: "https://via.placeholder.com/150",
+    image: "/images/st3.png",
   },
 ];
 

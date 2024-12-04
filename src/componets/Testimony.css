@@ -116,8 +116,8 @@
 .testimony-nav {
   display: flex;
   align-items: center;
-  justify-content: start;
-  margin: 20px;
+  justify-content: center;
+  margin-bottom: -80px;
 }
 
 .scroll-button {
@@ -127,8 +127,7 @@
   height: 50px;
   border-radius: 50%;
   border: none;
-  margin: 20px;
-  margin-bottom: -40px;
+  margin:10px 20px;
   cursor: pointer;
   font-size: 18px;
   transition: background 0.3s ease;
