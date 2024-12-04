@@ -43,14 +43,14 @@
     flex-direction: column;
   }
   
-  label {
+  .booking-form-container label {
    margin-left: 20px;
     text-align: left;
     font-size: 12px;
   }
   
-  input,
-  select {
+  .booking-form-container input,
+  .booking-form-container select {
     padding: 10px;
     border: none;
     border-bottom: 03px solid rgb(181, 178, 178);
@@ -59,13 +59,13 @@
     color: white;
   }
   
-  input::placeholder {
+  .booking-form-container input::placeholder {
     color: white;
     font-size: 12px;
   }
   
-  input:focus,
-  select:focus {
+  .booking-form-container input:focus,
+  .booking-form-container select:focus {
     outline: none;
     border-bottom: 2px solid darkgrey;
   }

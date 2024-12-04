@@ -20,6 +20,8 @@ import VisaForm from './componets/VisaForm';
 import AdvertDetails from './componets/AdvertDetails';
 import SingleService from './componets/SingleServices';
 import Team from './componets/Team';
+import NewsMedia from './componets/NewsMedia';
+import WorldMediaPartner from './componets/WorldMediaPartner';
 
 AOS.init();
 
@@ -107,6 +109,9 @@ const App = () => {
         <Route path="/service-details/:serviceId" element={<AdvertDetails />} />
         <Route path="/services/:serviceId" element={<SingleService />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/news-media" exact element={<NewsMedia/>}/>
+        <Route path="/world-media" exact element={<WorldMediaPartner/>}/>
+
 
 
          </Routes>
