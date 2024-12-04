@@ -7,7 +7,7 @@ const testimonies = [
     text: "This service changed my life! The visa application was seamless and faster than expected.",
     name: "John Doe",
     country: "USA",
-    image: "/st4.png",
+    image: "/images/st4.png",
   },
   {
     id: 2,
@@ -81,7 +81,7 @@ const testimonies = [
     text: "The visa service was efficient and stress-free. I received constant updates and felt well-informed.",
     name: "Priya Sharma",
     country: "India",
-    image: "/images/hotel1.png",
+    image: "/images/ad.png",
 
   },
   {
@@ -89,7 +89,7 @@ const testimonies = [
     text: "The team was fantastic. My visa was processed quickly, and I was kept updated throughout.",
     name: "Samantha Jones",
     country: "New Zealand",
-    image: "/images/hotel2.png",
+    image: "/images/ac.png",
 
   },
   {
@@ -104,7 +104,7 @@ const testimonies = [
     text: "Incredible experience! The team was extremely helpful. My visa was approved quickly, and I’m happy.",
     name: "Raj Patel",
     country: "India",
-    image: "/images/hotel3.png",
+    image: "/images/h3.png",
 
   },
   {
@@ -112,7 +112,7 @@ const testimonies = [
     text: "I had a great experience. The application process was smooth, and I’ll recommend this service.",
     name: "Olivia Brown",
     country: "USA",
-    image: "/images/hotel4.png",
+    image: "/images/h2.png",
 
   },
   {
@@ -120,7 +120,7 @@ const testimonies = [
     text: "This company offers the best visa service! My application was processed quickly, and the staff helped.",
     name: "James Miller",
     country: "Canada",
-    image: "/images/hotel5.png",
+    image: "/images/im1.png",
 
   },
   {
@@ -128,7 +128,7 @@ const testimonies = [
     text: "I can’t thank this service enough. My visa application was quick, with constant updates. Highly recommend.",
     name: "Sophia Wong",
     country: "Singapore",
-    image: "/images/hotel6.png",
+    image: "/images/1m2.png",
 
   },
   {
@@ -136,14 +136,14 @@ const testimonies = [
     text: "Amazing service! Everything was organized. I had no issues with my visa application. Best service ever.",
     name: "Victor Lee",
     country: "South Korea",
-    image: "/images/st1.png",
+    image: "/images/st6.png",
   },
   {
     id: 18,
     text: "This service made the visa process easy and fast. I was kept updated every step of the way.",
     name: "Emily Taylor",
     country: "UK",
-    image: "/images/st3.png",
+    image: "/images/st7.png",
   },
 ];
 
