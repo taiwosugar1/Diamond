@@ -16,7 +16,7 @@
     width: 19.8%;
     height: 100px;
     margin: 0;
-    padding: 0;
+    padding:10px 0;
     text-align: center;
     border: 0.3px solid rgb(47, 76, 114);
   }
@@ -24,6 +24,9 @@
   .logo-image {
     width: 80px; /* Adjust based on logo size */
     height: 60px;
+  }
+  .contact-section p{
+    font-size: 13px;
   }
   
   .contact-link-button:hover {

@@ -238,7 +238,7 @@ const Testimony = () => {
             <div className="img-container">
             <div className="testimony-image" > 
              <img src={testimony.image} alt="" />
-             <span>"</span>
+
             </div>
             <p className="testimony-name">
               <strong>{testimony.name}</strong> <br /> <p className='test-p'>{testimony.country} </p>

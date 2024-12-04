@@ -1,0 +1,70 @@
+.video-testimony-containerr {
+    padding: 10px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+    width: 100%;
+    margin-top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .testimony-gridd {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 90%;
+  }
+  
+  .testimony-cardd {
+    position: relative;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .testimony-video {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(18, 7, 49, 0.8);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    z-index: 1;
+    pointer-events: none; /* Ensures the video is clickable */
+    transition: opacity 0.3s;
+  }
+  
+  .video-overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .overlay-text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .testimony-info {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .testimony-name {
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+  }
+  
