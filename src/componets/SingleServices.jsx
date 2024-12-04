@@ -11,7 +11,7 @@ const SingleService = () => {
     return (
       <div className="not-found">
         <h2>Service Not Found</h2>
-        <Link to="/">Go Back to Services</Link>
+        <Link to="/services">Go Back to Services</Link>
       </div>
     );
   }

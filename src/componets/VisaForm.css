@@ -1,7 +1,7 @@
 .visa-form-container {
     width: 600px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,23 +16,28 @@
     font-size: 24px;
     color: white;
   }
-  
-  .form-group {
-    margin-bottom: 20px;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
+  .form-groupp, .visa-form-container form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
   
-  .form-group label{
-    text-align: left;
+  
+  .form-groupp{
+    margin: 15px auto;
+  }
+  
+  .form-groupp label{
+    margin-top: 15px;
+    margin-bottom: 5px;
     color: white;
   }
-  .form-group input,
-  .form-group textarea,
-  .form-group select {
+  .form-groupp input,
+  .form-groupp textarea,
+  .form-groupp select {
     width: 350px;
     padding: 10px;
     border: 1px solid #ddd;
@@ -41,32 +46,17 @@
   }
   
   
-  .form-group select.dropdown {
+  .form-groupp select.dropdown {
     appearance: none;
     background-color: #007bff;
     cursor: pointer;
   }
   
-  .form-group textarea {
+  .form-groupp textarea {
     resize: none;
   }
   
-  .submit-button {
-    width: 50%;
-    padding: 12px;
-    margin-left: -30px;
-    font-size: 14px;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
   
-  .submit-button:hover {
-    background-color: #0056b3;
-  }
   
   @media screen and (max-width: 768px){
     .visa-form-container{

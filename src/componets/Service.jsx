@@ -1,6 +1,6 @@
 import React from "react";
 import "./Service.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import services from "./array/services";
 
 const continents = [
@@ -73,6 +73,10 @@ const continents = [
 ];
 
 const Service = () => {
+  const navigate= useNavigate();
+  const handleClick = (service) => {
+    navigate(`/services/${service.id}`);
+};
   return (
     <section className="services-page">
       {/* Service Section */}
@@ -88,7 +92,7 @@ const Service = () => {
 
       <div className="services-grid">
         {services.map((service) => (
-          <div className="service-card" key={service.id} data-aos="zoom-in">
+          <div className="service-card" key={service.id} data-aos="zoom-in"  onClick={() => handleClick(service)}>
             <img
               src={service.image}
               alt={service.title}

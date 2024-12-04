@@ -7,7 +7,6 @@ import NewsletterComponent from './NewsletterComponent';
 import services from "./array/services";
 
 const Footer = () => {
-
   const navigate = useNavigate();
   const handleCardClick = (visa) => {
     if (visa.link) {
@@ -15,7 +14,15 @@ const Footer = () => {
       window.open(visa.link, "_blank");
     } else {
       // Navigate to Single Visa Page with serializable data
-      navigate(`/visa/${visa.id}`);
+      navigate(`/visa/${visa.id}`, {
+        state: {
+          id: visa.id,
+          type: visa.type,
+          description: visa.description,
+          backgroundImage: visa.backgroundImage,
+          details: visa.details,
+        },
+      });
     }
   };
 
@@ -70,9 +77,9 @@ const Footer = () => {
         {visas.map((visa) => (
           <ul
             key={visa.id}
-            onClick={() => handleCardClick(visa)}
+            
           >
-            <li className="footer-link">{visa.type}</li>
+            <li className="footer-link" onClick={() => handleCardClick(visa)}>{visa.type}</li>
           </ul>
         ))}
       </div>

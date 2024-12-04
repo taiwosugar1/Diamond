@@ -52,7 +52,7 @@
 }
 
 .navbar-menu a:hover {
-  color: rgb(183, 245, 84);
+  color: var(--link-color);
 }
 
 /* Desktop View */
@@ -83,14 +83,14 @@
     top: -15px;
     right: 0;
     width: 50%;
-    display: flex;flex-direction: column;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background: var(--ye);
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
     transform: translateX(100%); /* Initially off-screen */
     transition: transform 0.4s ease; /* Slide-in transition */
     z-index: 1000;
@@ -101,7 +101,7 @@
   }
 
   .navbar-menu li {
-    margin: 10px 20px;
+    margin: 10px 0;
     width: 100%;
   }
 }

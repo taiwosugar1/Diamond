@@ -40,7 +40,7 @@ const VisaForm = () => {
       <h2>Apply for {formData.visaType || "a Visa"}</h2>
       <form onSubmit={handleSubmit}>
         {/* Visa Type */}
-        <div className="form-group">
+        <div className="form-groupp">
           <label htmlFor="visaType">Visa Type</label>
           <select
             id="visaType"
@@ -61,7 +61,7 @@ const VisaForm = () => {
         </div>
 
         {/* Full Name */}
-        <div className="form-group">
+        <div className="form-groupp">
           <input
             type="text"
             id="name"
@@ -74,7 +74,7 @@ const VisaForm = () => {
         </div>
 
         {/* Email */}
-        <div className="form-group">
+        <div className="form-groupp">
           <input
             type="email"
             id="email"
@@ -87,7 +87,7 @@ const VisaForm = () => {
         </div>
 
         {/* Phone */}
-        <div className="form-group">
+        <div className="form-groupp">
           <input
             type="tel"
             id="phone"
@@ -100,7 +100,7 @@ const VisaForm = () => {
         </div>
 
         {/* Date of Birth */}
-        <div className="form-group">
+        <div className="form-groupp">
           <label htmlFor="dob">Date of Birth</label>
           <input
             type="date"
@@ -113,7 +113,7 @@ const VisaForm = () => {
         </div>
 
         {/* Nationality */}
-        <div className="form-group">
+        <div className="form-groupp">
           <input
             type="text"
             id="nationality"
@@ -126,7 +126,7 @@ const VisaForm = () => {
         </div>
 
         {/* Passport Number */}
-        <div className="form-group">
+        <div className="form-groupp">
           <input
             type="text"
             id="passportNumber"
@@ -139,7 +139,7 @@ const VisaForm = () => {
         </div>
 
         {/* Marital Status */}
-        <div className="form-group">
+        <div className="form-groupp">
           <select
             id="maritalStatus"
             name="maritalStatus"
@@ -156,7 +156,7 @@ const VisaForm = () => {
         </div>
 
         {/* Address */}
-        <div className="form-group">
+        <div className="form-groupp">
           <textarea
             id="address"
             name="address"
@@ -169,7 +169,7 @@ const VisaForm = () => {
         </div>
 
         {/* Supporting Documents */}
-        <div className="form-group">
+        <div className="form-groupp">
           <label htmlFor="supportingDocuments">Upload Your Passport Front Page</label>
           <input
             type="file"
@@ -182,7 +182,7 @@ const VisaForm = () => {
         </div>
 
         {/* Additional Details */}
-        <div className="form-group">
+        <div className="form-groupp">
           <textarea
             id="message"
             name="message"
@@ -194,7 +194,7 @@ const VisaForm = () => {
         </div>
 
         {/* Submit Button */}
-        <button type="submit" className="submit-button">
+        <button type="submit" className="button2">
           Submit Application
         </button>
       </form>

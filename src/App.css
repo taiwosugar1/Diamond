@@ -1,5 +1,4 @@
 :root {
-  
   --body-font-family: "DM Sans", sans-serif;
   --heading-font-family: "Playfair Display", serif;
   --body-font-size: 1rem;
@@ -41,7 +40,6 @@ li, a{
   border-radius: 50%;
   height: 40px;
   width: 40px;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
   opacity: 0.7;
   position: fixed;
   border: 0.5px solid grey;
@@ -58,14 +56,6 @@ li, a{
 
 .scroll-to-top:hover {
   opacity: 1;
-}
-a{
-  text-decoration: none;
-}
-
-::-webkit-scrollbar{
-  width: 1px;
-  height: 10px;
 }
 
 .abbout-title {
@@ -87,12 +77,27 @@ a{
 }
 
 .button1 {
-  background-color: var(--link-color);
+  background: var(--link-color);
   color: white;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 25px;
   font-size: 16px;
+  border: none;
+}
+.button2 {
+  padding: 12px 30px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button2:hover {
+  background: #0056b3;
 }
 
 @media screen and (max-width: 768px) {

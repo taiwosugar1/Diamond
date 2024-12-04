@@ -55,7 +55,7 @@ const SingleVisa = () => {
         <div className="visa-icon-large">{visaIcons[id]}</div>
 
         {/* Button to Navigate to the Form */}
-        <button className="visa-form-button" onClick={handleFormNavigation}>
+        <button className="button2" onClick={handleFormNavigation}>
           Apply for {type}
         </button>
       </div>
