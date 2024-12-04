@@ -22,6 +22,7 @@ import SingleService from './componets/SingleServices';
 import Team from './componets/Team';
 import NewsMedia from './componets/NewsMedia';
 import WorldMediaPartner from './componets/WorldMediaPartner';
+import SingleCountry from './componets/SingleCountry';
 
 AOS.init();
 
@@ -111,6 +112,7 @@ const App = () => {
         <Route path="/team" element={<Team />} />
         <Route path="/news-media" exact element={<NewsMedia/>}/>
         <Route path="/world-media" exact element={<WorldMediaPartner/>}/>
+        <Route path="/country/:id" element={<SingleCountry />} />
 
 
 
