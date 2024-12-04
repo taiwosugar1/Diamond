@@ -54,9 +54,9 @@ const SingleCountry = () => {
 
           <h3 className="abbout-title">Visa-Free Information</h3>
           <p>{country.visaFree}</p> 
-           <Link className="button2" >
+          <Link className="button2" >
              Click here to Apply for a Visa
-           </Link>
+          </Link>
         </div>
       </div>
     </div>
