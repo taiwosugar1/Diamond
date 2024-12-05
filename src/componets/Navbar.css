@@ -35,7 +35,10 @@
   border-radius: 20px;
   font-size: 12px;
   color: white;
-  background: #007bff;
+  background: #0e59a8;
+}
+.login-button:hover{
+  background: var(--headings) ;
 }
 
 .navbar-toggle {
