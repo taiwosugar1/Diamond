@@ -50,9 +50,7 @@ const Login = () => {
       </div>
         
         <button type="submit" className="button1">Login</button>
-        <Link className="have-account" to={"/signup"} >
-          Don't have an account? SignUp Here
-        </Link>
+        
       </form>
       {error && <p className="error">{error}</p>}
     </div>
