@@ -26,7 +26,16 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-brand">
         <img src="/images/logo.png" alt="" />
-        <h3>Diamond Visa & Immigration Services</h3>
+        <h4>Diamond Visa & Immigration Services</h4>
+          {/* Conditional rendering based on authentication */}
+         <div className='nav-auth-box'> {currentUser ? (
+          <>
+            <Link to="/profile" onClick={closeMenu} className='profile-btn'>Profile</Link>
+            <button className="logout-button" onClick={handleLogout}>Logout</button>
+          </>
+        ) : (
+          <button className='login-button'><Link to="/login" onClick={closeMenu}>Login / SignUp</Link></button>
+        )}</div>
       </div>
       <div className="navbar-toggle" onClick={toggleMenu}>
         ☰
@@ -37,16 +46,7 @@ const Navbar = () => {
         <li><Link to="/about" onClick={closeMenu}>About</Link></li>
         <li><Link to="/contact1" onClick={closeMenu}>Contact</Link></li>
         <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
-        
-        {/* Conditional rendering based on authentication */}
-        {currentUser ? (
-          <>
-            <li><Link to="/profile" onClick={closeMenu}>Profile</Link></li>
-            <li><button className="logout-button" onClick={handleLogout}>Logout</button></li>
-          </>
-        ) : (
-          <li className="auth-li"><Link to="/login" onClick={closeMenu}>Login / SignUp</Link></li>
-        )}
+      
       </ul>
     </nav>
   );
