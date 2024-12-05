@@ -27,6 +27,8 @@ import { AiFillMessage } from 'react-icons/ai';
 import Login from './componets/auth/Login';
 import Signup from './componets/auth/SignUp';
 import ResetPassword from './componets/auth/ResetPassword';
+import ProtectedRoute from './componets/auth/ProtectedRoute';
+import { AuthProvider } from './componets/auth/AuthContext';
 
 AOS.init();
 
@@ -72,6 +74,7 @@ const App = () => {
 
   return (
     <div className="App">
+        <AuthProvider>
       <Router>
 
       <ScrollToTop /> {/* Ensure pages start at the top when navigating */}
@@ -114,7 +117,15 @@ const App = () => {
          <Route path="/services" exact element={<Service/>}/>
          <Route path="/visa/:visaType" element={<SingleVisa />} />
 
-        <Route path="/visa-form" element={<VisaForm />} />
+        {/* <Route path="/visa-form" element={<VisaForm />} /> */}
+        <Route
+            path="/visa-form"
+            element={
+              <ProtectedRoute>
+                <VisaForm />
+              </ProtectedRoute>
+            }
+          />
         <Route path="/service-details/:serviceId" element={<AdvertDetails />} />
         <Route path="/services/:serviceId" element={<SingleService />} />
         <Route path="/team" element={<Team />} />
@@ -129,7 +140,7 @@ const App = () => {
         
          
      </Router>
-      
+    </AuthProvider> 
     </div>
   );
 }
