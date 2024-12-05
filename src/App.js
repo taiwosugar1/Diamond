@@ -24,6 +24,8 @@ import NewsMedia from './componets/NewsMedia';
 import WorldMediaPartner from './componets/WorldMediaPartner';
 import SingleCountry from './componets/SingleCountry';
 import { AiFillMessage } from 'react-icons/ai';
+import Login from './componets/auth/Login';
+import Signup from './componets/auth/SignUp';
 
 AOS.init();
 
@@ -100,6 +102,9 @@ const App = () => {
 
          <Routes>
           <Route path="/" exact element={<Home/>}/>
+          <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+
          <Route path='/about' element={<AboutUs/>}/>
          <Route path='/contact' element={<Contact/>}/>
          <Route path='/contact1' element={<Contact1/>}/>

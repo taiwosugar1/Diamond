@@ -50,12 +50,12 @@
     appearance: none;
     background-color: #007bff;
     cursor: pointer;
+    color: white;
   }
-  
+
   .form-groupp textarea {
     resize: none;
   }
-  
   
   
   @media screen and (max-width: 768px){

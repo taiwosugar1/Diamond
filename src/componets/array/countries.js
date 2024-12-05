@@ -35,19 +35,19 @@ const countries = [
     flag: "https://flagcdn.com/us.svg",
     images: [
       {
-        url: "https://via.placeholder.com/400x200?text=USA+Image+1",
+        url: "https://images.pexels.com/photos/27498575/pexels-photo-27498575/free-photo-of-sea-coast-of-new-york-with-brooklyn-bridge-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=400",
         placeName: "New York City",
       },
       {
-        url: "https://via.placeholder.com/400x200?text=USA+Image+2",
+        url: "https://images.pexels.com/photos/28614058/pexels-photo-28614058/free-photo-of-seattle-night-street-scene-with-space-needle.jpeg?auto=compress&cs=tinysrgb&w=400",
         placeName: "Los Angeles",
       },
       {
-        url: "https://via.placeholder.com/400x200?text=USA+Image+3",
+        url: "/images/hotel.jpg",
         placeName: "Chicago",
       },
       {
-        url: "https://via.placeholder.com/400x200?text=USA+Image+4",
+        url: "https://images.pexels.com/photos/105626/pexels-photo-105626.jpeg?auto=compress&cs=tinysrgb&w=400",
         placeName: "San Francisco",
       },
     ],
@@ -65,19 +65,19 @@ const countries = [
     flag: "https://flagcdn.com/ca.svg",
     images: [
       {
-        url: "https://via.placeholder.com/400x200?text=Canada+Image+1",
+        url: "https://images.pexels.com/photos/16419508/pexels-photo-16419508/free-photo-of-skyscrapers-in-vancouver-downtown-canada.jpeg?auto=compress&cs=tinysrgb&w=400",
         placeName: "Toronto",
       },
       {
-        url: "https://via.placeholder.com/400x200?text=Canada+Image+2",
+        url: "https://images.pexels.com/photos/29578741/pexels-photo-29578741/free-photo-of-aerial-view-of-saint-casimir-in-fall-quebec.jpeg?auto=compress&cs=tinysrgb&w=400",
         placeName: "Vancouver",
       },
       {
-        url: "https://via.placeholder.com/400x200?text=Canada+Image+3",
+        url: "https://images.pexels.com/photos/15626406/pexels-photo-15626406/free-photo-of-fairmont-frontenac-castle-hotel-in-quebec.jpeg?auto=compress&cs=tinysrgb&w=400",
         placeName: "Montreal",
       },
       {
-        url: "https://via.placeholder.com/400x200?text=Canada+Image+4",
+        url: "https://images.pexels.com/photos/11589790/pexels-photo-11589790.jpeg?auto=compress&cs=tinysrgb&w=400",
         placeName: "Calgary",
       },
     ],
@@ -126,19 +126,18 @@ const countries = [
     flag: "https://flagcdn.com/ke.svg",
     images: [
       {
-        url: "https://via.placeholder.com/400x200?text=Kenya+Image+1",
+        url: "https://images.pexels.com/photos/9833516/pexels-photo-9833516.jpeg?auto=compress&cs=tinysrgb&w=400",
         placeName: "Nairobi",
       },
       {
-        url: "https://via.placeholder.com/400x200?text=Kenya+Image+2",
-        placeName: "Mombasa",
+        url: "https://images.pexels.com/photos/1670732/pexels-photo-1670732.jpeg?auto=compress&cs=tinysrgb&w=400",
       },
       {
-        url: "https://via.placeholder.com/400x200?text=Kenya+Image+3",
+        url: "https://images.pexels.com/photos/16863348/pexels-photo-16863348/free-photo-of-traditional-samburu-woman.jpeg?auto=compress&cs=tinysrgb&w=400",
         placeName: "Masai Mara",
       },
       {
-        url: "https://via.placeholder.com/400x200?text=Kenya+Image+4",
+        url: "https://images.pexels.com/photos/865530/pexels-photo-865530.jpeg?auto=compress&cs=tinysrgb&w=400",
         placeName: "Lake Nakuru",
       },
     ],
