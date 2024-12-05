@@ -29,7 +29,7 @@ const AdvertDetails = () => {
   return (
     <div className="service-detail-container">
       <br />
-      <Link to={"/"}>← Go Back to Home page</Link>
+      <Link to={"/"} className="button3">← Go Back to Home page</Link>
       <br />
       <div className="content-box" data-aos="zoom-in">
         <h2 className="abbout-heading">// {title} // </h2>

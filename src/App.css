@@ -55,10 +55,11 @@ li, a{
 .button1 {
   background: var(--link-color);
   color: white;
+  margin: 10px;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 25px;
-  font-size: 16px;
+  font-size: 13px;
   border: none;
 }
 .button2 {
@@ -74,6 +75,20 @@ li, a{
 
 .button2:hover {
   background: #0056b3;
+}
+
+ .button3 {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 1rem;
+  display: inline-block;
+  margin: 10px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.button3 :hover {
+  text-decoration: underline;
+  background: var(--headings);
 }
 
 .fixed-message-icon ,.scroll-to-top{

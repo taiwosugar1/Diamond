@@ -5,7 +5,6 @@
   padding: 5px 15px;
   height: 50px;
   background: var(--ye);
-  color: var( --headings);
   position: sticky;
   top: 0;
   z-index: 5000;
@@ -21,31 +20,22 @@
   width: 50px;
   height: 50px;
   border-radius: 3%;
+  margin-right: 5px;
 }
 
-.navbar-brand h4 {
+.navbar-brand h5 {
   font-family: var(--heading-font-family);
+  text-align: left;
 }
 
-.nav-auth-box{
- height: 100%;
-}
-
-.profile-btn, .login-button, .logout-button{
-  margin: 5px;
-  padding: 5px;
+.login-button{
+  margin:10px 15px;
+  padding:10px;
   border: none;
   border-radius: 20px;
-}
-.logout-button{
-  background: var(--link-color);
-  color: white;
   font-size: 12px;
-}
-.login-button{
+  color: white;
   background: #007bff;
-  color: white;
-  font-size: 12px;
 }
 
 .navbar-toggle {
@@ -99,10 +89,8 @@
     border-radius: 2%;
   }
 
-  .navbar-brand h4 {
-    margin-left: 0px;
-    font-family: var(--heading-font-family);
-    width: 200px;
+  .navbar-brand h5 {
+    width: 150px;
   }
 
   .navbar-toggle {

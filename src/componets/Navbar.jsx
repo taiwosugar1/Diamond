@@ -26,15 +26,15 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-brand">
         <img src="/images/logo.png" alt="" />
-        <h4>Diamond Visa & Immigration Services</h4>
+        <h5>Diamond Visa & Immigration Services</h5>
           {/* Conditional rendering based on authentication */}
          <div className='nav-auth-box'> {currentUser ? (
           <>
-            <Link to="/profile" onClick={closeMenu} className='profile-btn'>Profile</Link>
-            <button className="logout-button" onClick={handleLogout}>Logout</button>
+            <Link to="/profile" onClick={closeMenu} className='button3'>Profile</Link>
+            <Link className="button1" onClick={handleLogout}>Logout</Link>
           </>
         ) : (
-          <button className='login-button'><Link to="/login" onClick={closeMenu}>Login / SignUp</Link></button>
+          <Link to="/login" onClick={closeMenu} className='login-button'>Login / SignUp</Link>
         )}</div>
       </div>
       <div className="navbar-toggle" onClick={toggleMenu}>
