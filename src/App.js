@@ -28,7 +28,7 @@ import Login from './componets/auth/Login';
 import Signup from './componets/auth/SignUp';
 import ResetPassword from './componets/auth/ResetPassword';
 import ProtectedRoute from './componets/auth/ProtectedRoute';
-import { AuthProvider } from './componets/auth/AuthContext';
+import { AuthProvider } from './AuthContext';
 
 AOS.init();
 

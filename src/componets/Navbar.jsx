@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { AuthContext } from '../../context/AuthContext'; // Adjust the path as per your folder structure
 import './Navbar.css';
+import { AuthContext } from '../AuthContext';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
