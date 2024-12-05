@@ -50,7 +50,7 @@ const Signup = () => {
         <Link className="have-account" to={"/login"} color="#007bff">
           Already have an account? Login Here
         </Link>
-      <h2>Signup</h2>
+      <h2 className="book-f">// Signup //</h2>
       <form onSubmit={handleSignup}>
         <div className="form-groupp">
           <input

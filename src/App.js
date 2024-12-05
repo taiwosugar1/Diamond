@@ -29,6 +29,7 @@ import Signup from './componets/auth/SignUp';
 import ResetPassword from './componets/auth/ResetPassword';
 import ProtectedRoute from './componets/auth/ProtectedRoute';
 import { AuthProvider } from './AuthContext';
+import UserProfile from './componets/UserProfile';
 
 AOS.init();
 
@@ -109,6 +110,7 @@ const App = () => {
           <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/reset" element={<ResetPassword />} />
+        <Route path="/profile" element={<UserProfile />} />
 
          <Route path='/about' element={<AboutUs/>}/>
          <Route path='/contact' element={<Contact/>}/>
