@@ -26,6 +26,7 @@ import SingleCountry from './componets/SingleCountry';
 import { AiFillMessage } from 'react-icons/ai';
 import Login from './componets/auth/Login';
 import Signup from './componets/auth/SignUp';
+import ResetPassword from './componets/auth/ResetPassword';
 
 AOS.init();
 
@@ -104,6 +105,7 @@ const App = () => {
           <Route path="/" exact element={<Home/>}/>
           <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/reset" element={<ResetPassword />} />
 
          <Route path='/about' element={<AboutUs/>}/>
          <Route path='/contact' element={<Contact/>}/>
