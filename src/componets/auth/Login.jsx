@@ -23,9 +23,11 @@ const Login = () => {
 
   return (
     <div className="visa-form-container" style={{justifyContent:"center", alignItems:"center", display:"flex"}}>
+
         <Link className="have-account" to={"/login"} color="#007bff">
-          Already have an account? Login Here
+          Don't have an account? Signup Here
         </Link>
+    
       <h2 className="book-f">// Login //</h2>
       <form onSubmit={handleLogin}>
       <div className="form-groupp">
@@ -50,7 +52,9 @@ const Login = () => {
       </div>
         
         <button type="submit" className="button1">Login</button>
-        
+        <Link className="have-account" to={"/reset"} color="#007bff">
+          Forgot Password
+        </Link>
       </form>
       {error && <p className="error">{error}</p>}
     </div>
