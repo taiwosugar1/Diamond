@@ -24,7 +24,7 @@ const Login = () => {
   return (
     <div className="visa-form-container" style={{justifyContent:"center", alignItems:"center", display:"flex"}}>
 
-        <Link className="have-account" to={"/login"} color="#007bff">
+        <Link className="have-account" to={"/signup"} color="#007bff">
           Don't have an account? Signup Here
         </Link>
     
