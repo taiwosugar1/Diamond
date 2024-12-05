@@ -23,9 +23,10 @@
   margin-right: 5px;
 }
 
-.navbar-brand h5 {
+.navbar-brand h4 {
   font-family: var(--heading-font-family);
   text-align: left;
+  width: 200px;
 }
 
 .login-button{
@@ -92,8 +93,7 @@
     border-radius: 2%;
   }
 
-  .navbar-brand h5 {
-    width: 150px;
+  .navbar-brand h4 {
   }
 
   .navbar-toggle {
