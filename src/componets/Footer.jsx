@@ -34,7 +34,7 @@ const Footer = () => {
       <div className="footer-section">
         <h3>About Us</h3>
         <p>
-          Migrify is the process of moving to a new country or region with the intention of staying and living there.
+          At Diamond Visa, we simplify the process of relocating to a new country or region, ensuring your journey toward living and thriving in your dream destination is seamless and hassle-free.
         </p>
         <div className="foot-icons">
           <h3>Follow Us:</h3>

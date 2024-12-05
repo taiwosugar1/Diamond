@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, sendEmailVerification } from "firebase/auth";
 import { auth } from "../../firebase";
 import { Link } from "react-router-dom";
 
@@ -16,6 +16,7 @@ const Signup = () => {
   });
 
   const [error, setError] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -27,9 +28,26 @@ const Signup = () => {
 
   const handleSignup = async (e) => {
     e.preventDefault();
+    setError("");
+    setMessage("");
+
     try {
-      await createUserWithEmailAndPassword(auth, formData.email, formData.password);
-      alert("Signup successful!");
+      // Create a new user
+      const userCredential = await createUserWithEmailAndPassword(
+        auth,
+        formData.email,
+        formData.password
+      );
+
+      // Send email verification
+      const user = userCredential.user;
+      await sendEmailVerification(user);
+
+      setMessage(
+        "Signup successful! A verification email has been sent to your email address. Please verify your email to complete the registration process."
+      );
+
+      // Clear the form
       setFormData({
         fullName: "",
         age: "",
@@ -47,9 +65,9 @@ const Signup = () => {
 
   return (
     <div className="visa-form-container">
-        <Link className="have-account" to={"/login"} color="#007bff">
-          Already have an account? Login Here
-        </Link>
+      <Link className="have-account" to={"/login"} color="#007bff">
+        Already have an account? Login Here
+      </Link>
       <h2 className="book-f">// Signup //</h2>
       <form onSubmit={handleSignup}>
         <div className="form-groupp">
@@ -352,9 +370,10 @@ const Signup = () => {
         <button type="submit" className="button1">
           Sign Up
         </button>
-        
       </form>
+
       {error && <p className="error">{error}</p>}
+      {message && <p className="success">{message}</p>}
     </div>
   );
 };
