@@ -5,7 +5,8 @@ import './Navbar.css';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { user, logout } = useContext(AuthContext); // Get user and logout from AuthContext
+  const { currentUser, logout } = useContext
+  (AuthContext); // Get user and logout from AuthContext
   const navigate = useNavigate();
 
   const toggleMenu = () => {
@@ -38,7 +39,7 @@ const Navbar = () => {
         <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
         
         {/* Conditional rendering based on authentication */}
-        {user ? (
+        {currentUser ? (
           <>
             <li><Link to="/profile" onClick={closeMenu}>Profile</Link></li>
             <li><button className="logout-button" onClick={handleLogout}>Logout</button></li>
