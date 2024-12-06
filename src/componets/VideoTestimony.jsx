@@ -1,20 +1,21 @@
 import React, { useState, useRef } from "react";
 import "./VideoTestimony.css";
+import { FaPlay } from "react-icons/fa";
 
 const testimonials = [
   {
     id: 1,
-    name: "John Doe",
+    name: "Queen Lee",
     testimony:
       "Diamond Visa and Immigration Services helped me achieve my dream of studying abroad. Their team is fantastic!",
-    videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4", // Replace with actual video URL
+    videoUrl: "/videos/backgroundVideo.mp4", // Replace with actual video URL
   },
   {
     id: 2,
-    name: "Jane Smith",
+    name: "Godwin Chucks",
     testimony:
       "Thanks to Diamond Visa and Immigration Services, my family and I are now happily settled in Canada. Highly recommended!",
-    videoUrl: "https://www.w3schools.com/html/movie.mp4", // Replace with actual video URL
+    videoUrl: "/videos/backgroundVideo.mp4", // Replace with actual video URL
   },
 ];
 
@@ -40,12 +41,12 @@ const VideoTestimony = () => {
                 activeVideo === testimonial.id ? "hidden" : ""
               }`}
             >
-              <p className="overlay-text">Click to Play</p>
+              <p className="overlay-text"><FaPlay/></p>
             </div>
             <video
               controls
               className="testimony-video"
-              poster="https://via.placeholder.com/300x200?text=Video+Thumbnail" // Optional poster image
+              poster="/images/ad.png" // Optional poster image
               onPlay={() => handlePlay(testimonial.id)}
               onPause={handlePause}
               onEnded={handlePause}
