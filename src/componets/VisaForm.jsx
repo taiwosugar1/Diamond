@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
-import emailjs from "@emailjs/browser";
+import { collection, addDoc } from "firebase/firestore";
+import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import "./VisaForm.css";
+import { db, storage } from "../firebase";
 
 const VisaForm = () => {
   const location = useLocation();
-  const { visaType } = location.state || {}; // Get visa type passed from SingleVisa
+  const { visaType } = location.state || {};
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -39,32 +41,41 @@ const VisaForm = () => {
     setError("");
     setSuccess(false);
 
-    const emailData = {
-      name: formData.name,
-      email: formData.email,
-      phone: formData.phone,
-      dob: formData.dob,
-      nationality: formData.nationality,
-      passportNumber: formData.passportNumber,
-      maritalStatus: formData.maritalStatus,
-      address: formData.address,
-      message: formData.message,
-      visaType: formData.visaType,
-    };
-
     try {
-      // Send email via EmailJS
-      await emailjs.send(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-        emailData,
-        process.env.REACT_APP_EMAILJS_USER_ID
-      );
+      let documentURL = null;
+
+      // Upload document to Firebase Storage
+      if (formData.supportingDocuments) {
+        const storageRef = ref(storage, `documents/${formData.supportingDocuments.name}`);
+        const snapshot = await uploadBytes(storageRef, formData.supportingDocuments);
+        documentURL = await getDownloadURL(snapshot.ref);
+      }
+
+      // Save form data to Firestore
+      const docRef = await addDoc(collection(db, "visaApplications"), {
+        ...formData,
+        supportingDocuments: documentURL,
+        submittedAt: new Date(),
+      });
+
       setSuccess(true);
-      alert("Application submitted successfully!");
+      alert("Application submitted successfully! Reference ID: " + docRef.id);
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        dob: "",
+        nationality: "",
+        passportNumber: "",
+        maritalStatus: "",
+        address: "",
+        supportingDocuments: null,
+        message: "",
+        visaType: visaType || "",
+      });
     } catch (err) {
-      setError("Failed to send the application. Please try again.");
-      console.error("EmailJS Error:", err);
+      setError("Failed to submit the application. Please try again.");
+      console.error("Firebase Error:", err);
     } finally {
       setIsSubmitting(false);
     }
@@ -96,8 +107,8 @@ const VisaForm = () => {
             <option value="Visa Extension">Visa Extension</option>
           </select>
         </div>
-          
-        {/* Full Name */}
+
+           {/* Full Name */}
         <div className="form-groupp">
           <input
             type="text"
@@ -217,7 +228,7 @@ const VisaForm = () => {
             required
           />
         </div>
-
+        
         {/* Additional Details */}
         <div className="form-groupp">
           <textarea
