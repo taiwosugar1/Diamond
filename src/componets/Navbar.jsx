@@ -26,7 +26,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-brand">
         <img src="/images/logo.png" alt="" />
-        <h4>Diamond Visa & Immigration Services</h4>
+        <h5>Diamond Visa & Immigration Services</h5>
           {/* Conditional rendering based on authentication */}
          <div className='nav-auth-box'> {currentUser ? (
           <>
