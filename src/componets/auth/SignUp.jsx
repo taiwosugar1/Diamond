@@ -44,7 +44,7 @@ const Signup = () => {
       await sendEmailVerification(user);
 
       setMessage(
-        "Signup successful! A verification email has been sent to your email address. Please verify your email to complete the registration process."
+        <div color="white">Signup successful! A verification email has been sent to your email address. Please verify your email to complete the registration process.</div>
       );
 
       // Clear the form

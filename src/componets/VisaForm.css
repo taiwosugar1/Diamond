@@ -45,7 +45,6 @@
     font-size: 16px;
   }
   
-  
   .form-groupp select.dropdown {
     appearance: none;
     background-color: #007bff;
@@ -56,7 +55,9 @@
   .form-groupp textarea {
     resize: none;
   }
-  
+  .success{
+    color: rgb(55, 233, 233);
+  }
   
   @media screen and (max-width: 768px){
     .visa-form-container{

@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
+import emailjs from "@emailjs/browser";
 import "./VisaForm.css";
 
 const VisaForm = () => {
   const location = useLocation();
-  const { visaType } = location.state || {}; // Get the visa type passed from SingleVisa
+  const { visaType } = location.state || {}; // Get visa type passed from SingleVisa
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -19,6 +20,10 @@ const VisaForm = () => {
     visaType: visaType || "",
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState("");
+
   const handleChange = (e) => {
     const { name, value, files } = e.target;
     if (name === "supportingDocuments") {
@@ -28,16 +33,46 @@ const VisaForm = () => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Implement submission logic here (e.g., EmailJS or API request)
-    console.log(formData);
-    alert(`Application for ${formData.visaType} submitted successfully!`);
+    setIsSubmitting(true);
+    setError("");
+    setSuccess(false);
+
+    const emailData = {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      dob: formData.dob,
+      nationality: formData.nationality,
+      passportNumber: formData.passportNumber,
+      maritalStatus: formData.maritalStatus,
+      address: formData.address,
+      message: formData.message,
+      visaType: formData.visaType,
+    };
+
+    try {
+      // Send email via EmailJS
+      await emailjs.send(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        emailData,
+        process.env.REACT_APP_EMAILJS_USER_ID
+      );
+      setSuccess(true);
+      alert("Application submitted successfully!");
+    } catch (err) {
+      setError("Failed to send the application. Please try again.");
+      console.error("EmailJS Error:", err);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <div className="visa-form-container">
-      <h2>Apply for {formData.visaType || "a Visa"}</h2>
+      <h2 className="book-f">// Apply for {formData.visaType || "a Visa"} //</h2>
       <form onSubmit={handleSubmit}>
         {/* Visa Type */}
         <div className="form-groupp">
@@ -50,7 +85,9 @@ const VisaForm = () => {
             className="dropdown"
             required
           >
-            <option value="" disabled>Select Visa Type</option>
+            <option value="" disabled>
+              Select Visa Type
+            </option>
             <option value="Tourist Visa">Tourist Visa</option>
             <option value="Emergency Visa">Emergency Visa</option>
             <option value="K1/i-130 Visa Application">K1/i-130 Visa Application</option>
@@ -59,7 +96,7 @@ const VisaForm = () => {
             <option value="Visa Extension">Visa Extension</option>
           </select>
         </div>
-
+          
         {/* Full Name */}
         <div className="form-groupp">
           <input
@@ -194,10 +231,12 @@ const VisaForm = () => {
         </div>
 
         {/* Submit Button */}
-        <button type="submit" className="button2">
-          Submit Application
+        <button type="submit" className="button2" disabled={isSubmitting}>
+          {isSubmitting ? "Submitting..." : "Submit Application"}
         </button>
       </form>
+      {success && <p className="success">Application submitted successfully!</p>}
+      {error && <p className="error">{error}</p>}
     </div>
   );
 };

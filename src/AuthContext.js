@@ -1,6 +1,7 @@
 import React, { createContext, useState, useEffect } from "react";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "./firebase";
+import Loader from "./componets/Loader";
 
 export const AuthContext = createContext();
 
@@ -26,7 +27,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div><Loader/></div>;
   }
 
   return (

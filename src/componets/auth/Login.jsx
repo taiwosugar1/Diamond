@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword, sendEmailVerification } from "firebase/auth";
 import { auth } from "../../firebase";
 import "./auth.css";
 import { Link, useNavigate } from "react-router-dom";
@@ -8,22 +8,54 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [resendMessage, setResendMessage] = useState("");
   const navigate = useNavigate(); // Initialize useNavigate
 
   const handleLogin = async (e) => {
     e.preventDefault();
+    setError(""); // Reset error state
+    setResendMessage(""); // Reset resend message state
+
     try {
-      await signInWithEmailAndPassword(auth, email, password);
+      // Attempt to sign in the user
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      const user = userCredential.user;
+
+      // Strictly enforce email verification
+      if (!user.emailVerified) {
+        // Sign out the user immediately if email is not verified
+        await auth.signOut();
+        setError("Email not verified. Please check your email inbox for the verification link.");
+        return;
+      }
+
+      // If email is verified, allow login
       alert("Login successful!");
-
-      // Navigate to the home page after successful login
-      navigate("/");
-
-      // Clear the input fields
-      setEmail("");
+      navigate("/"); // Navigate to home page
+      setEmail(""); // Clear input fields
       setPassword("");
     } catch (err) {
       setError(err.message);
+    }
+  };
+
+  const resendVerificationEmail = async () => {
+    setResendMessage("");
+    setError("");
+
+    try {
+      // Send verification email to the provided email
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      const user = userCredential.user;
+
+      if (!user.emailVerified) {
+        await sendEmailVerification(user);
+        setResendMessage(<div style={{color:"white"}}>Verification email sent! Please check your inbox.</div>);
+      } else {
+        setResendMessage(<div style={{color:"white"}}>Your email is already verified. You can log in."</div>);
+      }
+    } catch (err) {
+      setError(<div style={{color:"#ff0000"}}>Unable to resend verification email. Make sure the credentials are correct.</div>);
     }
   };
 
@@ -65,7 +97,16 @@ const Login = () => {
           Forgot Password
         </Link>
       </form>
-      {error && <p className="error">{error}</p>}
+
+      {error && (
+        <div className="error">
+          <p>{error}</p>
+          <button onClick={resendVerificationEmail} className="button1" >
+            Resend Verification Email
+          </button>
+        </div>
+      )}
+      {resendMessage && <p className="success">{resendMessage}</p>}
     </div>
   );
 };
