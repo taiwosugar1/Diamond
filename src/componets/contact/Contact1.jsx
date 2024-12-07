@@ -23,7 +23,7 @@ const Contact1 = () => {
         {/* Contact Form */}
         
 
-        <div className="contact-form">
+        <div className="contact-formm">
          <Contact/>
         </div>
 

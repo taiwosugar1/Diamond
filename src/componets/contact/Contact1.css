@@ -28,8 +28,8 @@
     padding: 20px 0;
     margin:0 auto;
   }
-  .contact-form{
-    max-width: 50%;
+  .contact-formm{
+    max-width: 60%;
   }
   /* Banner Section */
 .contact-banner {
@@ -115,8 +115,9 @@
     .contact-container{
       justify-content: center;
     }
-    .contact-form{
-      max-width: 95%;
+    .contact-formm{
+      width: 95%;
+      max-width: 100%;
     }
 
     .contact-details{
