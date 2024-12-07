@@ -30,6 +30,7 @@ import ResetPassword from './componets/auth/ResetPassword';
 import ProtectedRoute from './componets/auth/ProtectedRoute';
 import { AuthProvider } from './AuthContext';
 import UserProfile from './componets/UserProfile';
+import AdminDashboard from './componets/admin/AdminDashboard';
 
 AOS.init();
 
@@ -128,6 +129,16 @@ const App = () => {
               </ProtectedRoute>
             }
           />
+
+          <Route
+            path="/admin"
+            element={
+              <ProtectedRoute>
+                <AdminDashboard />
+              </ProtectedRoute>
+            }
+          />
+
         <Route path="/service-details/:serviceId" element={<AdvertDetails />} />
         <Route path="/services/:serviceId" element={<SingleService />} />
         <Route path="/team" element={<Team />} />

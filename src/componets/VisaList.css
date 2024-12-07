@@ -123,6 +123,60 @@
 .visa-form-button:hover {
   background-color: #0056b3;
 }
+
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup Content */
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content .h2{
+  color: var(--link-color);
+}
+/* Close Icon */
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.close-icon:hover {
+  color: #f00;
+}
+
+.success-visa, .popup-content .h2{
+  color: #23c328;
+  font-weight: 500;
+  padding: 4px;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
   .visa-list-heading {

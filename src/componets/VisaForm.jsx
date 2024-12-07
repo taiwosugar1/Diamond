@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { collection, addDoc } from "firebase/firestore";
-import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import "./VisaForm.css";
-import { db, storage } from "../firebase";
+import { db } from "../firebase";
+import { FaHandsClapping } from "react-icons/fa6";
 
 const VisaForm = () => {
   const location = useLocation();
@@ -17,49 +17,32 @@ const VisaForm = () => {
     passportNumber: "",
     maritalStatus: "",
     address: "",
-    supportingDocuments: null,
     message: "",
     visaType: visaType || "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [success, setSuccess] = useState(false);
+  const [showSuccessPopup, setShowSuccessPopup] = useState(false);
   const [error, setError] = useState("");
 
   const handleChange = (e) => {
-    const { name, value, files } = e.target;
-    if (name === "supportingDocuments") {
-      setFormData({ ...formData, [name]: files[0] });
-    } else {
-      setFormData({ ...formData, [name]: value });
-    }
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
     setError("");
-    setSuccess(false);
 
     try {
-      let documentURL = null;
-
-      // Upload document to Firebase Storage
-      if (formData.supportingDocuments) {
-        const storageRef = ref(storage, `documents/${formData.supportingDocuments.name}`);
-        const snapshot = await uploadBytes(storageRef, formData.supportingDocuments);
-        documentURL = await getDownloadURL(snapshot.ref);
-      }
-
       // Save form data to Firestore
       const docRef = await addDoc(collection(db, "visaApplications"), {
         ...formData,
-        supportingDocuments: documentURL,
         submittedAt: new Date(),
       });
 
-      setSuccess(true);
-      alert("Application submitted successfully! Reference ID: " + docRef.id);
+      setShowSuccessPopup(true);
       setFormData({
         name: "",
         email: "",
@@ -69,7 +52,6 @@ const VisaForm = () => {
         passportNumber: "",
         maritalStatus: "",
         address: "",
-        supportingDocuments: null,
         message: "",
         visaType: visaType || "",
       });
@@ -108,7 +90,7 @@ const VisaForm = () => {
           </select>
         </div>
 
-           {/* Full Name */}
+        {/* Full Name */}
         <div className="form-groupp">
           <input
             type="text"
@@ -212,23 +194,10 @@ const VisaForm = () => {
             onChange={handleChange}
             rows="2"
             required
-            placeholder="Residential Address (Home,City, State, Country)"
+            placeholder="Residential Address (Home, City, State, Country)"
           />
         </div>
 
-        {/* Supporting Documents */}
-        <div className="form-groupp">
-          <label htmlFor="supportingDocuments">Upload Your Passport Front Page</label>
-          <input
-            type="file"
-            id="supportingDocuments"
-            name="supportingDocuments"
-            onChange={handleChange}
-            accept=".pdf,.jpg,.jpeg,.png"
-            required
-          />
-        </div>
-        
         {/* Additional Details */}
         <div className="form-groupp">
           <textarea
@@ -246,7 +215,20 @@ const VisaForm = () => {
           {isSubmitting ? "Submitting..." : "Submit Application"}
         </button>
       </form>
-      {success && <p className="success">Application submitted successfully!</p>}
+
+      {showSuccessPopup && (
+        <div className="popup-overlay">
+          <div className="popup-content">
+            <span className="close-icon" onClick={() => setShowSuccessPopup(false)}>
+              &times;
+            </span>
+            <FaHandsClapping color="brown" />
+            <h2 className="h2">Application Submitted Successfully!</h2>
+            <p className="success-visa">One of Our members will contact you via, Email, Phone Call or Whatsapp chat. Thanks!</p>
+          </div>
+        </div>
+      )}
+
       {error && <p className="error">{error}</p>}
     </div>
   );

@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect } from "react";
+import React, { createContext, useState, useEffect, useContext } from "react";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "./firebase";
 import Loader from "./componets/Loader";
@@ -27,7 +27,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   if (loading) {
-    return <div><Loader/></div>;
+    return <div><Loader /></div>;
   }
 
   return (
@@ -35,4 +35,9 @@ export const AuthProvider = ({ children }) => {
       {children}
     </AuthContext.Provider>
   );
+};
+
+// Custom hook for accessing AuthContext
+export const useAuth = () => {
+  return useContext(AuthContext);
 };

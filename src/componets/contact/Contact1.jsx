@@ -21,9 +21,7 @@ const Contact1 = () => {
       <div className="contact-container">
 
         {/* Contact Form */}
-        <div className="content-box">
-
-      </div>
+        
 
         <div className="contact-form">
          <Contact/>

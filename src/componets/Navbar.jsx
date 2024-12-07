@@ -1,12 +1,11 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Navbar.css';
-import { AuthContext } from '../AuthContext';
+import { useAuth } from '../AuthContext'; // Use the custom hook
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { currentUser, logout } = useContext
-  (AuthContext); // Get user and logout from AuthContext
+  const { currentUser, logout } = useAuth(); // Get user and logout from AuthContext
   const navigate = useNavigate();
 
   const toggleMenu = () => {
@@ -28,14 +27,16 @@ const Navbar = () => {
         <img src="/images/logo.png" alt="" />
         <h5>Diamond Visa & Immigration Services</h5>
           {/* Conditional rendering based on authentication */}
-         <div className='nav-auth-box'> {currentUser ? (
-          <>
-            <Link to="/profile" onClick={closeMenu} className='button3'>Profile</Link>
-            <Link className="button1" onClick={handleLogout}>Logout</Link>
-          </>
-        ) : (
-          <Link to="/login" onClick={closeMenu} className='login-button'>Login / SignUp</Link>
-        )}</div>
+         <div className='nav-auth-box'> 
+           {currentUser ? (
+            <>
+              <Link to="/profile" onClick={closeMenu} className='button3'>Profile</Link>
+              <Link className="button1" onClick={handleLogout}>Logout</Link>
+            </>
+          ) : (
+            <Link to="/login" onClick={closeMenu} className='login-button'>Login / SignUp</Link>
+          )}
+         </div>
       </div>
       <div className="navbar-toggle" onClick={toggleMenu}>
         {isOpen ? 'X' : '☰'}
@@ -47,7 +48,6 @@ const Navbar = () => {
         <li><Link to="/about" onClick={closeMenu}>About</Link></li>
         <li><Link to="/contact1" onClick={closeMenu}>Contact</Link></li>
         <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
-      
       </ul>
     </nav>
   );

@@ -1,5 +1,9 @@
 
   .contact-page {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     background: var(--ye);
   }
@@ -18,10 +22,15 @@
   .contact-container {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
     justify-content: space-evenly;
-    padding: 20px;
+    padding: 20px 0;
+    margin:0 auto;
   }
-  
+  .contact-form{
+    max-width: 50%;
+  }
   /* Banner Section */
 .contact-banner {
   position: relative;
@@ -103,6 +112,16 @@
   }
   
   @media screen and (max-width: 768px) {
+    .contact-container{
+      justify-content: center;
+    }
+    .contact-form{
+      max-width: 95%;
+    }
+
+    .contact-details{
+      width: 85%;
+    }
     .map-container{
       width: 90%;
       padding: 0;
