@@ -1,0 +1,70 @@
+
+  /* Container */
+  .pay form {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Header */
+  .pay h2 {
+    font-size: 1.5em;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* CardElement */
+  .StripeElement {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 100%;
+    transition: border-color 0.3s;
+  }
+  
+  .StripeElement--focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .StripeElement--invalid {
+    border-color: #ff0000;
+  }
+  
+  /* Button */
+  .pay button {
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 1em;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pay button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .pay button:hover:not(:disabled) {
+    background-color: #0056b3;
+  }
+  
+  /* Message */
+  .pay p {
+    font-size: 0.9em;
+    color: #333333;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
