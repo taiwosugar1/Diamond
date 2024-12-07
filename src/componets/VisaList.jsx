@@ -28,12 +28,18 @@ const VisaList = () => {
 
   return (
     <section className="visa-list-container">
-      <h2 className="visa-list-heading" data-aos="zoom-in">Our Visa Services</h2>
-      <div className="back-link">
+     <div className="contact-banner">
+        <div className="overlay">
+        <h1 data-aos="zoom-in" >Our Visa Services</h1>
+        <br /><br />
+        <div className="back-link">
         <Link to="/">
           <span>← Back Home</span>
         </Link>
+       </div>
       </div>
+      </div>
+      <br /><br />
       <div className="visa-grid">
         {visas.map((visa) => (
           <div

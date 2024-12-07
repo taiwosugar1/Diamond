@@ -80,8 +80,20 @@ const Service = () => {
   return (
     <section className="services-page">
       {/* Service Section */}
+      <div className="contact-banner">
+        <div className="overlay">
+        <h1 data-aos="zoom-in" >Our Premium Visa Services</h1>
+        <br /><br />
+        <div className="back-link">
+        <Link to="/">
+          <span>← Back Home</span>
+        </Link>
+       </div>
+      </div>
+      </div>
+      <br /><br />
       <div className="intro-section">
-        <h1 className="services-heading">Our Premium Visa Services</h1>
+       
         <p className="services-description">
           We provide elite visa solutions for individuals, families, and
           businesses. Our expertise and tailored services cater to high-class

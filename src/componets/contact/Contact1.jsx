@@ -2,6 +2,7 @@ import React from "react";
 import "./Contact1.css";
 import Contact from "./Contact";
 import {FaFacebook, FaInstagram, FaTwitter} from 'react-icons/fa'
+import { Link } from "react-router-dom";
 
 const Contact1 = () => {
   return (
@@ -14,6 +15,12 @@ const Contact1 = () => {
       <div className="contact-banner">
         <div className="overlay">
           <h1 data-aos="zoom-in">Contact Us</h1>
+          <br /><br />
+          <div className="back-link">
+            <Link to="/">
+              <span>← Back Home</span>
+            </Link>
+         </div>
         </div>
       </div>
 

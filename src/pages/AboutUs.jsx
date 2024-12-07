@@ -1,5 +1,6 @@
 import React from "react";
 import "./AboutUs.css";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
@@ -12,6 +13,12 @@ const AboutUs = () => {
             Dedicated to providing expert immigration and visa processing
             services globally.
           </p>
+          <br /><br />
+          <div className="back-link">
+             <Link to="/">
+              <span>← Back Home</span>
+            </Link>
+         </div>
         </div>
       </div>
 

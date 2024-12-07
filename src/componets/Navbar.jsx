@@ -1,15 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Navbar.css';
 import { useAuth } from '../AuthContext'; // Use the custom hook
 import { doc, getDoc } from 'firebase/firestore';
-import { db } from '../firebase'; // Import Firestore instance
+import { db } from '../firebase'; 
+import { IoIosArrowForward } from "react-icons/io";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isAdmin, setIsAdmin] = useState(false); // State to track admin role
+  const [showDropdown, setShowDropdown] = useState(false); // State for dropdown
   const { currentUser, logout } = useAuth(); // Get user and logout from AuthContext
   const navigate = useNavigate();
+  const navbarRef = useRef(null); // Reference to the navbar
 
   useEffect(() => {
     const fetchUserRole = async () => {
@@ -40,18 +43,44 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
-  const handleLogout = () => {
-    logout(); // Call the logout function from AuthContext
-    navigate('/'); // Redirect to home page after logout
+  const toggleDropdown = () => {
+    setShowDropdown((prev) => !prev);
   };
 
+  const handleLogout = () => {
+    logout();
+    navigate('/'); 
+  };
+
+  // Close navbar when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        setIsOpen(false); // Close the menu
+        setShowDropdown(false); // Close dropdown
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   return (
-    <nav className="navbar">
+    <nav className="navbar" ref={navbarRef}>
       <div className="navbar-brand">
         <img src="/images/logo.png" alt="" />
         <h5>Diamond Visa & Immigration Services</h5>
         {/* Conditional rendering based on authentication */}
-        <div className="nav-auth-box">
+        
+      </div>
+      <div className="navbar-toggle" onClick={toggleMenu}>
+        {isOpen ? 'X' : '☰'}
+      </div>
+
+      <ul className={`navbar-menu ${isOpen ? 'open' : ''}`}>
+      <div className="nav-auth-box">
           {currentUser ? (
             <>
               {/* Show Profile link only if not an admin */}
@@ -64,20 +93,29 @@ const Navbar = () => {
               <button className="button1" onClick={handleLogout}>Logout</button>
             </>
           ) : (
-            <Link to="/login" onClick={closeMenu} className="login-button">Login / SignUp</Link>
+            <div className="dropdown">
+              <button 
+                className="login-button dropdown-toggle" 
+                onClick={toggleDropdown}
+              >
+                Login / SignUp
+              </button>
+              {showDropdown && (
+                <div className="dropdown-menu">
+                  <Link to="/login" className="dropdown-item" onClick={closeMenu}>Login</Link>
+                  <Link to="/forgot-password" className="dropdown-item" onClick={closeMenu}>Forgot Password?</Link>
+                  <Link to="/signup" className="dropdown-item" onClick={closeMenu}>Sign Up</Link>
+                </div>
+              )}
+            </div>
           )}
         </div>
-      </div>
-      <div className="navbar-toggle" onClick={toggleMenu}>
-        {isOpen ? 'X' : '☰'}
-      </div>
-
-      <ul className={`navbar-menu ${isOpen ? 'open' : ''}`}>
-        <li><Link to="/" onClick={closeMenu}>Home</Link></li>
-        <li><Link to="/visa" onClick={closeMenu}>List of Visa</Link></li>
-        <li><Link to="/about" onClick={closeMenu}>About</Link></li>
-        <li><Link to="/contact1" onClick={closeMenu}>Contact</Link></li>
-        <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
+        <br /><br />
+        <li><Link to="/" onClick={closeMenu}>Home <span><IoIosArrowForward /></span></Link></li>
+        <li><Link to="/visa" onClick={closeMenu}>List of Visa<span><IoIosArrowForward /></span></Link></li>
+        <li><Link to="/about" onClick={closeMenu}>About<span><IoIosArrowForward /></span></Link></li>
+        <li><Link to="/contact1" onClick={closeMenu}>Contact<span><IoIosArrowForward /></span></Link></li>
+        <li><Link to="/services" onClick={closeMenu}>Services<span><IoIosArrowForward /></span></Link></li>
       </ul>
     </nav>
   );

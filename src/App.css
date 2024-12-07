@@ -34,6 +34,10 @@ li, a{
   
 }
 
+.back-link span{
+  color: #fff;
+}
+
 .abbout-title {
   font-family: "Playfair Display", serif;
   font-size: 1rem;
