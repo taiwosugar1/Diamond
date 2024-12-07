@@ -148,7 +148,7 @@ const AdminDashboard = () => {
           <div className="users-list">
             {users.map((user) => (
               <div key={user.id} className="user-card">
-                <h3>{user.name || "No Name Provided"}</h3>
+                <h3>{user.fullName || "No Name Provided"}</h3>
                 <p><strong>Email:</strong> {user.email}</p>
                 <p><strong>Role:</strong> {user.role}</p>
                 <button
