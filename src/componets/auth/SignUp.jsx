@@ -15,6 +15,7 @@ const Signup = () => {
     age: "",
     address: "",
     country: "",
+    phone: "",
     occupation: "",
     maritalStatus: "",
     email: "",
@@ -72,6 +73,7 @@ const Signup = () => {
         age: "",
         address: "",
         country: "",
+        phone: "",
         occupation: "",
         maritalStatus: "",
         email: "",
@@ -146,6 +148,16 @@ const Signup = () => {
             name="occupation"
             placeholder="Occupation"
             value={formData.occupation}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="form-groupp">
+          <input
+            type="text"
+            name="phone"
+            placeholder="Phone Number"
+            value={formData.phone}
             onChange={handleChange}
             required
           />

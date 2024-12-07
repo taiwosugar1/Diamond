@@ -36,8 +36,9 @@ const UserProfile = () => {
       <h2>Welcome, {userData?.name || "User"}!</h2>
       <div className="profile-details">
         <p><strong>Email:</strong> {currentUser.email}</p>
-        <p><strong>Name:</strong> {userData?.name || "Not Provided"}</p>
-        <p><strong>Phone:</strong> {userData?.phone || "Not Provided"}</p>
+        <p><strong>Name:</strong> {userData?.fullName || "Not Provided"}</p>
+        <p><strong>Age:</strong> {userData?.age || "Not Provided"}</p>
+        <p><strong>Phone Number:</strong> {userData?.phone || "Not Provided"}</p>
         <p><strong>Address:</strong> {userData?.address || "Not Provided"}</p>
         {/* Add other user fields as necessary */}
       </div>
