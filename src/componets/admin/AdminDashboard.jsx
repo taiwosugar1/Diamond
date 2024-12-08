@@ -3,6 +3,7 @@ import { collection, getDocs, deleteDoc, doc } from "firebase/firestore";
 import { db } from "../../firebase";
 import "./AdminDashboard.css";
 import { useAuth } from "../../AuthContext";
+import Preloader from "../Preloader";
 
 const AdminDashboard = () => {
   const [applications, setApplications] = useState([]);
@@ -91,7 +92,7 @@ const AdminDashboard = () => {
   }
 
   if (loading) {
-    return <div>loading</div>;
+    return <div><Preloader/></div>;
   }
 
   if (error) {

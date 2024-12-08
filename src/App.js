@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes, useLocation, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, useLocation, Link } from 'react-router-dom';
 import './App.css';
 import Navbar from './componets/Navbar';
 import Home from './pages/Home';
@@ -67,8 +67,8 @@ const App = () => {
 
   return (
     <div className="App">
+    <BrowserRouter>
       <AuthProvider>
-        <Router>
           <ScrollToTop /> {/* This works with Router */}
             {showScrollButton && (
               <button className="scroll-to-top" onClick={scrollToTop}>
@@ -121,8 +121,9 @@ const App = () => {
             </Preloader>
 
             <Footer />
-        </Router>
       </AuthProvider>
+    </BrowserRouter>
+
     </div>
   );
 };
