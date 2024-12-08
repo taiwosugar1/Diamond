@@ -3,17 +3,14 @@ import './App.css';
 import Navbar from './componets/Navbar';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
-import { FaLongArrowAltUp, FaPhone, FaWhatsapp } from 'react-icons/fa';
+import { FaLongArrowAltUp} from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 import Footer from './componets/Footer';
 import Contact from './componets/contact/Contact';
-import MessageIcon from './componets/MessageIcon';
 import Contact1 from './componets/contact/Contact1';
 import VisaList from './componets/VisaList';
 import Service from './componets/Service';
 import AosAnimation from './componets/AosAnimation';
-import AOS from "aos";
-import "aos/dist/aos.css";
 import SingleVisa from './componets/SingleVisa';
 import VisaForm from './componets/VisaForm';
 import AdvertDetails from './componets/AdvertDetails';
@@ -30,10 +27,9 @@ import ProtectedRoute from './componets/auth/ProtectedRoute';
 import { AuthProvider } from './AuthContext';
 import UserProfile from './componets/UserProfile';
 import AdminDashboard from './componets/admin/AdminDashboard';
-import PaymentPage from './componets/PaymentForm';
 import Preloader from './componets/Preloader';
 
-AOS.init();
+
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -62,7 +58,6 @@ const App = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Scroll to top functionality
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -74,10 +69,7 @@ const App = () => {
     <div className="App">
       <AuthProvider>
         <Router>
-          <Preloader> {/* Moved inside Router */}
-            <ScrollToTop /> {/* Ensure pages start at the top when navigating */}
-
-            {/* Scroll to Top Button */}
+          <ScrollToTop /> {/* This works with Router */}
             {showScrollButton && (
               <button className="scroll-to-top" onClick={scrollToTop}>
                 <FaLongArrowAltUp />
@@ -90,8 +82,8 @@ const App = () => {
             <Link to='/contact' className="fixed-message-icon">
               <AiFillMessage className="message-icon" />
             </Link>
-
-            <Routes>
+            <Preloader>   {/*preloader  wrapping the routes */}
+             <Routes>
               <Route path="/" exact element={<Home />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
@@ -125,10 +117,10 @@ const App = () => {
               <Route path="/news-media" exact element={<NewsMedia />} />
               <Route path="/world-media" exact element={<WorldMediaPartner />} />
               <Route path="/country/:id" element={<SingleCountry />} />
-            </Routes>
+             </Routes>
+            </Preloader>
 
             <Footer />
-          </Preloader>
         </Router>
       </AuthProvider>
     </div>
@@ -136,3 +128,4 @@ const App = () => {
 };
 
 export default App;
+

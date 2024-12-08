@@ -4,13 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 // index.js or App.js
-import '@fontsource/montserrat'; // Defaults to weight 400
-import '@fontsource/poppins'; // Defaults to weight 400
+import '@fontsource/montserrat'; 
+import '@fontsource/poppins'; 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+   
+     <App />
   </React.StrictMode>
 );
 
