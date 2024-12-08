@@ -1,5 +1,4 @@
-
-import { BrowserRouter as  Router, Route, Routes, useLocation, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation, Link } from 'react-router-dom';
 import './App.css';
 import Navbar from './componets/Navbar';
 import Home from './pages/Home';
@@ -32,9 +31,9 @@ import { AuthProvider } from './AuthContext';
 import UserProfile from './componets/UserProfile';
 import AdminDashboard from './componets/admin/AdminDashboard';
 import PaymentPage from './componets/PaymentForm';
+import Preloader from './componets/Preloader';
 
 AOS.init();
-
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -47,8 +46,8 @@ const ScrollToTop = () => {
 };
 
 const App = () => {
-  const [showScrollButton, setShowScrollButton] = useState(false); 
-  
+  const [showScrollButton, setShowScrollButton] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 200) {
@@ -71,94 +70,69 @@ const App = () => {
     });
   };
 
-
-
- 
-
   return (
     <div className="App">
-        <AuthProvider>
-      <Router>
+      <AuthProvider>
+        <Router>
+          <Preloader> {/* Moved inside Router */}
+            <ScrollToTop /> {/* Ensure pages start at the top when navigating */}
 
-      <ScrollToTop /> {/* Ensure pages start at the top when navigating */}
+            {/* Scroll to Top Button */}
+            {showScrollButton && (
+              <button className="scroll-to-top" onClick={scrollToTop}>
+                <FaLongArrowAltUp />
+              </button>
+            )}
 
-          {/* Scroll to Top Button */}
-          {showScrollButton && (
-            <button className="scroll-to-top" onClick={scrollToTop}>
-              <FaLongArrowAltUp />
-            </button>
-          )}
-         
-          <AosAnimation/>
-          <Navbar  />
-             
-                {/* <a href='tel: +1-614-707-6245'>
-                 <div className='side-box'>
-                    <h6><FaPhone/><br/> Diamond</h6>
-                </div> </a>
-                <a href='https://wa.me/message/NL7UY3M3Q6ZOG1'> 
-                  <div className='side-box2'>
-                    <h6><FaWhatsapp/><br/>Book Now</h6> 
-                </div></a> */}
+            <AosAnimation />
+            <Navbar />
 
-                <Link to='/contact' className="fixed-message-icon"> 
-                <AiFillMessage className="message-icon" />
-               </Link>
+            <Link to='/contact' className="fixed-message-icon">
+              <AiFillMessage className="message-icon" />
+            </Link>
 
-                
+            <Routes>
+              <Route path="/" exact element={<Home />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<Signup />} />
+              <Route path="/reset" element={<ResetPassword />} />
+              <Route path="/profile" element={<UserProfile />} />
+              <Route path='/about' element={<AboutUs />} />
+              <Route path='/contact' element={<Contact />} />
+              <Route path='/contact1' element={<Contact1 />} />
+              <Route path="/visa" exact element={<VisaList />} />
+              <Route path="/services" exact element={<Service />} />
+              <Route path="/visa/:visaType" element={<SingleVisa />} />
+              <Route
+                path="/visa-form"
+                element={
+                  <ProtectedRoute>
+                    <VisaForm />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="/admin"
+                element={
+                  <ProtectedRoute>
+                    <AdminDashboard />
+                  </ProtectedRoute>
+                }
+              />
+              <Route path="/service-details/:serviceId" element={<AdvertDetails />} />
+              <Route path="/services/:serviceId" element={<SingleService />} />
+              <Route path="/team" element={<Team />} />
+              <Route path="/news-media" exact element={<NewsMedia />} />
+              <Route path="/world-media" exact element={<WorldMediaPartner />} />
+              <Route path="/country/:id" element={<SingleCountry />} />
+            </Routes>
 
-         <Routes>
-          <Route path="/" exact element={<Home/>}/>
-          <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/reset" element={<ResetPassword />} />
-        <Route path="/profile" element={<UserProfile />} />
-
-         <Route path='/about' element={<AboutUs/>}/>
-         <Route path='/contact' element={<Contact/>}/>
-         <Route path='/contact1' element={<Contact1/>}/>
-         <Route path="/visa" exact element={<VisaList/>}/>
-         <Route path="/services" exact element={<Service/>}/>
-         <Route path="/visa/:visaType" element={<SingleVisa />} />
-
-        {/* <Route path="/visa-form" element={<VisaForm />} /> */}
-        <Route
-            path="/visa-form"
-            element={
-              <ProtectedRoute>
-                <VisaForm />
-              </ProtectedRoute>
-            }
-          />
-
-          <Route
-            path="/admin"
-            element={
-              <ProtectedRoute>
-                <AdminDashboard />
-              </ProtectedRoute>
-            }
-          />
-
-        <Route path="/pay" exact element={<PaymentPage/>}/>
-
-        <Route path="/service-details/:serviceId" element={<AdvertDetails />} />
-        <Route path="/services/:serviceId" element={<SingleService />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/news-media" exact element={<NewsMedia/>}/>
-        <Route path="/world-media" exact element={<WorldMediaPartner/>}/>
-        <Route path="/country/:id" element={<SingleCountry />} />
-
-
-
-         </Routes>
-         <Footer/>
-        
-         
-     </Router>
-    </AuthProvider> 
+            <Footer />
+          </Preloader>
+        </Router>
+      </AuthProvider>
     </div>
   );
-}
+};
 
 export default App;

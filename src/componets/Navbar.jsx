@@ -103,7 +103,7 @@ const Navbar = () => {
               {showDropdown && (
                 <div className="dropdown-menu">
                   <Link to="/login" className="dropdown-item" onClick={closeMenu}>Login</Link>
-                  <Link to="/forgot-password" className="dropdown-item" onClick={closeMenu}>Forgot Password?</Link>
+                  <Link to="/reset" className="dropdown-item" onClick={closeMenu}>Forgot Password?</Link>
                   <Link to="/signup" className="dropdown-item" onClick={closeMenu}>Sign Up</Link>
                 </div>
               )}
