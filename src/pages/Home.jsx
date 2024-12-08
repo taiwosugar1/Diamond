@@ -60,8 +60,7 @@ const Home = () => {
       <div className="down-sec">
         <img src="/images/h2.png" alt="" className='down-sec-img one'/>
         <img src="/images/h1.png" alt="" className='down-sec-img two'/>
-
-          </div>
+      </div>
           
      
       <WorkingProcess/>

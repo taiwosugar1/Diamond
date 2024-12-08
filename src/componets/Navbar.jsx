@@ -82,16 +82,16 @@ const Navbar = () => {
       <ul className={`navbar-menu ${isOpen ? 'open' : ''}`}>
       <div className="nav-auth-box">
           {currentUser ? (
-            <>
+            <div className='auth-div'>
               {/* Show Profile link only if not an admin */}
               {!isAdmin && (
-                <Link to="/profile" onClick={closeMenu} className="button3">Profile</Link>
+                <Link to="/profile" onClick={closeMenu} className="button4">Profile</Link>
               )}
               {isAdmin && ( // Show admin link only if the user is an admin
                 <Link to="/admin" onClick={closeMenu} className="button3">Admin</Link>
               )}
               <button className="button1" onClick={handleLogout}>Logout</button>
-            </>
+            </div> 
           ) : (
             <div className="dropdown">
               <button 
@@ -102,9 +102,9 @@ const Navbar = () => {
               </button>
               {showDropdown && (
                 <div className="dropdown-menu">
-                  <Link to="/login" className="dropdown-item" onClick={closeMenu}>Login</Link>
-                  <Link to="/reset" className="dropdown-item" onClick={closeMenu}>Forgot Password?</Link>
-                  <Link to="/signup" className="dropdown-item" onClick={closeMenu}>Sign Up</Link>
+                  <Link to="/login" className="dropdown-item" onClick={closeMenu} style={{fontSize:"12px"}}>Login</Link>
+                  <Link to="/reset" className="dropdown-item" onClick={closeMenu} style={{fontSize:"12px"}}>Forgot Password?</Link>
+                  <Link to="/signup" className="dropdown-item" onClick={closeMenu} style={{fontSize:"12px"}}>Sign Up</Link>
                 </div>
               )}
             </div>
