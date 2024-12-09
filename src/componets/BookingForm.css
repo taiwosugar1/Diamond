@@ -51,7 +51,7 @@
   
   .booking-form-container input,
   .booking-form-container select {
-    padding: 10px;
+    padding: 5px;
     border: none;
     border-bottom: 03px solid rgb(181, 178, 178);
     background: transparent;

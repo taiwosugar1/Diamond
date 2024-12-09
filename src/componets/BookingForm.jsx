@@ -8,6 +8,7 @@ const BookingForm = () => {
     phone: "",
     email: "",
     country: "",
+    date: "",
     time: "",
   });
 
@@ -33,7 +34,7 @@ const BookingForm = () => {
         (response) => {
           console.log("Email sent successfully!", response);
           setMessage("Booking successfully submitted!");
-          setFormData({ fullName: "", phone: "", email: "", country: "", time: "" });
+          setFormData({ fullName: "", phone: "", email: "", country: "", time: "", date: "" });
         },
         (error) => {
           console.error("Failed to send email:", error);
@@ -108,6 +109,19 @@ const BookingForm = () => {
             <option value="Germany">Germany</option>
             <option value="China">China</option>
           </select>
+        </div>
+        
+        <div className="form-group">
+          
+          <input
+            type="date"
+            id="date"
+            name="date"
+            value={formData.email}
+            onChange={handleChange}
+            placeholder="date"
+            required
+          />
         </div>
 
         <div className="form-group">

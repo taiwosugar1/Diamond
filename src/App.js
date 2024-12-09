@@ -28,18 +28,7 @@ import { AuthProvider } from './AuthContext';
 import UserProfile from './componets/UserProfile';
 import AdminDashboard from './componets/admin/AdminDashboard';
 import Preloader from './componets/Preloader';
-
-
-
-const ScrollToTop = () => {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to the top of the page when the route changes
-  }, [pathname]);
-
-  return null;
-};
+import ScrollToTop from './componets/ScrollToTop';
 
 const App = () => {
   const [showScrollButton, setShowScrollButton] = useState(false);
