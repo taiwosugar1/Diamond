@@ -76,8 +76,7 @@ const Footer = () => {
         <h3>Visa</h3>
         {visas.map((visa) => (
           <ul
-            key={visa.id}
-            
+            key={visa.id} 
           >
             <li className="footer-link" onClick={() => handleCardClick(visa)}>{visa.type}</li>
           </ul>

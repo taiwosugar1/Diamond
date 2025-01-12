@@ -28,6 +28,10 @@
   .contact-section p{
     font-size: 13px;
   }
+
+  .contact-section a p{
+    color: #fff;
+  }
  
   /* For large screens */
   @media (min-width: 1024px) {

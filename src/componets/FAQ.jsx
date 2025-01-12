@@ -19,7 +19,7 @@ const FAQ = ({ visaType }) => {
     },
     {
       question: "How do I know if my visa has been approved?",
-      answer: "You will receive a notification from us once your visa is approved, often followed by an appointment to collect your visa.",
+      answer: "You will receive a notification from us once your visa is approved, often followed by the document been sent to you via a PDF file for you to print!",
     },
   ];
 

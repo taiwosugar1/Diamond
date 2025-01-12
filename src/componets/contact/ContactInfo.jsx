@@ -17,7 +17,9 @@ const ContactInfo = () => {
       </div>
       <div className="contact-section">
         <p>Email:</p>
-        <p>Diamondimmigrationservices@gmail.com</p>
+        <a href="mailto:Diamondimmigrationservices444@gmail.com">
+         <p>Diamondimmigrationservices444@gmail.com</p>
+        </a>
       </div>
       <div className="contact-section">
         <p>Address:</p>

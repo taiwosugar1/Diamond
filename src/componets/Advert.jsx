@@ -12,7 +12,7 @@ const Advert = () => {
     { title: "Consultancy", icon: <FaExternalLinkSquareAlt />, link: "/service-details/consultancy" },
     { title: "Trip Planning", icon: <LiaPlaneDepartureSolid />, link: "/service-details/trip-planning" },
     { title: "Airbnb", icon: <GrHome />, link: "/service-details/airbnb" },
-    { title: "Tourism", icon: <TbWorldCheck />, link: "/service-details/tourism" },
+    { title: "Group Tourist", icon: <TbWorldCheck />, link: "/service-details/tourism" },
     { title: "Transportation Services", icon: <MdCarRental />, link: "/service-details/transportation-services" },
     { title: "Accurate & Expert Advice", icon: <GrUserExpert />, link: "/service-details/expert-advice" },
   ];

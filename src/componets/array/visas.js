@@ -25,10 +25,10 @@ const visas = [
     {
       id: 3,
       type: "K1/i-130 Visa Application",
-      description: "Fiancé(e) or relative visa for U.S. immigration.",
+      description: "Fiancé(e), Spouse or Relative visa for U.S. immigration.",
       icon: <FaPlane />,
       backgroundImage: "/images/st9.png",
-      details: "The K1/i-130 Visa is for those seeking U.S. immigration through a fiancé(e) or a close relative. It facilitates family reunification.",
+      details: "The K1/i-130 Visa is for those seeking U.S. immigration through a Fiancé(e), Spouse or a close Relative. It facilitates family reunification.",
     },
     {
       id: 4,
